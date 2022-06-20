@@ -1,5 +1,6 @@
 {
-    "private": true,
+    "private": false,
+    "version": "0.0.0",
     "scripts": {
         "commit": "./node_modules/commitizen/bin/git-cz",
         "dev": "npm run development",
