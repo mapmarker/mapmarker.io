@@ -1,6 +1,8 @@
 {
-    "private": true,
+    "private": false,
+    "version": "0.0.0",
     "scripts": {
+        "commit": "./node_modules/commitizen/bin/git-cz",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -8,12 +10,21 @@
         "hot": "mix watch --hot",
         "prod": "npm run production",
         "production": "mix --production",
-        "sail": "./vendor/bin/sail"
+        "sail": "./vendor/bin/sail",
+        "release": "./node_modules/standard-version/bin/cli.js"
     },
     "devDependencies": {
         "axios": "^0.25",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "standard-version": "^9.5.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }

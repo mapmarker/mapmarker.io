@@ -1,0 +1,20 @@
+name: Tag Version
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tag-version:
+    name: Tag Version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1.0.3
+        with:
+          path: ./node_modules
+          key: yarn-${{ hashFiles('yarn.lock') }}
+      - name: Install Yarn Dependencies
+        run: yarn
+      - name: Tag Version
+        run: yarn relese

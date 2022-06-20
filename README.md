@@ -20,3 +20,15 @@ cp ./.env.example ./.env
 ```bash
 yarn sail up -d
 ```
+
+
+
+### Committing Changes
+
+This project uses commitizen to keep commits organized and to automate version tagging. To commit changes you made, run the following commands and follow the prompots:
+
+```bash
+git add .
+yarn commit
+```
+
