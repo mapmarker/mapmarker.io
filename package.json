@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "commit": "git-cz",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -12,8 +13,15 @@
     },
     "devDependencies": {
         "axios": "^0.25",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
