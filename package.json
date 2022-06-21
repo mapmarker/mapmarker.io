@@ -24,6 +24,7 @@
         "@semantic-release/changelog": "semantic-release/changelog",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "semantic-release/github",
+        "@semantic-release/npm": "^9.0.1",
         "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
         "axios": "^0.25",
         "commitizen": "^4.2.4",
@@ -39,7 +40,9 @@
         }
     },
     "release": {
-        "branches": ["main"],
+        "branches": [
+            "main"
+        ],
         "tagFormat": "${version}",
         "plugins": [
             "@semantic-release/release-notes-generator",
