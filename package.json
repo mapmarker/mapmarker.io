@@ -6,6 +6,7 @@
     "version": "0.0.1",
     "scripts": {
         "commit": "./node_modules/commitizen/bin/git-cz",
+        "cm": "yarn commit",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -14,6 +15,8 @@
         "prod": "npm run production",
         "production": "mix --production",
         "sail": "./vendor/bin/sail",
+        "test": "yarn sail artisan test",
+        "test:browser": "yarn sail dusk",
         "release": "./node_modules/standard-version/bin/cli.js"
     },
     "devDependencies": {
