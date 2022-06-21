@@ -15,6 +15,7 @@
         "prod": "npm run production",
         "production": "mix --production",
         "sail": "./vendor/bin/sail",
+        "vapor": "./vendor/bin/vapor",
         "test": "yarn sail artisan test",
         "test:browser": "yarn sail dusk",
         "release": "./node_modules/semantic-release/bin/semantic-release.js"
