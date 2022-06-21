@@ -6,7 +6,8 @@ workflows:
     jobs:
       - build:
           filters:
-            tags
+            tags:
+              only: /*/
       - test-unit:
           requires:
             - build
