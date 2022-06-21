@@ -1,0 +1,190 @@
+version: 2
+
+workflows:
+  version: 2
+      
+  build-test-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: main
+            tags:
+              only: /.*/
+      - test-unit:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: main
+      - test-browser:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: main
+      - deploy-staging:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /.*/
+            branches:
+                ignore: /.*/
+      - deploy-production:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - prod
+                
+      - tag-version:
+          filters:
+            branches:
+              only: main
+          
+
+defaults: &defaults
+  working_directory: /home/circleci/mapmarker.io
+  docker:
+    - image: cimg/php:8.1-browsers
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      # fetch source & prepare build image
+      - checkout
+
+      - restore_cache:
+          keys:
+            # "composer.lock" can be used if it is committed to the repo
+            - v1-dependencies-composer-{{ checksum "composer.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-composer-
+      - run: composer install -n --prefer-dist --no-progress --ignore-platform-req=ext-gd
+      - save_cache:
+          key: v1-dependencies-composer-{{ checksum "composer.lock" }}
+          paths:
+            - ./vendor
+
+      # yarn (with dep caching)
+      - restore_cache:
+          keys:
+            # "composer.lock" can be used if it is committed to the repo
+            - v1-dependencies-yarn-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-yarn-
+      - run: yarn
+      - save_cache:
+          key: v1-dependencies-yarn-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+
+      # compile js / css
+      - run: yarn prod
+
+      # save build to workspace for additional steps
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - mapmarker.io
+  
+  tag-version:
+    <<: *defaults
+    steps:
+      - checkout 
+      # load contents from build step
+      - run: yarn
+      - run:
+          name: Tag version
+          command: yarn release
+
+  test-unit:
+    <<: *defaults
+    steps:
+      # load contents from build step
+      - attach_workspace:
+          at: /home/circleci
+      # run tests with phpunit
+      - run:
+          name: Prepare
+          command: |
+            mkdir ./test-results
+            mkdir ./test-results/junit
+            touch database/database.sqlite
+            cp .env.circleci .env
+            php artisan key:generate
+            php artisan migrate
+      - run:
+          name: Tests
+          command: ./vendor/bin/phpunit --log-junit ./test-results/junit/results.xml
+
+      - store_test_results:
+          path: test-results
+
+  test-browser:
+    <<: *defaults
+    steps:
+      # load contents from build step
+      - attach_workspace:
+          at: /home/circleci
+
+      - run:
+          name: Setup Chrome
+          command: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install ./google-chrome-stable_current_amd64.deb
+
+      - run:
+          name: "Prepare"
+          command: |
+            cp .env.circleci .env
+            touch database/database.sqlite
+            php artisan key:generate
+            php artisan migrate
+            php artisan dusk:chrome-driver --detect
+
+      - run:
+          name: Start Server
+          command: php artisan serve --host=localhost --port=80
+          background: true
+
+      - run:
+          name: Start Chrome Driver
+          command: ./vendor/laravel/dusk/bin/chromedriver-linux
+          background: true
+
+      - run:
+          name: Run Browser Tests
+          command: php artisan dusk
+
+      - store_artifacts:
+          path: /home/circleci/mapmarker.io/tests/Browser/screenshots
+
+  deploy-staging:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - checkout
+      - run:
+          name: Deploy Staging
+          command: yarn vapor deploy staging --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1)"
+      - run:
+          name: Notify velocity.codeclimate
+          command: bash node_modules/circleci-util/src/notify-deployments.sh -o codeclimate-velocity
+
+  deploy-production:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - checkout
+      - run:
+          name: Deploy Production
+          command: yarn vapor deploy production --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1)"
+      - run:
+          name: Notify velocity.codeclimate
+          command: bash node_modules/circleci-util/src/notify-deployments.sh -o codeclimate-velocity
