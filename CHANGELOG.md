@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/mapmarker/mapmarker.io/compare/1.7.1...1.8.0) (2022-06-21)
+
+
+### Features
+
+* **laravel vapor:** configured staging / production envs ([6d36a2d](https://github.com/mapmarker/mapmarker.io/commit/6d36a2d3de8bb1272bb6cdd3a532cb736e5c7315))
+* **release:** automatically open release prs with github workflow ([4985f6d](https://github.com/mapmarker/mapmarker.io/commit/4985f6de782c9990847905e3b1df3810b8ad5c80))
+
 ## [1.7.1](https://github.com/mapmarker/mapmarker.io/compare/1.7.0...1.7.1) (2022-06-21)
 
 
