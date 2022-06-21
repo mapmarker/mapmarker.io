@@ -16,5 +16,9 @@ jobs:
           key: yarn-${{ hashFiles('yarn.lock') }}
       - name: Install Yarn Dependencies
         run: yarn
+      - name: Configure committer
+        run: |
+          git config user.name "MapMarker Version Bot"
+          git config user.email "<>"
       - name: Tag Version
         run: yarn release
