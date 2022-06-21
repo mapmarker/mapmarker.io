@@ -1,0 +1,21 @@
+name: Open Release PRs
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Open Pull Request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: "prod"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "MapMarker Release ${{ steps.date.outputs.date }}"
