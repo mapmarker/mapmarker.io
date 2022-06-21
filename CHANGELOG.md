@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/mapmarker/mapmarker.io/compare/1.5.0...1.6.0) (2022-06-21)
+
+
+### Features
+
+* **circleci:** run tests against tagged versions ([c594960](https://github.com/mapmarker/mapmarker.io/commit/c59496070249d59bf3ef2ce0f70d1c952486cd0b))
+
 # [1.5.0](https://github.com/mapmarker/mapmarker.io/compare/1.4.0...1.5.0) (2022-06-21)
 
 
