@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/mapmarker/mapmarker.io/compare/1.3.1...1.4.0) (2022-06-21)
+
+
+### Features
+
+* **versioning:** add plugin to set package.json version ([65379f3](https://github.com/mapmarker/mapmarker.io/commit/65379f3d8660e972369354bb6a73d46b115905d5))
+
 ## [1.3.1](https://github.com/mapmarker/mapmarker.io/compare/1.3.0...1.3.1) (2022-06-21)
 
 
