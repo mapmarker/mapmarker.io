@@ -1342,6 +1342,15 @@
   dependencies:
     "@octokit/openapi-types" "^12.4.0"
 
+"@semantic-release/changelog@semantic-release/changelog":
+  version "0.0.0-development"
+  resolved "https://codeload.github.com/semantic-release/changelog/tar.gz/a3a6f7b710dfc50ad7c7a5d74658aadf98630b79"
+  dependencies:
+    "@semantic-release/error" "^3.0.0"
+    aggregate-error "^3.0.0"
+    fs-extra "^9.0.0"
+    lodash "^4.17.4"
+
 "@semantic-release/commit-analyzer@^9.0.2":
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-9.0.2.tgz#a78e54f9834193b55f1073fa6258eecc9a545e03"
@@ -1387,6 +1396,27 @@
     p-retry "^4.0.0"
     url-join "^4.0.0"
 
+"@semantic-release/github@semantic-release/github":
+  version "0.0.0-development"
+  resolved "https://codeload.github.com/semantic-release/github/tar.gz/894a7127883ab527cd0d68e613d9161d64f4dfdf"
+  dependencies:
+    "@octokit/rest" "^18.0.0"
+    "@semantic-release/error" "^2.2.0"
+    aggregate-error "^3.0.0"
+    bottleneck "^2.18.1"
+    debug "^4.0.0"
+    dir-glob "^3.0.0"
+    fs-extra "^10.0.0"
+    globby "^11.0.0"
+    http-proxy-agent "^5.0.0"
+    https-proxy-agent "^5.0.0"
+    issue-parser "^6.0.0"
+    lodash "^4.17.4"
+    mime "^3.0.0"
+    p-filter "^2.0.0"
+    p-retry "^4.0.0"
+    url-join "^4.0.0"
+
 "@semantic-release/npm@^9.0.0":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-9.0.1.tgz#d81828eb1fb771e2767b3a8ee989915e1af27075"
@@ -1410,6 +1440,21 @@
   version "10.0.3"
   resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-10.0.3.tgz#85f7ca78bfa6b01fb5fda0ac48112855d69171dc"
   integrity sha512-k4x4VhIKneOWoBGHkx0qZogNjCldLPRiAjnIpMnlUh6PtaWXp/T+C9U7/TaNDDtgDa5HMbHl4WlREdxHio6/3w==
+  dependencies:
+    conventional-changelog-angular "^5.0.0"
+    conventional-changelog-writer "^5.0.0"
+    conventional-commits-filter "^2.0.0"
+    conventional-commits-parser "^3.2.3"
+    debug "^4.0.0"
+    get-stream "^6.0.0"
+    import-from "^4.0.0"
+    into-stream "^6.0.0"
+    lodash "^4.17.4"
+    read-pkg-up "^7.0.0"
+
+"@semantic-release/release-notes-generator@semantic-release/release-notes-generator":
+  version "0.0.0-development"
+  resolved "https://codeload.github.com/semantic-release/release-notes-generator/tar.gz/c5b3fbb437fad719e719a7daaeb0b467679f5854"
   dependencies:
     conventional-changelog-angular "^5.0.0"
     conventional-changelog-writer "^5.0.0"
@@ -2084,6 +2129,11 @@ assert@^1.1.1:
   dependencies:
     object-assign "^4.1.1"
     util "0.10.3"
+
+at-least-node@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
+  integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 autoprefixer@^10.4.0:
   version "10.4.7"
@@ -3792,6 +3842,16 @@ fs-extra@^10.0.0:
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
   dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+fs-extra@^9.0.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
+  integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
+  dependencies:
+    at-least-node "^1.0.0"
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
     universalify "^2.0.0"

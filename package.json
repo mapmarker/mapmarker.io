@@ -1,40 +1,61 @@
 {
-  "name": "mapmarker.io",
-  "description": "generate complex map markers on the fly",
-  "homepage": "https://www.mapmarker.io",
-  "license": "MIT",
-  "version": "0.0.0-development",
-  "scripts": {
-    "commit": "./node_modules/commitizen/bin/git-cz",
-    "cm": "yarn commit",
-    "dev": "npm run development",
-    "development": "mix",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "prod": "npm run production",
-    "production": "mix --production",
-    "sail": "./vendor/bin/sail",
-    "test": "yarn sail artisan test",
-    "test:browser": "yarn sail dusk",
-    "release": "./node_modules/semantic-release/bin/semantic-release.js"
-  },
-  "devDependencies": {
-    "axios": "^0.25",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "laravel-mix": "^6.0.6",
-    "lodash": "^4.17.19",
-    "postcss": "^8.1.14",
-    "semantic-release": "^19.0.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    "name": "mapmarker.io",
+    "description": "generate complex map markers on the fly",
+    "homepage": "https://www.mapmarker.io",
+    "license": "MIT",
+    "version": "0.0.0-development",
+    "scripts": {
+        "commit": "./node_modules/commitizen/bin/git-cz",
+        "cm": "yarn commit",
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "sail": "./vendor/bin/sail",
+        "test": "yarn sail artisan test",
+        "test:browser": "yarn sail dusk",
+        "release": "./node_modules/semantic-release/bin/semantic-release.js"
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "semantic-release/changelog",
+        "@semantic-release/github": "semantic-release/github",
+        "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
+        "axios": "^0.25",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "semantic-release": "^19.0.3"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "release": {
+        "tagFormat": "${version}",
+        "plugins": [
+            "@semantic-release/release-notes-generator",
+            "@semantic-release/changelog",
+            [
+                "@semantic-release/git",
+                {
+                    "assets": [
+                        "CHANGELOG.md",
+                        "package.json",
+                        "yarn.lock"
+                    ]
+                }
+            ],
+            "@semantic-release/github"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mapmarker/mapmarker.io.git"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mapmarker/mapmarker.io.git"
-  }
 }
