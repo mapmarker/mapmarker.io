@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@ambimax/semantic-release-composer@ambimax/semantic-release-composer":
+  version "1.0.2"
+  resolved "https://codeload.github.com/ambimax/semantic-release-composer/tar.gz/e81985d9e520a4dbd5a5c50bd260d68ba22b2a8e"
+  dependencies:
+    "@semantic-release/error" "^2.2.0"
+
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"

@@ -21,6 +21,7 @@
         "release": "./node_modules/semantic-release/bin/semantic-release.js"
     },
     "devDependencies": {
+        "@ambimax/semantic-release-composer": "ambimax/semantic-release-composer",
         "@semantic-release/changelog": "semantic-release/changelog",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "semantic-release/github",
@@ -47,6 +48,7 @@
         "plugins": [
             "@semantic-release/release-notes-generator",
             "@semantic-release/changelog",
+            "@ambimax/semantic-release-composer",
             [
                 "@semantic-release/npm",
                 {
