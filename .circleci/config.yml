@@ -9,6 +9,8 @@ workflows:
           filters:
             branches:
               ignore: main
+            tags:
+              only: /^v.*/
       - test-unit:
           requires:
             - build
@@ -98,9 +100,6 @@ jobs:
       - run:
           name: Tag version
           command: yarn release
-      - run:
-          name: Publish Version
-          command: git push --follow-tags origin main
 
   test-unit:
     <<: *defaults
