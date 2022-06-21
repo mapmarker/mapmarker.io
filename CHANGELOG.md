@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/mapmarker/mapmarker.io/compare/1.4.0...1.5.0) (2022-06-21)
+
+
+### Features
+
+* **versioning:** configured semantic-release/npm settings ([1a74cc9](https://github.com/mapmarker/mapmarker.io/commit/1a74cc93d75d4dced36df1cda2b1dc6dc3512a45))
+
 # [1.4.0](https://github.com/mapmarker/mapmarker.io/compare/1.3.1...1.4.0) (2022-06-21)
 
 
