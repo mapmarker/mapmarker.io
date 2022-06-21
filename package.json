@@ -6,6 +6,7 @@
     "version": "0.0.1",
     "scripts": {
         "commit": "./node_modules/commitizen/bin/git-cz",
+        "cm": "yarn commit",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",

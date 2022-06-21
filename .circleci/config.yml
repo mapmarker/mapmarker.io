@@ -7,7 +7,7 @@ workflows:
       - build:
           filters:
             tags:
-              only: /*/
+              only: /^v.*/
       - test-unit:
           requires:
             - build
