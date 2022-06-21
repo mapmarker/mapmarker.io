@@ -17,12 +17,16 @@ workflows:
           filters:
             branches:
               ignore: main
+            tags:
+              only: /.*/
       - test-browser:
           requires:
             - build
           filters:
             branches:
               ignore: main
+            tags:
+              only: /.*/
       - deploy-staging:
           requires:
             - build
