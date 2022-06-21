@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/mapmarker/mapmarker.io/compare/1.2.0...1.3.0) (2022-06-21)
+
+
+### Bug Fixes
+
+* **merge-conflicts:** resolved merge conflicts from master branch ([f65e615](https://github.com/mapmarker/mapmarker.io/commit/f65e6157775f1fb73f3bd1e7ac4befe28257d492))
+
+
+### Features
+
+* **laravel-vapor:** configured basic envs ([fd9c7af](https://github.com/mapmarker/mapmarker.io/commit/fd9c7af08431edefa519e92c705e57b7b3119a4a))
+* **laravel-vapor:** installed cli into project ([359ee63](https://github.com/mapmarker/mapmarker.io/commit/359ee635f1906d69c2f24557bf2390cd879b88fc))
+
 # [1.2.0](https://github.com/mapmarker/mapmarker.io/compare/1.1.0...1.2.0) (2022-06-21)
 
 
