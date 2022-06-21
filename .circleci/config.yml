@@ -18,8 +18,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
-          branches:
-              ignore: /.*/
+            branches:
+                ignore: /.*/
       - deploy-production:
           requires:
             - build
