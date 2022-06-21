@@ -5,22 +5,12 @@ workflows:
   build-test-deploy:
     jobs:
       - build
-      - openapi-validate:
-          requires:
-            - build
       - test-unit:
           requires:
             - build
       - test-browser:
           requires:
             - build
-      - deploy-staging:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - main
       - deploy-production:
           requires:
             - build
