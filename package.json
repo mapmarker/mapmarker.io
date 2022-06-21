@@ -15,6 +15,8 @@
         "prod": "npm run production",
         "production": "mix --production",
         "sail": "./vendor/bin/sail",
+        "test": "yarn sail artisan test",
+        "test:browser": "yarn sail dusk",
         "release": "./node_modules/standard-version/bin/cli.js"
     },
     "devDependencies": {
