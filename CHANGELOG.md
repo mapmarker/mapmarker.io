@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/mapmarker/mapmarker.io/compare/1.1.0...1.2.0) (2022-06-21)
+
+
+### Features
+
+* **circleci:** changed job filters for version tags ([17fa6fe](https://github.com/mapmarker/mapmarker.io/commit/17fa6fe2dfd5a0b2b7135c0f80f16568d9a69c66))
+
 # [1.1.0](https://github.com/mapmarker/mapmarker.io/compare/v1.0.1...1.1.0) (2022-06-21)
 
 
