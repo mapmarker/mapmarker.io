@@ -38,6 +38,7 @@
         }
     },
     "release": {
+        "branches": ["main"],
         "tagFormat": "${version}",
         "plugins": [
             "@semantic-release/release-notes-generator",
