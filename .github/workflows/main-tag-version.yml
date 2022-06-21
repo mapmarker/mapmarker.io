@@ -22,3 +22,5 @@ jobs:
           git config user.email "<>"
       - name: Tag Version
         run: yarn release
+      - name: Publish Version
+        run: git push --follow-tags origin main
