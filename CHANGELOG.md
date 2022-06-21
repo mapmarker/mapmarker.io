@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/mapmarker/mapmarker.io/compare/1.6.0...1.7.0) (2022-06-21)
+
+
+### Features
+
+* **versioning:** update composer.json version as part of release ([07e6dec](https://github.com/mapmarker/mapmarker.io/commit/07e6decc39cc1f8c4e0cdd560b201f41fdea44c5))
+
 # [1.6.0](https://github.com/mapmarker/mapmarker.io/compare/1.5.0...1.6.0) (2022-06-21)
 
 
