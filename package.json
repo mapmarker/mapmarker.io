@@ -21,6 +21,7 @@
     },
     "devDependencies": {
         "@semantic-release/changelog": "semantic-release/changelog",
+        "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "semantic-release/github",
         "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
         "axios": "^0.25",
