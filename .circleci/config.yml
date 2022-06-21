@@ -2,12 +2,10 @@ version: 2
 
 workflows:
   version: 2
-  tagged-build:
+      
+  build-test-deploy:
     jobs:
-      - build:
-          filters:
-            tags:
-              only: /^v.*/
+      - build
       - test-unit:
           requires:
             - build
@@ -17,15 +15,9 @@ workflows:
       - deploy-staging:
           requires:
             - build
-  untagged-build:
-    jobs:
-      - build
-      - test-unit:
-          requires:
-            - build
-      - test-browser:
-          requires:
-            - build
+          filters:
+            tags:
+              only: /^v.*/
       - deploy-production:
           requires:
             - build
