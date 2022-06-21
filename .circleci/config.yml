@@ -5,7 +5,10 @@ workflows:
       
   build-test-deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore: main
       - test-unit:
           requires:
             - build
@@ -33,9 +36,8 @@ workflows:
             branches:
               only:
                 - prod
+                
       - tag-version:
-          requires: 
-            - build 
           filters:
             branches:
               only: main
@@ -90,14 +92,12 @@ jobs:
   tag-version:
     <<: *defaults
     steps:
+      - checkout 
       # load contents from build step
-      - attach_workspace:
-          at: /home/circleci
-      # run standard-version
+      - run: yarn
       - run:
           name: Tag version
           command: yarn release
-      # publish changes
       - run:
           name: Publish Version
           command: git push --follow-tags origin main
