@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/mapmarker/mapmarker.io/compare/1.3.0...1.3.1) (2022-06-21)
+
+
+### Bug Fixes
+
+* **circleci:** remove deployment notification ([c10053a](https://github.com/mapmarker/mapmarker.io/commit/c10053a04027d77c0a268f885198f1150732da68))
+* **versioning:** attempt to enable tagging on master with pr open ([768a14a](https://github.com/mapmarker/mapmarker.io/commit/768a14a50dad3181d0688f9dc7f2cff7828f5434))
+
 # [1.3.0](https://github.com/mapmarker/mapmarker.io/compare/1.2.0...1.3.0) (2022-06-21)
 
 
