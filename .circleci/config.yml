@@ -9,9 +9,15 @@ workflows:
       - test-unit:
           requires:
             - build
+          filters:
+            branches:
+              ignore: main
       - test-browser:
           requires:
             - build
+          filters:
+            branches:
+              ignore: main
       - deploy-staging:
           requires:
             - build
