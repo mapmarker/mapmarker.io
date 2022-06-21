@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/mapmarker/mapmarker.io/compare/1.7.0...1.7.1) (2022-06-21)
+
+
+### Bug Fixes
+
+* **versioning:** include composer.json in semantic-release/git config ([d3f08aa](https://github.com/mapmarker/mapmarker.io/commit/d3f08aa63effcc45fec28a9221c182c286e404af))
+
 # [1.7.0](https://github.com/mapmarker/mapmarker.io/compare/1.6.0...1.7.0) (2022-06-21)
 
 
