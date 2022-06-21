@@ -3,7 +3,7 @@
     "description": "generate complex map markers on the fly",
     "homepage": "https://www.mapmarker.io",
     "license": "MIT",
-    "version": "0.0.0-development",
+    "version": "1.7.1",
     "scripts": {
         "commit": "./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
@@ -15,14 +15,17 @@
         "prod": "npm run production",
         "production": "mix --production",
         "sail": "./vendor/bin/sail",
+        "vapor": "./vendor/bin/vapor",
         "test": "yarn sail artisan test",
         "test:browser": "yarn sail dusk",
         "release": "./node_modules/semantic-release/bin/semantic-release.js"
     },
     "devDependencies": {
+        "@ambimax/semantic-release-composer": "ambimax/semantic-release-composer",
         "@semantic-release/changelog": "semantic-release/changelog",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "semantic-release/github",
+        "@semantic-release/npm": "^9.0.1",
         "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
         "axios": "^0.25",
         "commitizen": "^4.2.4",
@@ -38,18 +41,28 @@
         }
     },
     "release": {
-        "branches": ["main"],
+        "branches": [
+            "main"
+        ],
         "tagFormat": "${version}",
         "plugins": [
             "@semantic-release/release-notes-generator",
             "@semantic-release/changelog",
+            "@ambimax/semantic-release-composer",
+            [
+                "@semantic-release/npm",
+                {
+                    "npmPublish": false
+                }
+            ],
             [
                 "@semantic-release/git",
                 {
                     "assets": [
                         "CHANGELOG.md",
                         "package.json",
-                        "yarn.lock"
+                        "yarn.lock",
+                        "composer.json"
                     ]
                 }
             ],

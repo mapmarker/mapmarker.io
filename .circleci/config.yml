@@ -17,12 +17,16 @@ workflows:
           filters:
             branches:
               ignore: main
+            tags:
+              only: /.*/
       - test-browser:
           requires:
             - build
           filters:
             branches:
               ignore: main
+            tags:
+              only: /.*/
       - deploy-staging:
           requires:
             - build
@@ -99,7 +103,7 @@ jobs:
       - run: yarn
       - run:
           name: Tag version
-          command: yarn release
+          command: yarn release --no-ci
 
   test-unit:
     <<: *defaults
@@ -172,9 +176,6 @@ jobs:
       - run:
           name: Deploy Staging
           command: yarn vapor deploy staging --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1)"
-      - run:
-          name: Notify velocity.codeclimate
-          command: bash node_modules/circleci-util/src/notify-deployments.sh -o codeclimate-velocity
 
   deploy-production:
     <<: *defaults
@@ -185,6 +186,3 @@ jobs:
       - run:
           name: Deploy Production
           command: yarn vapor deploy production --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1)"
-      - run:
-          name: Notify velocity.codeclimate
-          command: bash node_modules/circleci-util/src/notify-deployments.sh -o codeclimate-velocity
