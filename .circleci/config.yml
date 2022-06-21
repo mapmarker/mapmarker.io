@@ -96,7 +96,7 @@ jobs:
       # run standard-version
       - run:
           name: Tag version
-          command: "yarn release -m 'chore(release): %s' -m '[skip ci]'"
+          command: yarn release
       # publish changes
       - run:
           name: Publish Version
