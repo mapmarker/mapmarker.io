@@ -10,7 +10,7 @@ workflows:
             branches:
               ignore: main
             tags:
-              only: /^v.*/
+              only: /.*/
       - test-unit:
           requires:
             - build
@@ -28,7 +28,7 @@ workflows:
             - build
           filters:
             tags:
-              only: /^v.*/
+              only: /.*/
             branches:
                 ignore: /.*/
       - deploy-production:
