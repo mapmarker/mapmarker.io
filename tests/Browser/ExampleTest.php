@@ -16,8 +16,11 @@ class ExampleTest extends DuskTestCase
     public function testBasicExample()
     {
         $this->browse(function (Browser $browser) {
+
+            $expectedVersionString = 'v' . \Composer\InstalledVersions::getRootPackage()['pretty_version'];
+
             $browser->visit('/')
-                    ->assertSee('Laravel');
+                ->assertSee($expectedVersionString);
         });
     }
 }
