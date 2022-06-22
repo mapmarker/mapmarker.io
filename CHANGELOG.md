@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/mapmarker/mapmarker.io/compare/1.17.2...1.18.0) (2022-06-22)
+
+
+### Features
+
+* **welcome:** remove fonts ([bd1cb42](https://github.com/mapmarker/mapmarker.io/commit/bd1cb42c31e11242b8e1823f523617916094a001))
+
 ## [1.17.2](https://github.com/mapmarker/mapmarker.io/compare/1.17.1...1.17.2) (2022-06-22)
 
 
