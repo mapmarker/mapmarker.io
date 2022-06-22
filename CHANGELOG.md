@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/mapmarker/mapmarker.io/compare/1.10.0...1.11.0) (2022-06-22)
+
+
+### Features
+
+* **laravel vapor docker:** switched deployment to docker-based with gd extension ([b9efafd](https://github.com/mapmarker/mapmarker.io/commit/b9efafd0655ade5c497112fca126fdb5c3760ac5))
+
 # [1.10.0](https://github.com/mapmarker/mapmarker.io/compare/1.9.0...1.10.0) (2022-06-22)
 
 
