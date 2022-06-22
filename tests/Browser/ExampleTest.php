@@ -20,6 +20,7 @@ class ExampleTest extends DuskTestCase
             $expectedVersionString = 'v' . \Composer\InstalledVersions::getRootPackage()['pretty_version'];
 
             $browser->visit('/')
+                ->screenshot('landing-page')
                 ->assertSee($expectedVersionString);
         });
     }
