@@ -410,7 +410,7 @@
         <div class="text-center">
             <div>
                 <img alt="MapMarker Logo" height="100"
-                    src="/api/v1/font-awesome/v5/icon-stack?size=200&color=DC4C3F&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=444&iconsize=48&hoffset=66&voffset=20">
+                    src="/api/v1/font-awesome/v5/icon-stack?size=200&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=44444&iconsize=48&hoffset=66&voffset=20">
             </div>
             <div class="text-sm text-gray-500">
                 {{ config('app.version') }}
