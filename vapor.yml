@@ -3,7 +3,6 @@ name: mapmarker
 environments:
     production:
         domain:
-            - "www.mapmarker.io"
             - "mapmarker.io"
             - "cdn.mapmarker.io"
         memory: 1024
