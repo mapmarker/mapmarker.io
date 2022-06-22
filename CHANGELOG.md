@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/mapmarker/mapmarker.io/compare/1.11.0...1.11.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **docker:** changed attempt to install gd ([706d961](https://github.com/mapmarker/mapmarker.io/commit/706d9615bfd9e7cb00e06d4a23a03db4cdbe2c17))
+
 # [1.11.0](https://github.com/mapmarker/mapmarker.io/compare/1.10.0...1.11.0) (2022-06-22)
 
 
