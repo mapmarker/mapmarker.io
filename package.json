@@ -74,5 +74,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/mapmarker/mapmarker.io.git"
+    },
+    "dependencies": {
+        "alpinejs": "^3.10.2"
     }
 }
