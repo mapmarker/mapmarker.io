@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/mapmarker/mapmarker.io/compare/1.18.1...1.19.0) (2022-06-22)
+
+
+### Features
+
+* **tailwindcss:** added tailwind compiler ([385a1a3](https://github.com/mapmarker/mapmarker.io/commit/385a1a3412d75afa55d9119e7e7ca4297b401b11))
+
 ## [1.18.1](https://github.com/mapmarker/mapmarker.io/compare/1.18.0...1.18.1) (2022-06-22)
 
 
