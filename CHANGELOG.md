@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/mapmarker/mapmarker.io/compare/1.19.0...1.19.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **assets:** remove compiled assets from commit scope ([5eac29c](https://github.com/mapmarker/mapmarker.io/commit/5eac29ce633cca52ba8b4b51735709e5ccbbeb06))
+
 # [1.19.0](https://github.com/mapmarker/mapmarker.io/compare/1.18.1...1.19.0) (2022-06-22)
 
 
