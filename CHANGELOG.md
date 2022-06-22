@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/mapmarker/mapmarker.io/compare/1.14.0...1.15.0) (2022-06-22)
+
+
+### Features
+
+* **laravel vapor domains:** configure staging & production environment domains ([dc37873](https://github.com/mapmarker/mapmarker.io/commit/dc37873315a97c56d22d68da579d15f43c7703e3))
+
 # [1.14.0](https://github.com/mapmarker/mapmarker.io/compare/1.13.0...1.14.0) (2022-06-22)
 
 

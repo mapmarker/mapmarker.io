@@ -2,6 +2,7 @@ id: 31921
 name: mapmarker
 environments:
     production:
+        domain: "*.mapmarker.io"
         memory: 1024
         cli-memory: 512
         runtime: "docker"
@@ -10,6 +11,7 @@ environments:
             - "php artisan event:cache"
             - "yarn prod && rm -rf node_modules"
     staging:
+        domain: "staging.mapmarker.io"
         memory: 1024
         cli-memory: 512
         runtime: "docker"
