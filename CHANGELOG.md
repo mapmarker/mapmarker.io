@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/mapmarker/mapmarker.io/compare/1.17.0...1.17.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **vapor domains:** explicitly set domains for production env ([1486457](https://github.com/mapmarker/mapmarker.io/commit/14864576afe7f4f3f25179289b6008b700628e0a))
+
 # [1.17.0](https://github.com/mapmarker/mapmarker.io/compare/1.16.0...1.17.0) (2022-06-22)
 
 
