@@ -169,7 +169,7 @@ jobs:
   deploy-staging:
     <<: *defaults
     steps:
-      - setup_remote_docker
+      - setup_remote_docker:
           version: 20.10.14
       - attach_workspace:
           at: /home/circleci
@@ -181,7 +181,7 @@ jobs:
   deploy-production:
     <<: *defaults
     steps:
-      - setup_remote_docker
+      - setup_remote_docker:
           version: 20.10.14
       - attach_workspace:
           at: /home/circleci
