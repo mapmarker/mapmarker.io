@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/mapmarker/mapmarker.io/compare/1.13.0...1.14.0) (2022-06-22)
+
+
+### Features
+
+* **fontawesome v4:** added support for pin, icon and iconstack ([ef36bee](https://github.com/mapmarker/mapmarker.io/commit/ef36bee3f1f4bd27bb581b7924f738220e1a6810))
+
 # [1.13.0](https://github.com/mapmarker/mapmarker.io/compare/1.12.0...1.13.0) (2022-06-22)
 
 
