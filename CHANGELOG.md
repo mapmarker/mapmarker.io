@@ -1,3 +1,11 @@
+## [1.11.3](https://github.com/mapmarker/mapmarker.io/compare/1.11.2...1.11.3) (2022-06-22)
+
+
+### Bug Fixes
+
+* **circleci:** fix syntax for docker version declaration ([1785e9e](https://github.com/mapmarker/mapmarker.io/commit/1785e9e08c2fbaf4dd9a4854232b1681da9d4acf))
+* **docker:** change docker version in build to 20.10.14 ([e765fe9](https://github.com/mapmarker/mapmarker.io/commit/e765fe90ee1ececc17209fe77fa9add1adee672b))
+
 ## [1.11.2](https://github.com/mapmarker/mapmarker.io/compare/1.11.1...1.11.2) (2022-06-22)
 
 
