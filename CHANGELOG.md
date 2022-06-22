@@ -1,3 +1,11 @@
+# [1.20.0](https://github.com/mapmarker/mapmarker.io/compare/1.19.1...1.20.0) (2022-06-22)
+
+
+### Features
+
+* **alpine:** added alpine js for mobile menu toggle ([c25a330](https://github.com/mapmarker/mapmarker.io/commit/c25a330808a7fa80503349f9505a87b2be2df8eb))
+* **layout with nav:** added layout with nav styling ([9254102](https://github.com/mapmarker/mapmarker.io/commit/9254102f02ab9f52e3cd478dfb74d677f4aa0e4f))
+
 ## [1.19.1](https://github.com/mapmarker/mapmarker.io/compare/1.19.0...1.19.1) (2022-06-22)
 
 
