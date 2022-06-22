@@ -19,6 +19,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Application Version
+    |--------------------------------------------------------------------------
+    |
+    | This value is the version of your application. This value comes from
+    | the version declared in your composer.json file. The build process
+    | using committizen and automatic tagging handles updating this.
+    |
+    */
+
+    'version' => 'v' . \Composer\InstalledVersions::getRootPackage()['pretty_version'],
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |

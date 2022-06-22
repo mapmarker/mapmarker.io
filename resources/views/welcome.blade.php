@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>MapMarker</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -405,7 +405,7 @@
 </head>
 
 <body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
 
         <div class="text-center">
             <div>
@@ -413,7 +413,7 @@
                     src="https://cdn.mapmarker.io/api/v1/font-awesome/v5/icon-stack?size=100&color=DC4C3F&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=444&iconsize=24&hoffset=33&voffset=10">
             </div>
             <div class="text-sm text-gray-500">
-                v{{ \Composer\InstalledVersions::getRootPackage()['pretty_version'] }}
+                {{ config('app.version') }}
             </div>
         </div>
     </div>
