@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/mapmarker/mapmarker.io/compare/1.18.0...1.18.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **domain:** removed www.mapmarker.io from domain declaration ([733e463](https://github.com/mapmarker/mapmarker.io/commit/733e4633ebbc109c33ddc19ec68cdb7c790e5116))
+
 # [1.18.0](https://github.com/mapmarker/mapmarker.io/compare/1.17.2...1.18.0) (2022-06-22)
 
 
