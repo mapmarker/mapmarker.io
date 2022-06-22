@@ -30,8 +30,8 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
 
         // LEGACY
         // Route::get('pin', 'PinController@show');
-        // Route::get('fa', 'FaController@show');
-        // Route::get('fa/stack', 'FaStackController@show');
+        Route::get('fa', 'FaController@show');
+        Route::get('fa/stack', 'FaStackController@show');
 
         // FONT-AWESOME
         Route::group(['prefix' => 'font-awesome', 'namespace' => 'FontAwesome'], function () {
@@ -45,8 +45,8 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
             // FONT-AWESOME 5
             Route::group(['prefix' => 'v5', 'namespace' => 'v5'], function () {
                 Route::get('pin', 'PinController@show');
-                // Route::get('icon', 'IconController@show');
-                // Route::get('icon-stack', 'IconStackController@show');
+                Route::get('icon', 'IconController@show');
+                Route::get('icon-stack', 'IconStackController@show');
             });
         });
     });

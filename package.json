@@ -3,7 +3,7 @@
     "description": "generate complex map markers on the fly",
     "homepage": "https://www.mapmarker.io",
     "license": "MIT",
-    "version": "1.11.3",
+    "version": "1.13.0",
     "scripts": {
         "commit": "./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
