@@ -1,3 +1,49 @@
+## [1.11.3](https://github.com/mapmarker/mapmarker.io/compare/1.11.2...1.11.3) (2022-06-22)
+
+
+### Bug Fixes
+
+* **circleci:** fix syntax for docker version declaration ([1785e9e](https://github.com/mapmarker/mapmarker.io/commit/1785e9e08c2fbaf4dd9a4854232b1681da9d4acf))
+* **docker:** change docker version in build to 20.10.14 ([e765fe9](https://github.com/mapmarker/mapmarker.io/commit/e765fe90ee1ececc17209fe77fa9add1adee672b))
+
+## [1.11.2](https://github.com/mapmarker/mapmarker.io/compare/1.11.1...1.11.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* **docker:** changed switches for docker-php-ext-configure gd ([74bec2d](https://github.com/mapmarker/mapmarker.io/commit/74bec2d1aa54865334e62e0ba5479bf1cb9f51b8))
+* **docker:** use --enable-gd instead of --with-gd ([08b516c](https://github.com/mapmarker/mapmarker.io/commit/08b516c3fe40946f6d287e93ae09ca02599c04c2))
+
+## [1.11.1](https://github.com/mapmarker/mapmarker.io/compare/1.11.0...1.11.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **docker:** changed attempt to install gd ([706d961](https://github.com/mapmarker/mapmarker.io/commit/706d9615bfd9e7cb00e06d4a23a03db4cdbe2c17))
+
+# [1.11.0](https://github.com/mapmarker/mapmarker.io/compare/1.10.0...1.11.0) (2022-06-22)
+
+
+### Features
+
+* **laravel vapor docker:** switched deployment to docker-based with gd extension ([b9efafd](https://github.com/mapmarker/mapmarker.io/commit/b9efafd0655ade5c497112fca126fdb5c3760ac5))
+
+# [1.10.0](https://github.com/mapmarker/mapmarker.io/compare/1.9.0...1.10.0) (2022-06-22)
+
+
+### Features
+
+* **fontawesome v5 pin controller:** added pin controller ([2fa4646](https://github.com/mapmarker/mapmarker.io/commit/2fa4646352e803a79e0230b34567108053498c78))
+* **pincontroller:** calibrated default offset to center text ([148568f](https://github.com/mapmarker/mapmarker.io/commit/148568f973a78447c7b105201266c3bee5b4c1fc))
+
+# [1.9.0](https://github.com/mapmarker/mapmarker.io/compare/1.8.0...1.9.0) (2022-06-22)
+
+
+### Features
+
+* **app version:** added version entry to config resolved from composer.json ([1543cad](https://github.com/mapmarker/mapmarker.io/commit/1543cad4c1826505a71ffbe87e3fb3215d98c24c))
+* **lawnding-page:** show only logo and current version on homepage ([ee48d66](https://github.com/mapmarker/mapmarker.io/commit/ee48d66803a9002393009b61b0f59397960c0ce4))
+
 # [1.8.0](https://github.com/mapmarker/mapmarker.io/compare/1.7.1...1.8.0) (2022-06-21)
 
 
