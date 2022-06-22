@@ -6,6 +6,14 @@ MapMarker.io is a straight-forward API that generates complex map markers on the
 
 ## Development
 
+### Requirements
+
+
+| Requirement   | Version   |
+|---------------|-----------|
+| PHP           | `^8.0.2`  |
+| Node          | `14`      |
+
 ### Installing Dependencies
 
 ```bash
@@ -17,11 +25,19 @@ cp ./.env.example ./.env
 
 ### Development Environment
 
+Launch the docker-based dev environment using the following command
+
 ```bash
 yarn sail up -d
 ```
 
+### Compiling Assets
 
+To automatically compile assets while developing, simply run the watch command. This will ensure that css is re-compiled automatically when you make changes to the templates or components of this project.
+
+```bash
+yarn watch
+```
 
 ### Committing Changes
 
