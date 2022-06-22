@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/mapmarker/mapmarker.io/compare/1.16.0...1.17.0) (2022-06-22)
+
+
+### Features
+
+* **logo:** make logo 2x display size for "retina" ([1af3e61](https://github.com/mapmarker/mapmarker.io/commit/1af3e61a41f4981f0e7efe0a211a8ca5e5609a38))
+
 # [1.16.0](https://github.com/mapmarker/mapmarker.io/compare/1.15.0...1.16.0) (2022-06-22)
 
 
