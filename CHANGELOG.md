@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/mapmarker/mapmarker.io/compare/1.9.0...1.10.0) (2022-06-22)
+
+
+### Features
+
+* **fontawesome v5 pin controller:** added pin controller ([2fa4646](https://github.com/mapmarker/mapmarker.io/commit/2fa4646352e803a79e0230b34567108053498c78))
+* **pincontroller:** calibrated default offset to center text ([148568f](https://github.com/mapmarker/mapmarker.io/commit/148568f973a78447c7b105201266c3bee5b4c1fc))
+
 # [1.9.0](https://github.com/mapmarker/mapmarker.io/compare/1.8.0...1.9.0) (2022-06-22)
 
 
