@@ -1,3 +1,11 @@
+## [1.11.2](https://github.com/mapmarker/mapmarker.io/compare/1.11.1...1.11.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* **docker:** changed switches for docker-php-ext-configure gd ([74bec2d](https://github.com/mapmarker/mapmarker.io/commit/74bec2d1aa54865334e62e0ba5479bf1cb9f51b8))
+* **docker:** use --enable-gd instead of --with-gd ([08b516c](https://github.com/mapmarker/mapmarker.io/commit/08b516c3fe40946f6d287e93ae09ca02599c04c2))
+
 ## [1.11.1](https://github.com/mapmarker/mapmarker.io/compare/1.11.0...1.11.1) (2022-06-22)
 
 
