@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/mapmarker/mapmarker.io/compare/1.15.0...1.16.0) (2022-06-22)
+
+
+### Features
+
+* **logo:** generate logo from api endpoint ([d08943b](https://github.com/mapmarker/mapmarker.io/commit/d08943b9094caa46f315d1d1d6224c88923afdbf))
+
 # [1.15.0](https://github.com/mapmarker/mapmarker.io/compare/1.14.0...1.15.0) (2022-06-22)
 
 
