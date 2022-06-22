@@ -39,8 +39,8 @@ class PinController extends Controller
         // RESIZE THE ICON
         $size = Request::get('size') ?: 40;
         $iconSize = Request::get('iconSize') ?: ($size / 3.2);
-        $voffset = Request::get('voffset') ?: 0;
-        $hoffset = Request::get('hoffset') ?: 0;
+        $voffset = (Request::get('voffset') ?: 0) + 3; //calibrated offset +3
+        $hoffset = (Request::get('hoffset') ?: 0) + 1; // calibrated offset +1
 
         $img->resize($size, $size, function ($constraint) {
             $constraint->aspectRatio();
