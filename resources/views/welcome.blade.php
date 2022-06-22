@@ -7,9 +7,6 @@
 
     <title>MapMarker</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
     <!-- Styles -->
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -410,7 +407,7 @@
         <div class="text-center">
             <div>
                 <img alt="MapMarker Logo" height="100"
-                    src="https://cdn.mapmarker.io/api/v1/font-awesome/v5/icon-stack?size=100&color=DC4C3F&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=444&iconsize=24&hoffset=33&voffset=10">
+                    src="/api/v1/font-awesome/v5/icon-stack?size=200&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=44444&iconsize=48&hoffset=66&voffset=20">
             </div>
             <div class="text-sm text-gray-500">
                 {{ config('app.version') }}

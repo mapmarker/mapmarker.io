@@ -1,3 +1,38 @@
+# [1.18.0](https://github.com/mapmarker/mapmarker.io/compare/1.17.2...1.18.0) (2022-06-22)
+
+
+### Features
+
+* **welcome:** remove fonts ([bd1cb42](https://github.com/mapmarker/mapmarker.io/commit/bd1cb42c31e11242b8e1823f523617916094a001))
+
+## [1.17.2](https://github.com/mapmarker/mapmarker.io/compare/1.17.1...1.17.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* **logo:** remove duplicate &color parameter deprecation causing crash on staging ([512792b](https://github.com/mapmarker/mapmarker.io/commit/512792bb28eb5a7581b4fca2259ce0ba6c621728))
+
+## [1.17.1](https://github.com/mapmarker/mapmarker.io/compare/1.17.0...1.17.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **vapor domains:** explicitly set domains for production env ([1486457](https://github.com/mapmarker/mapmarker.io/commit/14864576afe7f4f3f25179289b6008b700628e0a))
+
+# [1.17.0](https://github.com/mapmarker/mapmarker.io/compare/1.16.0...1.17.0) (2022-06-22)
+
+
+### Features
+
+* **logo:** make logo 2x display size for "retina" ([1af3e61](https://github.com/mapmarker/mapmarker.io/commit/1af3e61a41f4981f0e7efe0a211a8ca5e5609a38))
+
+# [1.16.0](https://github.com/mapmarker/mapmarker.io/compare/1.15.0...1.16.0) (2022-06-22)
+
+
+### Features
+
+* **logo:** generate logo from api endpoint ([d08943b](https://github.com/mapmarker/mapmarker.io/commit/d08943b9094caa46f315d1d1d6224c88923afdbf))
+
 # [1.15.0](https://github.com/mapmarker/mapmarker.io/compare/1.14.0...1.15.0) (2022-06-22)
 
 
