@@ -2,7 +2,7 @@ version: 2
 
 workflows:
   version: 2
-      
+
   build-test-deploy:
     jobs:
       - build:
@@ -34,7 +34,7 @@ workflows:
             tags:
               only: /.*/
             branches:
-                ignore: /.*/
+              ignore: /.*/
       - deploy-production:
           requires:
             - build
@@ -42,12 +42,11 @@ workflows:
             branches:
               only:
                 - prod
-                
+
       - tag-version:
           filters:
             branches:
               only: main
-          
 
 defaults: &defaults
   working_directory: /home/circleci/mapmarker.io
@@ -94,11 +93,11 @@ jobs:
           root: /home/circleci
           paths:
             - mapmarker.io
-  
+
   tag-version:
     <<: *defaults
     steps:
-      - checkout 
+      - checkout
       # load contents from build step
       - run: yarn
       - run:
@@ -170,6 +169,7 @@ jobs:
   deploy-staging:
     <<: *defaults
     steps:
+      - setup_remote_docker
       - attach_workspace:
           at: /home/circleci
       - checkout
@@ -180,6 +180,7 @@ jobs:
   deploy-production:
     <<: *defaults
     steps:
+      - setup_remote_docker
       - attach_workspace:
           at: /home/circleci
       - checkout
