@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/mapmarker/mapmarker.io/compare/1.8.0...1.9.0) (2022-06-22)
+
+
+### Features
+
+* **app version:** added version entry to config resolved from composer.json ([1543cad](https://github.com/mapmarker/mapmarker.io/commit/1543cad4c1826505a71ffbe87e3fb3215d98c24c))
+* **lawnding-page:** show only logo and current version on homepage ([ee48d66](https://github.com/mapmarker/mapmarker.io/commit/ee48d66803a9002393009b61b0f59397960c0ce4))
+
 # [1.8.0](https://github.com/mapmarker/mapmarker.io/compare/1.7.1...1.8.0) (2022-06-21)
 
 
