@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/mapmarker/mapmarker.io/compare/1.11.3...1.12.0) (2022-06-22)
+
+
+### Features
+
+* **font awesome v5:** added support for icons ([0bba792](https://github.com/mapmarker/mapmarker.io/commit/0bba79204e40863e6cc1136ab7dc4e7e22bc33a2))
+
 ## [1.11.3](https://github.com/mapmarker/mapmarker.io/compare/1.11.2...1.11.3) (2022-06-22)
 
 
