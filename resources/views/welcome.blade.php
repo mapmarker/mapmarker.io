@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app-nav')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MapMarker</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-
-<body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 items-center">
-        <div class="text-center">
-            <div>
-                <img alt="MapMarker Logo" height="100"
-                    src="/api/v1/font-awesome/v5/icon-stack?size=200&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=44444&iconsize=48&hoffset=66&voffset=20">
-            </div>
-            <div class="text-sm text-gray-500">
-                {{ config('app.version') }}
-            </div>
+@section('content')
+    <div class="container mx-auto px-2">
+        <div class="pt-16">
+            <h1 class="font-bold text-5xl mb-8">Generate complex map markers on the fly.</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi voluptate dolorum provident
+            perferendis tempore dicta adipisci magni voluptatem veniam fugiat maxime, eum ex fuga harum laborum facilis
+            magnam temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed id placeat sint maiores culpa
+            inventore possimus, delectus facilis, numquam beatae ipsum et eos animi vitae ab accusantium quaerat optio
+            itaque!
         </div>
     </div>
-</body>
-
-</html>
+@endsection
