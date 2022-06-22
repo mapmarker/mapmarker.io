@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/mapmarker/mapmarker.io/compare/1.17.1...1.17.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* **logo:** remove duplicate &color parameter deprecation causing crash on staging ([512792b](https://github.com/mapmarker/mapmarker.io/commit/512792bb28eb5a7581b4fca2259ce0ba6c621728))
+
 ## [1.17.1](https://github.com/mapmarker/mapmarker.io/compare/1.17.0...1.17.1) (2022-06-22)
 
 
