@@ -27,6 +27,7 @@
         "@semantic-release/github": "semantic-release/github",
         "@semantic-release/npm": "^9.0.1",
         "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
+        "@tailwindcss/typography": "^0.5.2",
         "autoprefixer": "^10.4.7",
         "axios": "^0.25",
         "commitizen": "^4.2.4",

@@ -5,3 +5,20 @@
 [x-cloak] {
     display: none !important;
 }
+
+.changelog {
+    @apply text-gray-200 pb-24
+}
+
+.changelog h1,
+h2 {
+    @apply text-2xl mt-8 font-bold
+}
+
+.changelog h3 {
+    @apply font-bold ml-4 mt-2 text-gray-300
+}
+
+.changelog ul li {
+    @apply ml-8 text-gray-300
+}

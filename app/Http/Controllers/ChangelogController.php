@@ -8,6 +8,7 @@ class ChangelogController extends Controller
 {
     public function index()
     {
-        return view('changelog');
+        $changelogContent = file_get_contents(base_path('CHANGELOG.md'));
+        return view('changelog', compact('changelogContent'));
     }
 }

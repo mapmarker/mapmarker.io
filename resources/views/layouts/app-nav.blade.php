@@ -3,7 +3,7 @@
 @section('nav')
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav x-data="{ mobileMenuOpen: false }">
-        <div class="container mx-auto px-4 py-10">
+        <div class="container mx-auto px-4 py-1 md:py-10">
             <div class="relative flex items-center justify-between h-16">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     <!-- Mobile menu button-->
@@ -49,7 +49,8 @@
                 </div>
                 <div
                     class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-400 font-bold">
-                    <a href="/changelog" class="hover:text-white hover:underline">
+                    <a href="/changelog"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                         {{ config('app.version') }}
                     </a>
                 </div>
