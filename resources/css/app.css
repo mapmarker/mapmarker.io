@@ -6,13 +6,24 @@
     display: none !important;
 }
 
+.hero {
+    background-image: url('/images/map.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
 .changelog {
-    @apply text-gray-200 pb-24
+    @apply text-gray-200
 }
 
 .changelog h1,
-h2 {
-    @apply text-2xl mt-8 font-bold
+.changelog h2 {
+    @apply text-2xl mt-8 font-black
+}
+
+.changelog.changelog-slim h1,
+.changelog.changelog-slim h2 {
+    @apply text-2xl mt-0 font-black
 }
 
 .changelog h3 {
