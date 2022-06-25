@@ -2,25 +2,19 @@
 
 namespace Tests\Browser;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
-class ExampleTest extends DuskTestCase
+class HomeTest extends DuskTestCase
 {
-    /**
-     * A basic browser test example.
-     *
-     * @return void
-     */
-    public function testBasicExample()
+    public function test_homepage()
     {
         $this->browse(function (Browser $browser) {
 
             $expectedVersionString = 'v' . \Composer\InstalledVersions::getRootPackage()['pretty_version'];
 
             $browser->visit('/')
-                ->screenshot('landing-page')
+                ->screenshot('page.landing-page')
                 ->assertSee($expectedVersionString);
         });
     }
