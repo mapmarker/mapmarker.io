@@ -1,3 +1,11 @@
+# [1.21.0](https://github.com/mapmarker/mapmarker.io/compare/1.20.0...1.21.0) (2022-06-25)
+
+
+### Features
+
+* **changelog:** added route ([0085223](https://github.com/mapmarker/mapmarker.io/commit/008522364229089abf394d5e3059f5f86a89ec20))
+* **changelog:** implemented changelog ([d4d3360](https://github.com/mapmarker/mapmarker.io/commit/d4d3360c1d40c2d042fb31f7edfbb6aebba696a5))
+
 # [1.20.0](https://github.com/mapmarker/mapmarker.io/compare/1.19.1...1.20.0) (2022-06-22)
 
 
@@ -219,4 +227,3 @@
 
 * **versioning:** add main to versioning branch ([2c4a507](https://github.com/mapmarker/mapmarker.io/commit/2c4a507ecbac3bbd360be97e3bd2b780ed6b2155))
 * **versioning:** add semantic-release configuration ([c7a9ccd](https://github.com/mapmarker/mapmarker.io/commit/c7a9ccde64017d15aea861d6cb8d521f7cf13f0e))
-
