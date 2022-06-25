@@ -7,7 +7,7 @@
             <p class="max-w-3xl">Here is the list of latest changes to the MapMarker.io platform. These notes are compiled
                 automatically with every release so these will be up-to-date with the latest changes available. You can find
                 the source file in our Github repo.</p>
-            <div class="changelog changelog-slim mt-12 pb-24">
+            <div class="changelog mt-12 pb-24">
                 <x-markdown>{{ $changelogContent }}</x-markdown>
             </div>
         </div>
