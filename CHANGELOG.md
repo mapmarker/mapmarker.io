@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/mapmarker/mapmarker.io/compare/1.21.0...1.22.0) (2022-06-25)
+
+
+### Features
+
+* **homepage:** added homepage with latest release ([2bcc2a1](https://github.com/mapmarker/mapmarker.io/commit/2bcc2a110c265592362358ddd071f5993269953f))
+
 # [1.21.0](https://github.com/mapmarker/mapmarker.io/compare/1.20.0...1.21.0) (2022-06-25)
 
 
