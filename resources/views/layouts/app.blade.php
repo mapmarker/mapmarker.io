@@ -8,9 +8,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body class="antialiased bg-gray-300">
+<body class="antialiased bg-zinc-900">
     @section('nav') @show
-    <div class="min-h-screen pt-16">
+    <div class="min-h-screen">
         @section('content') @show
     </div>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
