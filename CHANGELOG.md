@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/mapmarker/mapmarker.io/compare/1.22.0...1.22.1) (2022-06-25)
+
+
+### Bug Fixes
+
+* **changelog:** fix spacing on dedicated changelog page ([f647cb3](https://github.com/mapmarker/mapmarker.io/commit/f647cb3c1336adda158210b57eb345f117adb6e9))
+
 # [1.22.0](https://github.com/mapmarker/mapmarker.io/compare/1.21.0...1.22.0) (2022-06-25)
 
 
