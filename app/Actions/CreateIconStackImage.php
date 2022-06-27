@@ -22,10 +22,6 @@ class CreateIconStackImage
 
         // RESIZE THE ICON
         $size = data_get($params, 'size') ?: 30;
-        $size = round($size * 1.5);
-        if ($size % 2 == 0) {
-            $size += 1;
-        }
         $iconSize = data_get($params, 'iconsize') ?: ($size * 0.3);
         $voffset = data_get($params, 'voffset') ?: 0;
         $hoffset = data_get($params, 'hoffset') ?: 0;
@@ -74,14 +70,6 @@ class CreateIconStackImage
                 $font->valign('center');
             });
         }
-
-        // trim whitespace
-        $img->trim('top-left', ['top', 'bottom', 'left', 'right'], 1);
-
-        // resize to requested size
-        $img->resize(null, data_get($params, 'size') ?: 30, function ($constraint) {
-            $constraint->aspectRatio();
-        });
 
         return $img;
     }
