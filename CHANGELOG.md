@@ -1,3 +1,11 @@
+# [1.23.0](https://github.com/mapmarker/mapmarker.io/compare/1.22.1...1.23.0) (2022-06-27)
+
+
+### Features
+
+* **homepage:** use new whitespace-trimmed version as website logo ([b8c4c51](https://github.com/mapmarker/mapmarker.io/commit/b8c4c5122592b77c21587059b2d87f347ac6625c))
+* **v2:** proof of concept endpoint with improved trimming and sizing ([4d0cf5e](https://github.com/mapmarker/mapmarker.io/commit/4d0cf5e9043964bc34f8d3a827ae89c1106ca9cf))
+
 ## [1.22.1](https://github.com/mapmarker/mapmarker.io/compare/1.22.0...1.22.1) (2022-06-25)
 
 
