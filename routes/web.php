@@ -51,4 +51,14 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
             });
         });
     });
+
+    Route::group(['prefix' => 'v2', 'namespace' => 'v2'], function () {
+        // FONT-AWESOME
+        Route::group(['prefix' => 'font-awesome', 'namespace' => 'FontAwesome'], function () {
+            // FONT-AWESOME 5
+            Route::group(['prefix' => 'v5', 'namespace' => 'v5'], function () {
+                Route::get('icon-stack', 'IconStackController@show');
+            });
+        });
+    });
 });
