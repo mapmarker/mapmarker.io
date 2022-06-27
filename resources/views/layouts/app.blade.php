@@ -8,7 +8,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body class="antialiased bg-zinc-900">
+<body class="antialiased bg-zinc-900 p-2 md:p-10">
     @section('nav') @show
     <div class="min-h-screen">
         @section('content') @show

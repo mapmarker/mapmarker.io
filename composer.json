@@ -16,6 +16,7 @@
         "laravel/tinker": "^2.7",
         "laravel/vapor-cli": "^1.39",
         "laravel/vapor-core": "^2.22",
+        "lorisleiva/laravel-actions": "^2.4",
         "spatie/laravel-markdown": "^2.2"
     },
     "require-dev": {
