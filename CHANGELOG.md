@@ -1,3 +1,14 @@
+# [1.25.0](https://github.com/mapmarker/mapmarker.io/compare/1.24.0...1.25.0) (2022-06-28)
+
+
+### Features
+
+* **fa-v5:** added v2 support for icons ([1f01846](https://github.com/mapmarker/mapmarker.io/commit/1f018463906b991a2e4342121577e5837ab81a2c))
+* **fa-v5:** added v2 support for pins ([80aa5f6](https://github.com/mapmarker/mapmarker.io/commit/80aa5f64913fc636bb9ab6277fd4f4f931e2bd38))
+* **fav2:** moved logic to create icon stack to action ([45fe6d1](https://github.com/mapmarker/mapmarker.io/commit/45fe6d14fb6f509c5f97419a67ff263b0f518781))
+* **fav5:** created compatible iconstack endpoint ([bd9e25d](https://github.com/mapmarker/mapmarker.io/commit/bd9e25daa57cb710af6130aaa6c346d66a57b656))
+* **homepage:** updated v2 endpoint used for logo ([c77383f](https://github.com/mapmarker/mapmarker.io/commit/c77383f89d40d4f3d6071f2dd7bf6a341d4e9f6e))
+
 # [1.24.0](https://github.com/mapmarker/mapmarker.io/compare/1.23.0...1.24.0) (2022-06-28)
 
 
