@@ -57,6 +57,7 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
         Route::group(['prefix' => 'font-awesome', 'namespace' => 'FontAwesome'], function () {
             // FONT-AWESOME 5
             Route::group(['prefix' => 'v5', 'namespace' => 'v5'], function () {
+                Route::get('pin', 'PinController@show');
                 Route::get('icon', 'IconController@show');
                 Route::get('icon-stack', 'IconStackController@show');
             });
