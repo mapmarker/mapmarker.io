@@ -8,7 +8,7 @@
         "pint": "./vendor/bin/pint",
         "style": "yarn pint -v --test",
         "style:fix": "yarn pint",
-        "commit": "./node_modules/commitizen/bin/git-cz",
+        "commit": "yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
         "dev": "yarn development",
         "development": "mix",
