@@ -3,7 +3,7 @@
 @section('content')
     <x-docs-layout>
 
-        <x-icon-spectrum icon="fa-rocket" class="opacity-40" />
+        <x-icon-spectrum icon="fa-rocket" class="opacity-40" iconClass="-mr-10" />
 
         <h2> Getting Started</h2>
 
