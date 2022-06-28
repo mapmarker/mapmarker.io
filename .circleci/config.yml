@@ -11,7 +11,7 @@ workflows:
               ignore: main
             tags:
               only: /.*/
-      - code-style:
+      - code-formatting:
           requires:
             - build
           filters:
@@ -112,7 +112,7 @@ jobs:
           name: Tag version
           command: yarn release --no-ci
 
-  code-style:
+  code-formatting:
     <<: *defaults
     steps:
       # load contents from build step
