@@ -41,7 +41,7 @@ class FaController extends Controller
             $constraint->aspectRatio();
         });
 
-        $img->text($this->getUnicodeCharFromIcon($icon), $size / 2, $size / 2, function ($font) use ($icon , $size) {
+        $img->text($this->getUnicodeCharFromIcon($icon), $size / 2, $size / 2, function ($font) use ($icon, $size) {
             $font->file($this->getIconFontPath($icon));
             $font->size($size * 0.8);
             $font->color(Request::get('color') ?: '000000');
@@ -51,7 +51,7 @@ class FaController extends Controller
 
         $label = Request::get('label') ?: null;
         $labelOffset = Request::get('labelOffset') ?: 0;
-        if (! is_null($label)) {
+        if (!is_null($label)) {
 
             // ADD THE LABEL
             $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($size) {

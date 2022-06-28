@@ -48,7 +48,7 @@ class PinController extends Controller
 
         // DRAW THE PIN
         $pin_color = $background ?: 'EF5646';
-        $img->text($this->getUnicodeCharFromIcon('fa-map-marker'), $size / 2.0, $size / 2.0, function ($font) use ($icon , $size, $pin_color) {
+        $img->text($this->getUnicodeCharFromIcon('fa-map-marker'), $size / 2.0, $size / 2.0, function ($font) use ($icon, $size, $pin_color) {
             $font->file($this->getIconFontPath($icon));
             $font->size($size * 0.90);
             $font->color($pin_color);
@@ -76,7 +76,7 @@ class PinController extends Controller
 
         $label = Request::get('label') ?: null;
         $labelOffset = Request::get('labelOffset') ?: 0;
-        if (! is_null($label)) {
+        if (!is_null($label)) {
 
             // ADD THE LABEL
             $img->text(IconEncoder::getUnicodeFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($size) {
