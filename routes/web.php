@@ -32,6 +32,7 @@ Route::get('/changelog', [ChangelogController::class, 'index']);
 */
 Route::group(['prefix' => 'documentation'], function () {
     Route::get('/', [DocumentationController::class, 'index']);
+    Route::get('/integrations', [DocumentationController::class, 'integrations']);
 });
 
 /*

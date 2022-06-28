@@ -8,4 +8,9 @@ class DocumentationController extends Controller
     {
         return view('docs.index');
     }
+
+    public function integrations()
+    {
+        return view('docs.integrations.index');
+    }
 }

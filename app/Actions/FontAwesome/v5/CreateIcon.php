@@ -65,7 +65,7 @@ class CreateIcon
 
     protected function getIconFontPath($icon)
     {
-        return base_path('resources/fonts/legacy/fontawesome-webfont.ttf');
+        return FontAwesomeV5Encoder::getFile($icon);
     }
 
     protected function getTextFontPath()
