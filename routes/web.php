@@ -40,6 +40,28 @@ Route::group(['prefix' => 'documentation'], function () {
         Route::get('/google-maps', [DocumentationController::class, 'integrationsGoogleMaps']);
         Route::get('/mapbox', [DocumentationController::class, 'integrationsMapbox']);
     });
+
+    Route::group(['prefix' => 'font-awesome'], function () {
+        Route::get('/', [DocumentationController::class, 'fontAwesome']);
+
+        Route::group(['prefix' => 'v6'], function () {
+            Route::get('/', [DocumentationController::class, 'fontAwesomeV6']);
+        });
+
+        Route::group(['prefix' => 'v5'], function () {
+            Route::get('/', [DocumentationController::class, 'fontAwesomeV5']);
+            Route::get('/pins', [DocumentationController::class, 'fontAwesomeV5Pins']);
+            Route::get('/icons', [DocumentationController::class, 'fontAwesomeV5Icons']);
+            Route::get('/icon-stacks', [DocumentationController::class, 'fontAwesomeV5IconStacks']);
+        });
+
+        Route::group(['prefix' => 'v4'], function () {
+            Route::get('/', [DocumentationController::class, 'fontAwesomeV4']);
+            Route::get('/pins', [DocumentationController::class, 'fontAwesomeV4Pins']);
+            Route::get('/icons', [DocumentationController::class, 'fontAwesomeV4Icons']);
+            Route::get('/icon-stacks', [DocumentationController::class, 'fontAwesomeV4IconStacks']);
+        });
+    });
 });
 
 /*

@@ -2,9 +2,7 @@
 
 @section('content')
     <x-docs-layout>
-
         <div class="grid grid-cols-3 gap-8">
-
             <div class="col-span-3">
                 <x-docs-box>
                     <x-icon-spectrum icon="fa-cog" class="opacity-40" iconClass="-mr-12 w-[49px]" />
@@ -51,9 +49,6 @@
                     </a>
                 </x-docs-box>
             </div>
-
-
         </div>
-
     </x-docs-layout>
 @endsection
