@@ -1,3 +1,11 @@
+# [1.24.0](https://github.com/mapmarker/mapmarker.io/compare/1.23.0...1.24.0) (2022-06-28)
+
+
+### Features
+
+* **commit:** added auto-formatting to commit command ([ee3a9a0](https://github.com/mapmarker/mapmarker.io/commit/ee3a9a027eeedcb107063beb2835288e2a2b876f))
+* **laravel-pint:** run style check in verbose mode ([bd782c5](https://github.com/mapmarker/mapmarker.io/commit/bd782c5271e4aac244c2ecf8585cd301a16b4c1b))
+
 # [1.23.0](https://github.com/mapmarker/mapmarker.io/compare/1.22.1...1.23.0) (2022-06-27)
 
 
