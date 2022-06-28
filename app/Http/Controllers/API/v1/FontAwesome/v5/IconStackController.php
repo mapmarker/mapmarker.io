@@ -14,7 +14,6 @@ class IconStackController extends Controller
 
     public function show(Request $request)
     {
-        $size = $request->get('size') ?: 30;
         $img = CreateIconStack::run($request->all(), self::SCALE, self::FORCE_ODD_SIZE);
 
         return $img->response('png');
