@@ -26,7 +26,7 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex-shrink-0 flex items-center">
                         <img class="block h-8 w-auto"
-                            src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-map-marker-alt&color=fff&on=fa-map-solid&oncolor=777&iconsize=25&hoffset=33&voffset=8"
+                            src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-map-marker-alt&color=fff&on=fa-map-solid&oncolor=777&iconsize=14&hoffset=21&voffset=8"
                             alt="MapMarker.io Logo">
                         <span class="hidden md:inline-block font-bold text-xl ml-2 text-gray-50">MapMarker.io</span>
                     </div>
