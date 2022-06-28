@@ -1,17 +1,22 @@
 <?php
 
-namespace App\Actions;
+namespace App\Actions\FontAwesome\v5;
 
 use App\Helpers\Encoders\FontAwesome\v5\FontAwesomeV5Encoder;
-use Intervention\Image\Facades\Image as Image;
+use Intervention\Image\Facades\Image;
 use Lorisleiva\Actions\Concerns\AsAction;
 
-class CreateIconStackImage
+class CreateIconStack
 {
     use AsAction;
 
-    public function handle(array $params)
+    public function handle(array $params, $scale = 1.0, $forceOddSize = false)
     {
+        $size = (data_get($params, 'size') ?: 30) * $scale;
+        if ($forceOddSize && $size % 2 == 0) {
+            $size++;
+        }
+
         // OPEN ICON DEFAULT IMAGE
         $img = file_get_contents(resource_path('images/icon.png'));
         $img = Image::make($img);
@@ -21,10 +26,9 @@ class CreateIconStackImage
         $on = data_get($params, 'on') ?: $this->getDefaultOnIcon();
 
         // RESIZE THE ICON
-        $size = data_get($params, 'size') ?: 30;
-        $iconSize = data_get($params, 'iconsize') ?: ($size * 0.3);
-        $voffset = data_get($params, 'voffset') ?: 0;
-        $hoffset = data_get($params, 'hoffset') ?: 0;
+        $iconSize = data_get($params, 'iconsize') * $scale ?: ($size * 0.3);
+        $voffset = data_get($params, 'voffset') * $scale ?: 0;
+        $hoffset = data_get($params, 'hoffset') * $scale ?: 0;
 
         $img->resize($size, $size, function ($constraint) {
             $constraint->aspectRatio();
