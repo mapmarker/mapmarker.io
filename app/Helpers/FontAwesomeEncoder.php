@@ -683,8 +683,9 @@ class FontAwesomeEncoder
 
     /**
      * get unicode character from a font aweosome <i>-tag fa-* class.
-     * @param  string $icon_class  the requested icon to be rendered for the desired stack context
-     * @param  bool $is_on_icon is this icon the background icon (fa-2x) of the stack
+     *
+     * @param  string  $icon_class  the requested icon to be rendered for the desired stack context
+     * @param  bool  $is_on_icon is this icon the background icon (fa-2x) of the stack
      * @return unicode             the unicode of the icon to use in font rendering
      */
     public static function getUnicodeFromIcon($icon_class, $is_on_icon = false)
@@ -702,6 +703,6 @@ class FontAwesomeEncoder
             $unicodeChar = self::$map[$icon_class];
         }
 
-        return json_decode('"' . $unicodeChar . '"');
+        return json_decode('"'.$unicodeChar.'"');
     }
 }

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\API\v1;
 
-use App\Http\Controllers\Controller as Controller;
 use App\Helpers\FontAwesomeEncoder;
+use App\Http\Controllers\Controller as Controller;
 use Illuminate\Support\Facades\Request;
 use Intervention\Image\Facades\Image as Image;
 
@@ -48,7 +48,7 @@ class PinController extends Controller
 
         // DRAW THE PIN
         $pin_color = $background ?: 'EF5646';
-        $img->text($this->getUnicodeCharFromIcon('fa-map-marker'), $size / 2.0, $size / 2.1, function ($font) use ($icon, $img, $size, $pin_color) {
+        $img->text($this->getUnicodeCharFromIcon('fa-map-marker'), $size / 2.0, $size / 2.1, function ($font) use ($icon , $size, $pin_color) {
             $font->file($this->getIconFontPath($icon));
             $font->size($size * 1.0);
             $font->color($pin_color);
@@ -57,7 +57,7 @@ class PinController extends Controller
         });
 
         // FILL THE PIN HOLE
-        $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size / 2.0, $size / 2.6, function ($font) use ($icon, $img, $size, $pin_color) {
+        $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size / 2.0, $size / 2.6, function ($font) use ($size, $pin_color) {
             $font->file($this->getIconFontPath('fa-circle'));
             $font->size($size * 0.5);
             $font->color($pin_color);
@@ -66,7 +66,7 @@ class PinController extends Controller
         });
 
         if ($icon) {
-            $img->text($this->getUnicodeCharFromIcon($icon), ($img->width() / 2) + $hoffset, ($img->height() / 5) + $voffset, function ($font) use ($icon, $iconSize, $size) {
+            $img->text($this->getUnicodeCharFromIcon($icon), ($img->width() / 2) + $hoffset, ($img->height() / 5) + $voffset, function ($font) use ($icon, $iconSize) {
                 $font->file($this->getIconFontPath($icon));
                 $font->size((int) $iconSize);
                 $font->color(Request::get('color') ?: '#FFFFFF');
@@ -85,10 +85,10 @@ class PinController extends Controller
 
         $label = Request::get('label') ?: null;
         $labelOffset = Request::get('labelOffset') ?: 0;
-        if (!is_null($label)) {
+        if (! is_null($label)) {
 
             // ADD THE LABEL
-            $img->text(IconEncoder::getUnicodeFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($img, $size) {
+            $img->text(IconEncoder::getUnicodeFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($size) {
                 $font->file($this->getIconFontPath('fa-circle'));
                 $font->size($size * 0.44);
                 $font->color(Request::get('labelColor') ?: 'D9534F');
@@ -97,7 +97,7 @@ class PinController extends Controller
             });
 
             // ADD THE LABEL TEXT
-            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($img, $size) {
+            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($size) {
                 $font->file($this->getTextFontPath());
                 $font->size($size * 0.25);
                 $font->color(Request::get('labelTextColor') ?: 'FFFFFF');
