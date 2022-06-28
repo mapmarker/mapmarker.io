@@ -44,23 +44,27 @@ yarn watch
 This project uses laravel/pint to handle code format checking and fixing. 
 
 ##### Helper: Pint
-```
+```bash
 yarn pint
 ```
 
 ##### Helper: check code for formatting issues
-```
+```bash
 yarn style
 ```
 
 ##### Helper: fix code formatting issue
-```
+```bash
 yarn style:fix
 ```
 
 ##### Commit Integration
 
 Thee package.json has a command helper for committing changes. As part of that helper command, code style is automatically fixed and all changes are added to the scope of the commit. 
+
+```json
+"commit": "yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
+```
 
 ### Committing Changes
 
