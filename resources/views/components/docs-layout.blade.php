@@ -7,7 +7,7 @@
                 <div>
                     <div class="mb-6">
                         <a href="/documentation" class="block mb-1">Getting Started</a>
-                        <a href="/documentation/api-versioning" class="block mb-1">API Versioning</a>
+                        <a href="/documentation/versions" class="block mb-1">API Versions</a>
                     </div>
 
                     <div class="mb-6">

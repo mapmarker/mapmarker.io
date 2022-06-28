@@ -32,7 +32,14 @@ Route::get('/changelog', [ChangelogController::class, 'index']);
 */
 Route::group(['prefix' => 'documentation'], function () {
     Route::get('/', [DocumentationController::class, 'index']);
-    Route::get('/integrations', [DocumentationController::class, 'integrations']);
+    Route::get('/versions', [DocumentationController::class, 'versions']);
+
+    Route::group(['prefix' => 'integrations'], function () {
+        Route::get('/', [DocumentationController::class, 'integrations']);
+        Route::get('/bing-maps', [DocumentationController::class, 'integrationsBingMaps']);
+        Route::get('/google-maps', [DocumentationController::class, 'integrationsGoogleMaps']);
+        Route::get('/mapbox', [DocumentationController::class, 'integrationsMapbox']);
+    });
 });
 
 /*
