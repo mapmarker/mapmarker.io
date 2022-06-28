@@ -5,6 +5,9 @@
     "license": "MIT",
     "version": "1.23.0",
     "scripts": {
+        "pint": "./vendor/bin/pint",
+        "style": "yarn pint --test",
+        "style:fix": "yarn pint",
         "commit": "./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
         "dev": "yarn development",
