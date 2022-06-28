@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\API\v1\FontAwesome\v4;
 
-use App\Http\Controllers\API\v1\FaController as BaseController;
 use App\Helpers\Encoders\FontAwesome\v4\FontAwesomeV4Encoder;
+use App\Http\Controllers\API\v1\FaController as BaseController;
 
 class IconController extends BaseController
 {

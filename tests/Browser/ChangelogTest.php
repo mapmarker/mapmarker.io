@@ -10,8 +10,7 @@ class ChangelogTest extends DuskTestCase
     public function test_homepage()
     {
         $this->browse(function (Browser $browser) {
-
-            $expectedVersionString = 'v' . \Composer\InstalledVersions::getRootPackage()['pretty_version'];
+            $expectedVersionString = 'v'.\Composer\InstalledVersions::getRootPackage()['pretty_version'];
 
             $browser->visit('/changelog')
                 ->screenshot('page.changelog')

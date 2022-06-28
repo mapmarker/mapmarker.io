@@ -11,6 +11,14 @@ workflows:
               ignore: main
             tags:
               only: /.*/
+      - code-formatting:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: main
+            tags:
+              only: /.*/
       - test-unit:
           requires:
             - build
@@ -103,6 +111,17 @@ jobs:
       - run:
           name: Tag version
           command: yarn release --no-ci
+
+  code-formatting:
+    <<: *defaults
+    steps:
+      # load contents from build step
+      - attach_workspace:
+          at: /home/circleci
+      # check code style
+      - run:
+          name: "Check Code Styling"
+          command: yarn style
 
   test-unit:
     <<: *defaults

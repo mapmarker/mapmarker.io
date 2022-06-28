@@ -5,7 +5,10 @@
     "license": "MIT",
     "version": "1.23.0",
     "scripts": {
-        "commit": "./node_modules/commitizen/bin/git-cz",
+        "pint": "./vendor/bin/pint",
+        "style": "yarn pint -v --test",
+        "style:fix": "yarn pint",
+        "commit": "yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
         "dev": "yarn development",
         "development": "mix",

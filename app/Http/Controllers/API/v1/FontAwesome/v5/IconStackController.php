@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\API\v1\FontAwesome\v5;
 
-use App\Http\Controllers\API\v1\FaStackController as Controller;
 use App\Helpers\Encoders\FontAwesome\v5\FontAwesomeV5Encoder;
+use App\Http\Controllers\API\v1\FaStackController as Controller;
 
 class IconStackController extends Controller
 {
