@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\API\v1;
 
-use App\Http\Controllers\Controller as Controller;
 use App\Helpers\FontAwesomeEncoder;
+use App\Http\Controllers\Controller as Controller;
 use Illuminate\Support\Facades\Request;
 use Intervention\Image\Facades\Image as Image;
 
@@ -51,7 +51,7 @@ class FaStackController extends Controller
         });
 
         $large_color = (Request::get('oncolor') ?: Request::get('color')) ?: '000000';
-        $img->text($this->getUnicodeCharFromIcon($on), $size / 2, $size / 2, function ($font) use ($on, $img, $size, $large_color) {
+        $img->text($this->getUnicodeCharFromIcon($on), $size / 2, $size / 2, function ($font) use ($on, $size, $large_color) {
             $font->file($this->getIconFontPath($on));
             $font->size($size * 0.8);
             $font->color($large_color);
@@ -60,7 +60,7 @@ class FaStackController extends Controller
         });
 
         $small_color = Request::get('color') ?: null;
-        $img->text($this->getUnicodeCharFromIcon($icon), ($size / 2) + $hoffset, ($size / 2) + $voffset, function ($font) use ($icon, $img, $size, $iconSize, $large_color, $small_color) {
+        $img->text($this->getUnicodeCharFromIcon($icon), ($size / 2) + $hoffset, ($size / 2) + $voffset, function ($font) use ($icon, $iconSize, $large_color, $small_color) {
             $font->file($this->getIconFontPath($icon));
             $font->size($iconSize);
             $font->color($small_color ?: $large_color);
@@ -70,10 +70,10 @@ class FaStackController extends Controller
 
         $label = Request::get('label') ?: null;
         $labelOffset = Request::get('labelOffset') ?: 0;
-        if (!is_null($label)) {
+        if (! is_null($label)) {
 
             // ADD THE LABEL
-            $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($img, $size) {
+            $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($size) {
                 $font->file($this->getIconFontPath('fa-circle'));
                 $font->size($size * 0.44);
                 $font->color(Request::get('labelColor') ?: 'D9534F');
@@ -82,7 +82,7 @@ class FaStackController extends Controller
             });
 
             // ADD THE LABEL TEXT
-            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($img, $size) {
+            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($size) {
                 $font->file($this->getTextFontPath());
                 $font->size($size * 0.25);
                 $font->color(Request::get('labelTextColor') ?: 'FFFFFF');

@@ -3,8 +3,8 @@
 namespace App\Actions;
 
 use App\Helpers\Encoders\FontAwesome\v5\FontAwesomeV5Encoder;
-use Lorisleiva\Actions\Concerns\AsAction;
 use Intervention\Image\Facades\Image as Image;
+use Lorisleiva\Actions\Concerns\AsAction;
 
 class CreateIconStackImage
 {
@@ -31,7 +31,7 @@ class CreateIconStackImage
         });
 
         $large_color = (data_get($params, 'oncolor') ?: data_get($params, 'color')) ?: '000000';
-        $img->text($this->getUnicodeCharFromIcon($on), $size / 2, $size / 2, function ($font) use ($on, $img, $size, $large_color) {
+        $img->text($this->getUnicodeCharFromIcon($on), $size / 2, $size / 2, function ($font) use ($on, $size, $large_color) {
             $font->file($this->getIconFontPath($on));
             $font->size($size * 0.8);
             $font->color($large_color);
@@ -40,7 +40,7 @@ class CreateIconStackImage
         });
 
         $small_color = data_get($params, 'color') ?: null;
-        $img->text($this->getUnicodeCharFromIcon($icon), ($size / 2) + $hoffset, ($size / 2) + $voffset, function ($font) use ($icon, $img, $size, $iconSize, $large_color, $small_color) {
+        $img->text($this->getUnicodeCharFromIcon($icon), ($size / 2) + $hoffset, ($size / 2) + $voffset, function ($font) use ($icon, $iconSize, $large_color, $small_color) {
             $font->file($this->getIconFontPath($icon));
             $font->size($iconSize);
             $font->color($small_color ?: $large_color);
@@ -50,10 +50,10 @@ class CreateIconStackImage
 
         $label = data_get($params, 'label') ?: null;
         $labelOffset = data_get($params, 'labelOffset') ?: 0;
-        if (!is_null($label)) {
+        if (! is_null($label)) {
 
             // ADD THE LABEL
-            $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($img, $size, $params) {
+            $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($size, $params) {
                 $font->file($this->getIconFontPath('fa-circle'));
                 $font->size($size * 0.44);
                 $font->color(data_get($params, 'labelColor') ?: 'D9534F');
@@ -62,7 +62,7 @@ class CreateIconStackImage
             });
 
             // ADD THE LABEL TEXT
-            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($img, $size, $params) {
+            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($size, $params) {
                 $font->file($this->getTextFontPath());
                 $font->size($size * 0.25);
                 $font->color(data_get($params, 'labelTextColor') ?: 'FFFFFF');

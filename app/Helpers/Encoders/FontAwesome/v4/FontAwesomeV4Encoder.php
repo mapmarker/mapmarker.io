@@ -696,6 +696,6 @@ class FontAwesomeV4Encoder implements Encoder
             $unicodeChar = self::MAP[$icon];
         }
 
-        return json_decode('"' . $unicodeChar . '"');
+        return json_decode('"'.$unicodeChar.'"');
     }
 }

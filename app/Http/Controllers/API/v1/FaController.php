@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\API\v1;
 
-use App\Http\Controllers\Controller as Controller;
 use App\Helpers\FontAwesomeEncoder;
+use App\Http\Controllers\Controller as Controller;
 use Illuminate\Support\Facades\Request;
 use Intervention\Image\Facades\Image as Image;
 
@@ -41,7 +41,7 @@ class FaController extends Controller
             $constraint->aspectRatio();
         });
 
-        $img->text($this->getUnicodeCharFromIcon($icon), $size / 2, $size / 2, function ($font) use ($icon, $img, $size) {
+        $img->text($this->getUnicodeCharFromIcon($icon), $size / 2, $size / 2, function ($font) use ($icon, $size) {
             $font->file($this->getIconFontPath($icon));
             $font->size($size * 0.8);
             $font->color(Request::get('color') ?: '000000');
@@ -51,10 +51,10 @@ class FaController extends Controller
 
         $label = Request::get('label') ?: null;
         $labelOffset = Request::get('labelOffset') ?: 0;
-        if (!is_null($label)) {
+        if (! is_null($label)) {
 
             // ADD THE LABEL
-            $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($img, $size) {
+            $img->text($this->getUnicodeCharFromIcon('fa-circle'), $size * 0.8, $size * 0.8, function ($font) use ($size) {
                 $font->file($this->getIconFontPath('fa-circle'));
                 $font->size($size * 0.44);
                 $font->color(Request::get('labelColor') ?: 'D9534F');
@@ -63,7 +63,7 @@ class FaController extends Controller
             });
 
             // ADD THE LABEL TEXT
-            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($img, $size) {
+            $img->text($label, $size * 0.8 + $labelOffset, $size * 0.8, function ($font) use ($size) {
                 $font->file($this->getTextFontPath());
                 $font->size($size * 0.25);
                 $font->color(Request::get('labelTextColor') ?: 'FFFFFF');
