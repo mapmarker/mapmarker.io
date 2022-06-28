@@ -37,7 +37,7 @@
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 aria-current="page">Home</a>
 
-                            <a href="docs"
+                            <a href="/documentation"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Docs</a>
 
                             <a href="/changelog"
@@ -67,7 +67,7 @@
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Home</a>
 
-                <a href="/docs"
+                <a href="/documentation"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Docs</a>
 
                 <a href="/changelog"

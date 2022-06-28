@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChangelogController;
+use App\Http\Controllers\DocumentationController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/license', [HomeController::class, 'license']);
+Route::get('/privacy', [HomeController::class, 'privacy']);
+Route::get('/terms', [HomeController::class, 'terms']);
 Route::get('/changelog', [ChangelogController::class, 'index']);
+
+/*
+|--------------------------------------------------------------------------
+| Documentation Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for our docs.
+|
+*/
+Route::group(['prefix' => 'documentation'], function () {
+    Route::get('/', [DocumentationController::class, 'index']);
+});
 
 /*
 |--------------------------------------------------------------------------
