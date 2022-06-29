@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/mapmarker/mapmarker.io/compare/1.27.0...1.28.0) (2022-06-29)
+
+
+### Features
+
+* **cache middleware:** added x-vapor-base64-encode response header ([80c5c21](https://github.com/mapmarker/mapmarker.io/commit/80c5c2100c5e16778bc8fc7ff50b252055aa740e))
+
 # [1.27.0](https://github.com/mapmarker/mapmarker.io/compare/1.26.1...1.27.0) (2022-06-29)
 
 
