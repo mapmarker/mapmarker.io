@@ -1,3 +1,23 @@
+# [1.26.0](https://github.com/mapmarker/mapmarker.io/compare/1.25.0...1.26.0) (2022-06-29)
+
+
+### Features
+
+* **docs:** added api versioning page ([cafac5a](https://github.com/mapmarker/mapmarker.io/commit/cafac5a741569dfb94cdbad829424b431077dafe))
+* **docs:** added interactive documentation for v1/v2 font-awesome 4/5 endpoitns ([477274e](https://github.com/mapmarker/mapmarker.io/commit/477274ec4326f7d03668b2026d5d60519f3145f0))
+* **docs:** added interation examples ([a12f43f](https://github.com/mapmarker/mapmarker.io/commit/a12f43f5c7592a1b8091bdff361ac9db9a16070e))
+* **docs:** added overview links for doc sections ([a43fd74](https://github.com/mapmarker/mapmarker.io/commit/a43fd74135b212dbb17cc212f6d5c2eb241681a7))
+* **docs:** added parent pages for font-awesome docs ([71f1cee](https://github.com/mapmarker/mapmarker.io/commit/71f1cee5ba4a461dd2eeffef4a252d59be11578e))
+* **docs:** adding navigation structure ([a0fed3a](https://github.com/mapmarker/mapmarker.io/commit/a0fed3a872369116ee4c7c0e0b4bcaa067f0f54c))
+* **docs:** cleanup copy and pasted descriptions ([693015a](https://github.com/mapmarker/mapmarker.io/commit/693015af50a9b640dd81e073c340ac17638fcfb4))
+* **docs:** fixed more rendering isses in terms ([443d10b](https://github.com/mapmarker/mapmarker.io/commit/443d10bf8ec626b66e059188a4ea60f6f6e0c105))
+* **docs:** integrations parent page ([7bb6ee8](https://github.com/mapmarker/mapmarker.io/commit/7bb6ee88049fe26cbd1b7710c4e750523f5dc53d))
+* **documentation:** added lots of boilerplate / building blocks ([7db1e5b](https://github.com/mapmarker/mapmarker.io/commit/7db1e5b611400c598fe2b0428b789d4460d8652b))
+* **homepage:** link to most recent markers on homepage ([b044008](https://github.com/mapmarker/mapmarker.io/commit/b04400896950a19440b440c05796756689ea8f02))
+* **homepage:** spacing ([822fff6](https://github.com/mapmarker/mapmarker.io/commit/822fff6065b27db06b6c56c08ea53c53b4d9824a))
+* **markercreator:** interactive marker documentation component ([51f6b51](https://github.com/mapmarker/mapmarker.io/commit/51f6b5174374ee357dac7d1b2ee300dca588da55))
+* **trimtransparentborder:** changed to trim only top / bottom to ensure marker remains square ([5eda20d](https://github.com/mapmarker/mapmarker.io/commit/5eda20d7c0f1e473efe5171d1ef54046c1642b90))
+
 # [1.25.0](https://github.com/mapmarker/mapmarker.io/compare/1.24.0...1.25.0) (2022-06-28)
 
 
