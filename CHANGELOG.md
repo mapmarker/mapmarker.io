@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/mapmarker/mapmarker.io/compare/1.28.0...1.29.0) (2022-06-29)
+
+
+### Features
+
+* **cache-middleware:** try using Cache::remember notation ([9ab08bb](https://github.com/mapmarker/mapmarker.io/commit/9ab08bbd6e5f5a4e04e9048095d6b389173c6de3))
+
 # [1.28.0](https://github.com/mapmarker/mapmarker.io/compare/1.27.0...1.28.0) (2022-06-29)
 
 
