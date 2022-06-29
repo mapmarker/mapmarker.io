@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Cache;
 
 class CacheMiddleware
 {
+    const TTL_DAYS = 7 * 86400;
+
     /**
      * Handle an incoming request.
      *
@@ -18,14 +20,10 @@ class CacheMiddleware
     public function handle(Request $request, Closure $next)
     {
         $key = md5($request->fullUrl());
-        if (! Cache::has($key)) {
-            $value = $next($request)->withHeaders([
-                'X-Vapor-Base64-Encode' => 'True',
-                'Cache-Control' => 'max-age=2592000, public',
-            ]);
-            Cache::put($key, $value);
-        }
 
-        return Cache::get($key);
+        return Cache::remember($key, self::TTL_DAYS, fn () => $next($request)->withHeaders([
+            'X-Vapor-Base64-Encode' => 'True',
+            'Cache-Control' => 'max-age=2592000, public',
+        ]));
     }
 }
