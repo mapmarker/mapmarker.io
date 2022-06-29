@@ -11,6 +11,6 @@ class TrimTransparentBorder
 
     public function handle(Image $img)
     {
-        $img->trim('transparent', ['top', 'bottom', 'left', 'right'], 1);
+        $img->trim('transparent', ['top', 'bottom'], 1);
     }
 }
