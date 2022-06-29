@@ -8,6 +8,7 @@
                     <div class="mb-6">
                         <a href="/documentation" class="block mb-1">Getting Started</a>
                         <a href="/documentation/versions" class="block mb-1">API Versions</a>
+                        <a href="/changelog" class="block mb-1">Changelog</a>
                     </div>
 
                     <div class="mb-6">

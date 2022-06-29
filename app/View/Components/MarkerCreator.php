@@ -47,7 +47,7 @@ class MarkerCreator extends Component
             'name' => 'Text Color',
             'value' => 'FFF',
             'type' => 'text',
-            'description' => 'The color of the text on the marker.',
+            'description' => 'The main color of the marker.',
         ],
         'background' => [
             'name' => 'Background Color',

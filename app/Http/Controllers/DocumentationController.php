@@ -24,7 +24,7 @@ class DocumentationController extends Controller
         return view('docs.integrations.bing-maps');
     }
 
-    public function integrationGoogleMaps()
+    public function integrationsGoogleMaps()
     {
         return view('docs.integrations.google-maps');
     }

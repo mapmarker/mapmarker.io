@@ -40,9 +40,6 @@
                             <a href="/documentation"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Docs</a>
 
-                            <a href="/changelog"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Changelog</a>
-
                             <a href="https://status.mapmarker.io" target="_blank"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">API
                                 Status</a>
@@ -69,9 +66,6 @@
 
                 <a href="/documentation"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Docs</a>
-
-                <a href="/changelog"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Changelog</a>
 
                 <a href="https://status.mapmarker.io" target="_blank"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">API
