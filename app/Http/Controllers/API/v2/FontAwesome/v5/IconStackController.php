@@ -7,7 +7,6 @@ use App\Actions\Image\ResizeToHeight;
 use App\Actions\Image\TrimTransparentBorder;
 use App\Http\Controllers\Controller as Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
 
 class IconStackController extends Controller
 {
@@ -17,15 +16,10 @@ class IconStackController extends Controller
 
     public function show(Request $request)
     {
-        $cacheKey = md5($request->fullurl());
-        $img = Cache::remember($cacheKey, function () use ($request) {
-            $size = $request->get('size') ?: 30;
-            $img = CreateIconStack::run($request->all(), self::SCALE, self::FORCE_ODD_SIZE);
-            TrimTransparentBorder::run($img);
-            ResizeToHeight::run($img, $size);
-
-            return $img;
-        });
+        $size = $request->get('size') ?: 30;
+        $img = CreateIconStack::run($request->all(), self::SCALE, self::FORCE_ODD_SIZE);
+        TrimTransparentBorder::run($img);
+        ResizeToHeight::run($img, $size);
 
         return $img->response('png');
     }
