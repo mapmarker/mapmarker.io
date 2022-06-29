@@ -6,9 +6,9 @@
             <div class="col-span-3">
                 <x-docs-box>
                     <h2>Icon Stacks</h2>
-                    <p>You can generate pins with custom text labels. This is very helpful when trying to render lots of
-                        data and you are trying to tie the map markers to other content on your page such as tables or
-                        lists.</p>
+                    <p>You can generate complex icons to convey importan attributes when rendering lots of data on a map.
+                        This will help improve your users understanding of what is going on when lots of things are moving.
+                    </p>
                     <x-marker-creator endpoint="/api/v1/font-awesome/v4/icon-stack" :fields="[
                         'size',
                         'icon' => ['value' => 'fa-map-pin'],

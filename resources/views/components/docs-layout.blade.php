@@ -51,7 +51,6 @@
                     <div class="mb-6">
                         <div class="text-black text-sm text-slate-300 mb-2">More</div>
                         <div class="ml-2">
-                            <a href="/documentation/legacy" class="block mb-1">Legacy Markers</a>
                             <a href="/license" class="block mb-1">License</a>
                             <a href="/terms" class="block mb-1">Terms of Service</a>
                             <a href="/privacy" class="block">Privacy Policy</a>
