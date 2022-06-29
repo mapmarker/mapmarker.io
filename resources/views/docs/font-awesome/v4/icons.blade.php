@@ -9,7 +9,7 @@
                     <p>You can generate pins with custom text labels. This is very helpful when trying to render lots of
                         data and you are trying to tie the map markers to other content on your page such as tables or
                         lists.</p>
-                    <x-marker-creator endpoint="/api/v2/font-awesome/v5/icon" :fields="['icon' => ['value' => 'fa-star-solid'], 'size', 'color' => ['value' => 'BC5AF4']]" />
+                    <x-marker-creator endpoint="/api/v1/font-awesome/v4/icon" :fields="['icon' => ['value' => 'fa-star'], 'size', 'color' => ['value' => 'BC5AF4']]" />
                 </x-docs-box>
             </div>
         </div>

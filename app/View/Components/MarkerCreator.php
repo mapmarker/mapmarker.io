@@ -7,6 +7,12 @@ use Illuminate\View\Component;
 class MarkerCreator extends Component
 {
     const FIELDS = [
+        'size' => [
+            'name' => 'Marker Size',
+            'value' => 75,
+            'type' => 'number',
+            'description' => 'The size of the marker is the height of the final image generated.',
+        ],
         'text' => [
             'name' => 'Text',
             'value' => 'A',
@@ -19,13 +25,25 @@ class MarkerCreator extends Component
             'type' => 'text',
             'description' => 'The icon you would like to show in the pin. This has to be a Font Awesome 5 class name.',
         ],
-        'size' => [
-            'name' => 'Size',
-            'value' => 75,
+        'iconsize' => [
+            'name' => 'Icon Size',
+            'value' => 30,
             'type' => 'number',
-            'description' => 'The size of the marker is the height. Your text will be automatically scaled to fit.',
+            'description' => 'The size of the foreground icon in the stack',
         ],
         'color' => [
+            'name' => 'Text Color',
+            'value' => 'FFF',
+            'type' => 'text',
+            'description' => 'The color of the map marker',
+        ],
+        'on' => [
+            'name' => 'Background Icon',
+            'value' => '',
+            'type' => 'text',
+            'description' => 'The icon you would like to be the background one in the stack.',
+        ],
+        'oncolor' => [
             'name' => 'Text Color',
             'value' => 'FFF',
             'type' => 'text',
