@@ -195,7 +195,7 @@ jobs:
       - checkout
       - run:
           name: Deploy Staging
-          command: yarn vapor deploy staging --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1)"
+          command: yarn vapor deploy staging --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1 | head -n 3)"
 
   deploy-production:
     <<: *defaults
@@ -207,4 +207,4 @@ jobs:
       - checkout
       - run:
           name: Deploy Production
-          command: yarn vapor deploy production --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1)"
+          command: yarn vapor deploy production --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1 | head -n 3)"
