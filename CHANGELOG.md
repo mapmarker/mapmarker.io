@@ -1,3 +1,10 @@
+## [1.26.1](https://github.com/mapmarker/mapmarker.io/compare/1.26.0...1.26.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **deployment:** shorten commit message for deployment logs ([a16ffe8](https://github.com/mapmarker/mapmarker.io/commit/a16ffe8a89902643de0fbfc14a076e47da812081))
+
 # [1.26.0](https://github.com/mapmarker/mapmarker.io/compare/1.25.0...1.26.0) (2022-06-29)
 
 
