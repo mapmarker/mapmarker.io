@@ -1,3 +1,12 @@
+# [1.30.0](https://github.com/mapmarker/mapmarker.io/compare/1.29.0...1.30.0) (2022-06-29)
+
+
+### Features
+
+* **cache-middleware:** remove middleware ([e363371](https://github.com/mapmarker/mapmarker.io/commit/e3633713367bd137b57d0d2ab27576c853384ace))
+* **cache-middleware:** shift caching middleware to v2 endpoints only ([6491ac1](https://github.com/mapmarker/mapmarker.io/commit/6491ac13b9953f8c6ead07148fe2529d56067cd4))
+* **cache:** move cache to controller for testing ([189f430](https://github.com/mapmarker/mapmarker.io/commit/189f430af33f7c9e48d7e97a6cfc875220d94b38))
+
 # [1.29.0](https://github.com/mapmarker/mapmarker.io/compare/1.28.0...1.29.0) (2022-06-29)
 
 
