@@ -10,7 +10,7 @@
 
             <p>
                 We have a few different versions of our API live. This is because we understand what we offer developers: a
-                simple reliable service that makes their job easier by ensuring your applications continue to work with
+                simple reliable service that makes their job easier by ensuring their applications continue to work with
                 minimal maintenance.
             </p>
 

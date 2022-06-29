@@ -20,6 +20,7 @@
                     <div class="mb-6">
                         <div class="text-black text-sm text-slate-300 mb-2">Font Awesome 5</div>
                         <div class="ml-2">
+                            <a href="/documentation/font-awesome/v5" class="block mb-1">Overview</a>
                             <a href="/documentation/font-awesome/v5/pins" class="block mb-1">Pins</a>
                             <a href="/documentation/font-awesome/v5/icons" class="block mb-1">Icons</a>
                             <a href="/documentation/font-awesome/v5/icon-stack" class="block">Icon Stacks</a>
@@ -29,6 +30,7 @@
                     <div class="mb-6">
                         <div class="text-black text-sm text-slate-300 mb-2">Font Awesome 4</div>
                         <div class="ml-2">
+                            <a href="/documentation/font-awesome/v4" class="block mb-1">Overview</a>
                             <a href="/documentation/font-awesome/v4/pins" class="block mb-1">Pins</a>
                             <a href="/documentation/font-awesome/v4/icons" class="block mb-1">Icons</a>
                             <a href="/documentation/font-awesome/v4/icon-stack" class="block">Icon Stacks</a>
@@ -38,6 +40,7 @@
                     <div class="mb-6">
                         <div class="text-black text-sm text-slate-300 mb-2">Integrations</div>
                         <div class="ml-2">
+                            <a href="/documentation/integrations" class="block mb-1">Overview</a>
                             <a href="/documentation/integrations/bing-maps" class="block mb-1">Bing Maps</a>
                             <a href="/documentation/integrations/google-maps" class="block mb-1">Google Maps</a>
                             <a href="/documentation/integrations/mapbox" class="block">Mapbox</a>
