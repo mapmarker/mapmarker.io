@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/mapmarker/mapmarker.io/compare/1.26.1...1.27.0) (2022-06-29)
+
+
+### Features
+
+* **cache:** added server cache with browser cache ([08b40a0](https://github.com/mapmarker/mapmarker.io/commit/08b40a0a2b54a0310c927a486b30fc4d562ca1cf))
+
 ## [1.26.1](https://github.com/mapmarker/mapmarker.io/compare/1.26.0...1.26.1) (2022-06-29)
 
 
