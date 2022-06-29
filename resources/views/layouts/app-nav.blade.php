@@ -25,7 +25,7 @@
                 </div>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex-shrink-0 flex items-center">
-                        <img class="block h-8 w-auto"
+                        <img class="block h-8 w-auto w-[41px]"
                             src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-map-marker-alt&color=fff&on=fa-map-solid&oncolor=777&iconsize=14&hoffset=21&voffset=8"
                             alt="MapMarker.io Logo">
                         <span class="hidden md:inline-block font-bold text-xl ml-2 text-gray-50">MapMarker.io</span>
@@ -37,11 +37,8 @@
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 aria-current="page">Home</a>
 
-                            <a href="docs"
+                            <a href="/documentation"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Docs</a>
-
-                            <a href="/changelog"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Changelog</a>
 
                             <a href="https://status.mapmarker.io" target="_blank"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">API
@@ -52,7 +49,7 @@
                 <div
                     class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-400 font-bold">
                     <a href="/changelog"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-black">
                         {{ config('app.version') }}
                     </a>
                 </div>
@@ -67,11 +64,8 @@
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Home</a>
 
-                <a href="/docs"
+                <a href="/documentation"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Docs</a>
-
-                <a href="/changelog"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Changelog</a>
 
                 <a href="https://status.mapmarker.io" target="_blank"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">API
