@@ -1,3 +1,10 @@
+## [1.30.1](https://github.com/mapmarker/mapmarker.io/compare/1.30.0...1.30.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **cache:** remove cache ([e448a64](https://github.com/mapmarker/mapmarker.io/commit/e448a642ea816c77841b7ecb5d136d0f5c46d780))
+
 # [1.30.0](https://github.com/mapmarker/mapmarker.io/compare/1.29.0...1.30.0) (2022-06-29)
 
 
