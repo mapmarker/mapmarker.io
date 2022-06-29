@@ -80,6 +80,7 @@
         "url": "https://github.com/mapmarker/mapmarker.io.git"
     },
     "dependencies": {
+        "@tailwindcss/forms": "^0.5.2",
         "alpinejs": "^3.10.2"
     }
 }

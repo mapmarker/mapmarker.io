@@ -30,7 +30,7 @@
                     ### Pins
                     Create pins that look native to any map but contain more contextual information for your users.
                 </x-markdown>
-                <a href="/documentation/font-awesome/v5/pins"
+                <a href="/documentation/font-awesome/v4/pins"
                     class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Get Started
                 </a>
@@ -49,7 +49,7 @@
                     ### Icons
                     When simplicity and a minimal look are the goal. Simple icons as map markers are a good go-to.
                 </x-markdown>
-                <a href="/documentation/font-awesome/v5/icons"
+                <a href="/documentation/font-awesome/v4/icons"
                     class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Get Started
                 </a>
@@ -68,7 +68,7 @@
                     ### Icon Stacks
                     You can layer your favorite icons to create unique icons tailored to your application and branding.
                 </x-markdown>
-                <a href="/documentation/font-awesome/v5/icon-stacks"
+                <a href="/documentation/font-awesome/v4/icon-stacks"
                     class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Get Started
                 </a>
