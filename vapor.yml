@@ -9,23 +9,24 @@ environments:
         cli-memory: 512
         runtime: docker
         build:
-            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
-            - 'php artisan event:cache'
-            - 'yarn prod && rm -rf node_modules'
+            - "COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev"
+            - "php artisan event:cache"
+            - "yarn prod && rm -rf node_modules"
     staging:
         domain: staging.mapmarker.io
         memory: 1024
         cli-memory: 512
         runtime: docker
         build:
-            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
-            - 'php artisan event:cache'
-            - 'yarn prod && rm -rf node_modules'
+            - "COMPOSER_MIRROR_PATH_REPOS=1 composer install"
+            - "php artisan event:cache"
+            - "yarn prod && rm -rf node_modules"
     test:
+        domain: test.mapmarker.io
         memory: 1024
         cli-memory: 512
         runtime: docker
         build:
-            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
-            - 'php artisan event:cache'
-            - 'yarn prod && rm -rf node_modules'
+            - "COMPOSER_MIRROR_PATH_REPOS=1 composer install"
+            - "php artisan event:cache"
+            - "yarn prod && rm -rf node_modules"
