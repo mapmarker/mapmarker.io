@@ -35,6 +35,13 @@ workflows:
               ignore: main
             tags:
               only: /.*/
+      - deploy-test:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - test
       - deploy-staging:
           requires:
             - build
@@ -184,6 +191,18 @@ jobs:
 
       - store_artifacts:
           path: /home/circleci/mapmarker.io/tests/Browser/screenshots
+
+  deploy-test:
+    <<: *defaults
+    steps:
+      - setup_remote_docker:
+          version: 20.10.14
+      - attach_workspace:
+          at: /home/circleci
+      - checkout
+      - run:
+          name: Deploy Test
+          command: yarn vapor deploy test --commit $CIRCLE_SHA1 --message "$(git log --format=%B -n 1 $CIRCLE_SHA1 | head -n 3)"
 
   deploy-staging:
     <<: *defaults
