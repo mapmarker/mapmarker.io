@@ -17,7 +17,7 @@
                 </div>
             </div>
             {{-- PINS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10 pb-4">
                 <div class="-mb-4">
                     <img src="/api/v2/font-awesome/v5/pin?text=A&background=992DE5&size=50" class="inline h-12 m-0 mx-1" />
                     <img src="/api/v2/font-awesome/v5/pin?text=AC&background=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
@@ -34,7 +34,7 @@
                 </a>
             </div>
             {{-- ICONS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10 pb-4">
                 <div class="-mb-4">
                     <img src="/api/v2/font-awesome/v5/icon?icon=fa-users&color=992DE5&size=50"
                         class="inline h-12 m-0 mx-1" />
@@ -52,7 +52,7 @@
                 </a>
             </div>
             {{-- ICON STACKS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10 pb-4">
                 <div class="-mb-4">
                     <img src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-map-marker-alt&color=171719&on=fa-map-solid&oncolor=992DE5&iconsize=14&hoffset=21&voffset=8"
                         class="inline h-12 m-0 mx-1" />
@@ -71,7 +71,7 @@
                 </a>
             </div>
             <div class="col-span-2">
-                <div class="bg-slate-800 p-8 rounded-lg mb-8 md:mb-0">
+                <div class="bg-slate-800 p-8 rounded-lg mt-4 mb-8 md:mb-0">
                     <div class="changelog changelog-slim">
                         <x-markdown>{{ $versionEntry }}</x-markdown>
                     </div>
