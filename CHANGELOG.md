@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/mapmarker/mapmarker.io/compare/1.32.0...1.33.0) (2022-06-30)
+
+
+### Features
+
+* **mobile:** handling lots of responsive issues ([1b965f5](https://github.com/mapmarker/mapmarker.io/commit/1b965f510d9de32538847c15813a21bb37919403))
+
 # [1.32.0](https://github.com/mapmarker/mapmarker.io/compare/1.31.0...1.32.0) (2022-06-30)
 
 
