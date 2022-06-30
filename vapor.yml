@@ -5,6 +5,7 @@ environments:
         domain:
             - mapmarker.io
             - cdn.mapmarker.io
+        gateway-version: 2
         memory: 1024
         cli-memory: 512
         runtime: docker
@@ -14,6 +15,7 @@ environments:
             - "yarn prod && rm -rf node_modules"
     staging:
         domain: staging.mapmarker.io
+        gateway-version: 2
         memory: 1024
         cli-memory: 512
         runtime: docker
