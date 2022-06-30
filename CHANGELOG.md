@@ -1,3 +1,11 @@
+# [1.32.0](https://github.com/mapmarker/mapmarker.io/compare/1.31.0...1.32.0) (2022-06-30)
+
+
+### Features
+
+* **cloudflare-cache:** try to enable caching by setting response headers ([7dc96b2](https://github.com/mapmarker/mapmarker.io/commit/7dc96b24af99a49412fd42a04c310560b04f9fb0))
+* **cloudflare-middleware:** move middleware top of global stack ([f805cdb](https://github.com/mapmarker/mapmarker.io/commit/f805cdbc938324328db2d06a987464f1194addb8))
+
 # [1.31.0](https://github.com/mapmarker/mapmarker.io/compare/1.30.1...1.31.0) (2022-06-30)
 
 

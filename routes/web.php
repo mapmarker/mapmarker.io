@@ -72,7 +72,7 @@ Route::group(['prefix' => 'documentation'], function () {
 | Here is where you can register web routes for map markers
 |
 */
-Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'middleware' => 'api'], function () {
+Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'middleware' => ['api']], function () {
     Route::group(['prefix' => 'v1', 'namespace' => 'v1'], function () {
 
         // LEGACY
