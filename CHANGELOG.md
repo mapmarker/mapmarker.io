@@ -1,3 +1,10 @@
+# [1.34.0](https://github.com/mapmarker/mapmarker.io/compare/1.33.0...1.34.0) (2022-06-30)
+
+
+### Features
+
+* **cloudflare-middleware:** cache all api responses only ([58dfe04](https://github.com/mapmarker/mapmarker.io/commit/58dfe044ada4e130ea2a01346f9306f6c763dcb8))
+
 # [1.33.0](https://github.com/mapmarker/mapmarker.io/compare/1.32.0...1.33.0) (2022-06-30)
 
 
