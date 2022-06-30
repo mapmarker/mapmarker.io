@@ -2,7 +2,7 @@
 
 @section('content')
     <x-docs-layout>
-        <div class="grid grid-cols-3 gap-8">
+        <div class="md:grid grid-cols-3 gap-8">
             <div class="col-span-3">
                 <x-docs-box>
                     <x-icon-spectrum icon="fa-fort-awesome" class="opacity-40" iconClass="-mr-12 w-[49px]" />
@@ -19,7 +19,7 @@
                 </x-docs-box>
             </div>
             {{-- PINS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10">
                 <div class="-mb-4">
                     <img src="/api/v1/font-awesome/v4/pin?text=A&background=992DE5&size=50" class="inline h-12 m-0 -mx-1" />
                     <img src="/api/v1/font-awesome/v4/pin?text=AC&background=BC5AF4&size=50" class="inline h-12 m-0 -mx-1" />
@@ -36,7 +36,7 @@
                 </a>
             </div>
             {{-- ICONS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10">
                 <div class="-mb-4">
                     <img src="/api/v1/font-awesome/v4/icon?icon=fa-user&color=992DE5&size=50"
                         class="inline h-12 m-0 -mx-1" />
@@ -55,7 +55,7 @@
                 </a>
             </div>
             {{-- ICON STACKS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10">
                 <div class="-mb-4">
                     <img src="/api/v1/font-awesome/v4/icon-stack?size=64&icon=fa-binoculars&color=992DE5&on=fa-circle-o&oncolor=992DE5&iconsize=14"
                         class="inline h-12 m-0 mx-1" />

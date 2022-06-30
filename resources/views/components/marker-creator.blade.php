@@ -11,9 +11,9 @@
             .join('&');
     }
 }" x-init="$nextTick(() => { updateMarkerUrl() })">
-    <div class="grid grid-cols-10">
+    <div class="md:grid grid-cols-10">
         <div class="col-span-1">
-            <img x-bind:src="marker" />
+            <img x-bind:src="marker" class="mx-auto md:mx-0" />
         </div>
         <div class="col-span-9">
             <div class="mt-9 p-2 bg-slate-300 text-slate-900 font-mono rounded"
