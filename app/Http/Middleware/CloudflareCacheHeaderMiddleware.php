@@ -12,8 +12,9 @@ class CloudflareCacheHeaderMiddleware
     {
         /** @var Response $response */
         $response = $next($request);
+        $routeUri = data_get($request->route(), 'uri');
 
-        if (Str::startsWith($request->route()->uri, 'api/')) {
+        if (Str::startsWith($routeUri, 'api/')) {
             // Cache all responses for 1 minute
             $response->setCache(['public' => true, 'max_age' => 60, 's_maxage' => 60]);
 

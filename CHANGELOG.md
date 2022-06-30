@@ -1,3 +1,11 @@
+# [1.36.0](https://github.com/mapmarker/mapmarker.io/compare/1.35.0...1.36.0) (2022-06-30)
+
+
+### Features
+
+* **cloudflare-cache-header-middleware:** added assertions to ensure cookies are being stripped ([551cdaf](https://github.com/mapmarker/mapmarker.io/commit/551cdaf70e5c5974599b787d202421c8237947aa))
+* **cloudflare-cache-header-middleware:** handle $request->route() returning null ([40b7b81](https://github.com/mapmarker/mapmarker.io/commit/40b7b81f21249989d7197464eb0274aa15ff44a0))
+
 # [1.35.0](https://github.com/mapmarker/mapmarker.io/compare/1.34.0...1.35.0) (2022-06-30)
 
 
