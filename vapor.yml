@@ -3,20 +3,32 @@ name: mapmarker
 environments:
     production:
         domain:
-            - "mapmarker.io"
-            - "cdn.mapmarker.io"
+            - mapmarker.io
+            - cdn.mapmarker.io
+        gateway-version: 2
         memory: 1024
         cli-memory: 512
-        runtime: "docker"
+        runtime: docker
         build:
             - "COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev"
             - "php artisan event:cache"
             - "yarn prod && rm -rf node_modules"
     staging:
-        domain: "staging.mapmarker.io"
+        domain: staging.mapmarker.io
+        gateway-version: 2
         memory: 1024
         cli-memory: 512
-        runtime: "docker"
+        runtime: docker
+        build:
+            - "COMPOSER_MIRROR_PATH_REPOS=1 composer install"
+            - "php artisan event:cache"
+            - "yarn prod && rm -rf node_modules"
+    test:
+        domain: test.mapmarker.io
+        gateway-version: 2
+        memory: 1024
+        cli-memory: 512
+        runtime: docker
         build:
             - "COMPOSER_MIRROR_PATH_REPOS=1 composer install"
             - "php artisan event:cache"

@@ -2,23 +2,20 @@
 
 namespace App\Http\Controllers\API\v1\FontAwesome\v5;
 
-use App\Http\Controllers\API\v1\FaController as BaseController;
-use App\Helpers\Encoders\FontAwesome\v5\FontAwesomeV5Encoder;
+use App\Actions\FontAwesome\v5\CreateIcon;
+use App\Http\Controllers\Controller as Controller;
+use Illuminate\Http\Request;
 
-class IconController extends BaseController
+class IconController extends Controller
 {
-    protected function getIconFontPath($icon)
-    {
-        return FontAwesomeV5Encoder::getFile($icon);
-    }
+    const SCALE = 1.0;
 
-    protected function getTextFontPath()
-    {
-        return base_path('resources/fonts/monofonto.ttf');
-    }
+    const FORCE_ODD_SIZE = false;
 
-    protected function getUnicodeCharFromIcon($icon)
+    public function show(Request $request)
     {
-        return FontAwesomeV5Encoder::getUnicodeFromIcon($icon);
+        $img = CreateIcon::run($request->all(), self::SCALE, self::FORCE_ODD_SIZE);
+
+        return $img->response('png');
     }
 }

@@ -15,11 +15,14 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "laravel/vapor-cli": "^1.39",
-        "laravel/vapor-core": "^2.22"
+        "laravel/vapor-core": "^2.22",
+        "lorisleiva/laravel-actions": "^2.4",
+        "spatie/laravel-markdown": "^2.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^6.24",
+        "laravel/pint": "^0.2.1",
         "laravel/sail": "^1.14",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
@@ -65,5 +68,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "version": "1.19.0"
+    "version": "1.31.0"
 }

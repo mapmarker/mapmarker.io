@@ -1,3 +1,141 @@
+# [1.31.0](https://github.com/mapmarker/mapmarker.io/compare/1.30.1...1.31.0) (2022-06-30)
+
+
+### Features
+
+* **api-gateway-2:** use api gateway v2 for all environments due to cost & performance ([a592ff1](https://github.com/mapmarker/mapmarker.io/commit/a592ff18ce0b975ac8082a1ddbc8718e3865fb28))
+* **env:** added new test env with workflow in circleci ([56d6a9a](https://github.com/mapmarker/mapmarker.io/commit/56d6a9a4226fc6659157f77c8508d4778086418d))
+* **gateway-version:** use version 2 ([71f3f2d](https://github.com/mapmarker/mapmarker.io/commit/71f3f2df236052b802ed8f39ac0a942e91b6f8fe))
+* **test-env:** added custom domain record ([f882f60](https://github.com/mapmarker/mapmarker.io/commit/f882f60586e6d24bbdb32e858788b4b8fa7a47b3))
+
+## [1.30.1](https://github.com/mapmarker/mapmarker.io/compare/1.30.0...1.30.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **cache:** remove cache ([e448a64](https://github.com/mapmarker/mapmarker.io/commit/e448a642ea816c77841b7ecb5d136d0f5c46d780))
+
+# [1.30.0](https://github.com/mapmarker/mapmarker.io/compare/1.29.0...1.30.0) (2022-06-29)
+
+
+### Features
+
+* **cache-middleware:** remove middleware ([e363371](https://github.com/mapmarker/mapmarker.io/commit/e3633713367bd137b57d0d2ab27576c853384ace))
+* **cache-middleware:** shift caching middleware to v2 endpoints only ([6491ac1](https://github.com/mapmarker/mapmarker.io/commit/6491ac13b9953f8c6ead07148fe2529d56067cd4))
+* **cache:** move cache to controller for testing ([189f430](https://github.com/mapmarker/mapmarker.io/commit/189f430af33f7c9e48d7e97a6cfc875220d94b38))
+
+# [1.29.0](https://github.com/mapmarker/mapmarker.io/compare/1.28.0...1.29.0) (2022-06-29)
+
+
+### Features
+
+* **cache-middleware:** try using Cache::remember notation ([9ab08bb](https://github.com/mapmarker/mapmarker.io/commit/9ab08bbd6e5f5a4e04e9048095d6b389173c6de3))
+
+# [1.28.0](https://github.com/mapmarker/mapmarker.io/compare/1.27.0...1.28.0) (2022-06-29)
+
+
+### Features
+
+* **cache middleware:** added x-vapor-base64-encode response header ([80c5c21](https://github.com/mapmarker/mapmarker.io/commit/80c5c2100c5e16778bc8fc7ff50b252055aa740e))
+
+# [1.27.0](https://github.com/mapmarker/mapmarker.io/compare/1.26.1...1.27.0) (2022-06-29)
+
+
+### Features
+
+* **cache:** added server cache with browser cache ([08b40a0](https://github.com/mapmarker/mapmarker.io/commit/08b40a0a2b54a0310c927a486b30fc4d562ca1cf))
+
+## [1.26.1](https://github.com/mapmarker/mapmarker.io/compare/1.26.0...1.26.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **deployment:** shorten commit message for deployment logs ([a16ffe8](https://github.com/mapmarker/mapmarker.io/commit/a16ffe8a89902643de0fbfc14a076e47da812081))
+
+# [1.26.0](https://github.com/mapmarker/mapmarker.io/compare/1.25.0...1.26.0) (2022-06-29)
+
+
+### Features
+
+* **docs:** added api versioning page ([cafac5a](https://github.com/mapmarker/mapmarker.io/commit/cafac5a741569dfb94cdbad829424b431077dafe))
+* **docs:** added interactive documentation for v1/v2 font-awesome 4/5 endpoitns ([477274e](https://github.com/mapmarker/mapmarker.io/commit/477274ec4326f7d03668b2026d5d60519f3145f0))
+* **docs:** added interation examples ([a12f43f](https://github.com/mapmarker/mapmarker.io/commit/a12f43f5c7592a1b8091bdff361ac9db9a16070e))
+* **docs:** added overview links for doc sections ([a43fd74](https://github.com/mapmarker/mapmarker.io/commit/a43fd74135b212dbb17cc212f6d5c2eb241681a7))
+* **docs:** added parent pages for font-awesome docs ([71f1cee](https://github.com/mapmarker/mapmarker.io/commit/71f1cee5ba4a461dd2eeffef4a252d59be11578e))
+* **docs:** adding navigation structure ([a0fed3a](https://github.com/mapmarker/mapmarker.io/commit/a0fed3a872369116ee4c7c0e0b4bcaa067f0f54c))
+* **docs:** cleanup copy and pasted descriptions ([693015a](https://github.com/mapmarker/mapmarker.io/commit/693015af50a9b640dd81e073c340ac17638fcfb4))
+* **docs:** fixed more rendering isses in terms ([443d10b](https://github.com/mapmarker/mapmarker.io/commit/443d10bf8ec626b66e059188a4ea60f6f6e0c105))
+* **docs:** integrations parent page ([7bb6ee8](https://github.com/mapmarker/mapmarker.io/commit/7bb6ee88049fe26cbd1b7710c4e750523f5dc53d))
+* **documentation:** added lots of boilerplate / building blocks ([7db1e5b](https://github.com/mapmarker/mapmarker.io/commit/7db1e5b611400c598fe2b0428b789d4460d8652b))
+* **homepage:** link to most recent markers on homepage ([b044008](https://github.com/mapmarker/mapmarker.io/commit/b04400896950a19440b440c05796756689ea8f02))
+* **homepage:** spacing ([822fff6](https://github.com/mapmarker/mapmarker.io/commit/822fff6065b27db06b6c56c08ea53c53b4d9824a))
+* **markercreator:** interactive marker documentation component ([51f6b51](https://github.com/mapmarker/mapmarker.io/commit/51f6b5174374ee357dac7d1b2ee300dca588da55))
+* **trimtransparentborder:** changed to trim only top / bottom to ensure marker remains square ([5eda20d](https://github.com/mapmarker/mapmarker.io/commit/5eda20d7c0f1e473efe5171d1ef54046c1642b90))
+
+# [1.25.0](https://github.com/mapmarker/mapmarker.io/compare/1.24.0...1.25.0) (2022-06-28)
+
+
+### Features
+
+* **fa-v5:** added v2 support for icons ([1f01846](https://github.com/mapmarker/mapmarker.io/commit/1f018463906b991a2e4342121577e5837ab81a2c))
+* **fa-v5:** added v2 support for pins ([80aa5f6](https://github.com/mapmarker/mapmarker.io/commit/80aa5f64913fc636bb9ab6277fd4f4f931e2bd38))
+* **fav2:** moved logic to create icon stack to action ([45fe6d1](https://github.com/mapmarker/mapmarker.io/commit/45fe6d14fb6f509c5f97419a67ff263b0f518781))
+* **fav5:** created compatible iconstack endpoint ([bd9e25d](https://github.com/mapmarker/mapmarker.io/commit/bd9e25daa57cb710af6130aaa6c346d66a57b656))
+* **homepage:** updated v2 endpoint used for logo ([c77383f](https://github.com/mapmarker/mapmarker.io/commit/c77383f89d40d4f3d6071f2dd7bf6a341d4e9f6e))
+
+# [1.24.0](https://github.com/mapmarker/mapmarker.io/compare/1.23.0...1.24.0) (2022-06-28)
+
+
+### Features
+
+* **commit:** added auto-formatting to commit command ([ee3a9a0](https://github.com/mapmarker/mapmarker.io/commit/ee3a9a027eeedcb107063beb2835288e2a2b876f))
+* **laravel-pint:** run style check in verbose mode ([bd782c5](https://github.com/mapmarker/mapmarker.io/commit/bd782c5271e4aac244c2ecf8585cd301a16b4c1b))
+
+# [1.23.0](https://github.com/mapmarker/mapmarker.io/compare/1.22.1...1.23.0) (2022-06-27)
+
+
+### Features
+
+* **homepage:** use new whitespace-trimmed version as website logo ([b8c4c51](https://github.com/mapmarker/mapmarker.io/commit/b8c4c5122592b77c21587059b2d87f347ac6625c))
+* **v2:** proof of concept endpoint with improved trimming and sizing ([4d0cf5e](https://github.com/mapmarker/mapmarker.io/commit/4d0cf5e9043964bc34f8d3a827ae89c1106ca9cf))
+
+## [1.22.1](https://github.com/mapmarker/mapmarker.io/compare/1.22.0...1.22.1) (2022-06-25)
+
+
+### Bug Fixes
+
+* **changelog:** fix spacing on dedicated changelog page ([f647cb3](https://github.com/mapmarker/mapmarker.io/commit/f647cb3c1336adda158210b57eb345f117adb6e9))
+
+# [1.22.0](https://github.com/mapmarker/mapmarker.io/compare/1.21.0...1.22.0) (2022-06-25)
+
+
+### Features
+
+* **homepage:** added homepage with latest release ([2bcc2a1](https://github.com/mapmarker/mapmarker.io/commit/2bcc2a110c265592362358ddd071f5993269953f))
+
+# [1.21.0](https://github.com/mapmarker/mapmarker.io/compare/1.20.0...1.21.0) (2022-06-25)
+
+
+### Features
+
+* **changelog:** added route ([0085223](https://github.com/mapmarker/mapmarker.io/commit/008522364229089abf394d5e3059f5f86a89ec20))
+* **changelog:** implemented changelog ([d4d3360](https://github.com/mapmarker/mapmarker.io/commit/d4d3360c1d40c2d042fb31f7edfbb6aebba696a5))
+
+# [1.20.0](https://github.com/mapmarker/mapmarker.io/compare/1.19.1...1.20.0) (2022-06-22)
+
+
+### Features
+
+* **alpine:** added alpine js for mobile menu toggle ([c25a330](https://github.com/mapmarker/mapmarker.io/commit/c25a330808a7fa80503349f9505a87b2be2df8eb))
+* **layout with nav:** added layout with nav styling ([9254102](https://github.com/mapmarker/mapmarker.io/commit/9254102f02ab9f52e3cd478dfb74d677f4aa0e4f))
+
+## [1.19.1](https://github.com/mapmarker/mapmarker.io/compare/1.19.0...1.19.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **assets:** remove compiled assets from commit scope ([5eac29c](https://github.com/mapmarker/mapmarker.io/commit/5eac29ce633cca52ba8b4b51735709e5ccbbeb06))
+
 # [1.19.0](https://github.com/mapmarker/mapmarker.io/compare/1.18.1...1.19.0) (2022-06-22)
 
 
@@ -204,9 +342,3 @@
 
 * **versioning:** add main to versioning branch ([2c4a507](https://github.com/mapmarker/mapmarker.io/commit/2c4a507ecbac3bbd360be97e3bd2b780ed6b2155))
 * **versioning:** add semantic-release configuration ([c7a9ccd](https://github.com/mapmarker/mapmarker.io/commit/c7a9ccde64017d15aea861d6cb8d521f7cf13f0e))
-
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-### 0.0.1 (2022-06-21)

@@ -3097,13 +3097,13 @@ class FontAwesomeV5Encoder implements Encoder
     {
         $meta = self::getIconMeta($icon);
 
-        return base_path('resources/fonts/FontAwesome/v5/' . $meta['file'] . '');
+        return base_path('resources/fonts/FontAwesome/v5/'.$meta['file'].'');
     }
 
     public static function getUnicodeFromIcon($icon)
     {
         $meta = self::getIconMeta($icon);
 
-        return json_decode('"' . $meta['unicode'] . '"');
+        return json_decode('"'.$meta['unicode'].'"');
     }
 }

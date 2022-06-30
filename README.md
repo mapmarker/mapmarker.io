@@ -39,6 +39,33 @@ To automatically compile assets while developing, simply run the watch command. 
 yarn watch
 ```
 
+### Code Formatting
+
+This project uses laravel/pint to handle code format checking and fixing. 
+
+##### Helper: Pint
+```bash
+yarn pint
+```
+
+##### Helper: check code for formatting issues
+```bash
+yarn style
+```
+
+##### Helper: fix code formatting issue
+```bash
+yarn style:fix
+```
+
+##### Commit Integration
+
+Thee package.json has a command helper for committing changes. As part of that helper command, code style is automatically fixed and all changes are added to the scope of the commit. 
+
+```json
+"commit": "yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
+```
+
 ### Committing Changes
 
 This project uses commitizen to keep commits organized and to automate version tagging. To commit changes you made, run the following commands and follow the prompots:

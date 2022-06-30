@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ChangelogController;
+use App\Http\Controllers\DocumentationController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +16,52 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/license', [HomeController::class, 'license']);
+Route::get('/privacy', [HomeController::class, 'privacy']);
+Route::get('/terms', [HomeController::class, 'terms']);
+Route::get('/changelog', [ChangelogController::class, 'index']);
+
+/*
+|--------------------------------------------------------------------------
+| Documentation Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for our docs.
+|
+*/
+Route::group(['prefix' => 'documentation'], function () {
+    Route::get('/', [DocumentationController::class, 'index']);
+    Route::get('/versions', [DocumentationController::class, 'versions']);
+
+    Route::group(['prefix' => 'integrations'], function () {
+        Route::get('/', [DocumentationController::class, 'integrations']);
+        Route::get('/bing-maps', [DocumentationController::class, 'integrationsBingMaps']);
+        Route::get('/google-maps', [DocumentationController::class, 'integrationsGoogleMaps']);
+        Route::get('/mapbox', [DocumentationController::class, 'integrationsMapbox']);
+    });
+
+    Route::group(['prefix' => 'font-awesome'], function () {
+        Route::get('/', [DocumentationController::class, 'fontAwesome']);
+
+        Route::group(['prefix' => 'v6'], function () {
+            Route::get('/', [DocumentationController::class, 'fontAwesomeV6']);
+        });
+
+        Route::group(['prefix' => 'v5'], function () {
+            Route::get('/', [DocumentationController::class, 'fontAwesomeV5']);
+            Route::get('/pins', [DocumentationController::class, 'fontAwesomeV5Pins']);
+            Route::get('/icons', [DocumentationController::class, 'fontAwesomeV5Icons']);
+            Route::get('/icon-stacks', [DocumentationController::class, 'fontAwesomeV5IconStacks']);
+        });
+
+        Route::group(['prefix' => 'v4'], function () {
+            Route::get('/', [DocumentationController::class, 'fontAwesomeV4']);
+            Route::get('/pins', [DocumentationController::class, 'fontAwesomeV4Pins']);
+            Route::get('/icons', [DocumentationController::class, 'fontAwesomeV4Icons']);
+            Route::get('/icon-stacks', [DocumentationController::class, 'fontAwesomeV4IconStacks']);
+        });
+    });
 });
 
 /*
@@ -42,6 +89,18 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
                 Route::get('icon-stack', 'IconStackController@show');
             });
 
+            // FONT-AWESOME 5
+            Route::group(['prefix' => 'v5', 'namespace' => 'v5'], function () {
+                Route::get('pin', 'PinController@show');
+                Route::get('icon', 'IconController@show');
+                Route::get('icon-stack', 'IconStackController@show');
+            });
+        });
+    });
+
+    Route::group(['prefix' => 'v2', 'namespace' => 'v2'], function () {
+        // FONT-AWESOME
+        Route::group(['prefix' => 'font-awesome', 'namespace' => 'FontAwesome'], function () {
             // FONT-AWESOME 5
             Route::group(['prefix' => 'v5', 'namespace' => 'v5'], function () {
                 Route::get('pin', 'PinController@show');

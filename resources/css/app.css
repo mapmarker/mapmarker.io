@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
+.hero {
+    background-image: url('/images/map.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.changelog {
+    @apply text-gray-200
+}
+
+.changelog h1,
+.changelog h2 {
+    @apply text-2xl mt-8 font-black
+}
+
+.changelog.changelog-slim h1,
+.changelog.changelog-slim h2 {
+    @apply text-2xl mt-0 font-black
+}
+
+.changelog h3 {
+    @apply font-bold ml-4 mt-2 text-gray-300
+}
+
+.changelog ul li {
+    @apply ml-8 text-gray-300
+}

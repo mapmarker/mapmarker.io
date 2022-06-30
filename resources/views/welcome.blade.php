@@ -1,25 +1,82 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app-nav')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MapMarker</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
+@section('content')
+    <div class="container mx-auto px-2 text-gray-200">
 
-<body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 items-center">
-        <div class="text-center">
-            <div>
-                <img alt="MapMarker Logo" height="100"
-                    src="/api/v1/font-awesome/v5/icon-stack?size=200&icon=fa-map-marker-alt&color=626BE9&on=fa-map-solid&oncolor=44444&iconsize=48&hoffset=66&voffset=20">
+        <div class="md:grid grid-cols-3 gap-8">
+            <div class="col-span-3">
+                <div class="rounded-lg mb-8 md:mb-0 hero">
+                    <div class="rounded-lg lg:text-center bg-indigo-700/80 p-6 lg:py-36">
+                        <h1 class="text-3xl lg:text-5xl font-bold">
+                            Generate complex map markers on the fly.
+                        </h1>
+                        <p class="text-xl mt-6">
+                            Simplify building complex map-based experiences for modern applications.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="text-sm text-gray-500">
-                {{ config('app.version') }}
+            {{-- PINS --}}
+            <div class="prose prose-invert text-center">
+                <div class="-mb-4">
+                    <img src="/api/v2/font-awesome/v5/pin?text=A&background=992DE5&size=50" class="inline h-12 m-0 mx-1" />
+                    <img src="/api/v2/font-awesome/v5/pin?text=AC&background=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
+                    <img src="/api/v2/font-awesome/v5/pin?icon=fa-star-solid&background=CE86F5&size=50"
+                        class="inline-block h-12 m-0 mx-1" />
+                </div>
+                <x-markdown>
+                    ### Pins
+                    Create pins that look native to any map but contain more contextual information for your users.
+                </x-markdown>
+                <a href="/documentation/font-awesome/v5/pins"
+                    class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Get Started
+                </a>
+            </div>
+            {{-- ICONS --}}
+            <div class="prose prose-invert text-center">
+                <div class="-mb-4">
+                    <img src="/api/v2/font-awesome/v5/icon?icon=fa-users&color=992DE5&size=50"
+                        class="inline h-12 m-0 mx-1" />
+                    <img src="/api/v2/font-awesome/v5/icon?icon=fa-box&color=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
+                    <img src="/api/v2/font-awesome/v5/icon?icon=fa-wind&color=CE86F5&size=50"
+                        class="inline-block h-12 m-0 mx-1" />
+                </div>
+                <x-markdown>
+                    ### Icons
+                    When simplicity and a minimal look are the goal. Simple icons as map markers are a good go-to.
+                </x-markdown>
+                <a href="/documentation/font-awesome/v5/icons"
+                    class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Get Started
+                </a>
+            </div>
+            {{-- ICON STACKS --}}
+            <div class="prose prose-invert text-center">
+                <div class="-mb-4">
+                    <img src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-map-marker-alt&color=171719&on=fa-map-solid&oncolor=992DE5&iconsize=14&hoffset=21&voffset=8"
+                        class="inline h-12 m-0 mx-1" />
+                    <img src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-amazon&color=171719&on=fa-truck&oncolor=BC5AF4&iconsize=30&voffset=-6&hoffset=-11"
+                        class="inline h-12 m-0 mx-1" />
+                    <img src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-apple&color=171719&on=fa-box&oncolor=CE86F5&iconsize=25&voffset=10"
+                        class="inline h-12 m-0 mx-1" />
+                </div>
+                <x-markdown>
+                    ### Icon Stacks
+                    You can layer your favorite icons to create unique icons tailored to your application and branding.
+                </x-markdown>
+                <a href="/documentation/font-awesome/v5/icon-stacks"
+                    class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Get Started
+                </a>
+            </div>
+            <div class="col-span-2">
+                <div class="bg-slate-800 p-8 rounded-lg mb-8 md:mb-0">
+                    <div class="changelog changelog-slim">
+                        <x-markdown>{{ $versionEntry }}</x-markdown>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</body>
-
-</html>
+@endsection

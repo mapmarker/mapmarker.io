@@ -3,9 +3,12 @@
     "description": "generate complex map markers on the fly",
     "homepage": "https://www.mapmarker.io",
     "license": "MIT",
-    "version": "1.19.0",
+    "version": "1.31.0",
     "scripts": {
-        "commit": "./node_modules/commitizen/bin/git-cz",
+        "pint": "./vendor/bin/pint",
+        "style": "yarn pint -v --test",
+        "style:fix": "yarn pint",
+        "commit": "yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
         "dev": "yarn development",
         "development": "mix",
@@ -27,6 +30,7 @@
         "@semantic-release/github": "semantic-release/github",
         "@semantic-release/npm": "^9.0.1",
         "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
+        "@tailwindcss/typography": "^0.5.2",
         "autoprefixer": "^10.4.7",
         "axios": "^0.25",
         "commitizen": "^4.2.4",
@@ -74,5 +78,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/mapmarker/mapmarker.io.git"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "alpinejs": "^3.10.2"
     }
 }

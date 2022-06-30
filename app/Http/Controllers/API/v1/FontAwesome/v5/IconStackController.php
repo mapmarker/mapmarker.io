@@ -2,28 +2,20 @@
 
 namespace App\Http\Controllers\API\v1\FontAwesome\v5;
 
-use App\Http\Controllers\API\v1\FaStackController as Controller;
-use App\Helpers\Encoders\FontAwesome\v5\FontAwesomeV5Encoder;
+use App\Actions\FontAwesome\v5\CreateIconStack;
+use App\Http\Controllers\Controller as Controller;
+use Illuminate\Http\Request;
 
 class IconStackController extends Controller
 {
-    protected function getDefaultOnIcon()
-    {
-        return 'fa-circle-regular';
-    }
+    const SCALE = 1.0;
 
-    protected function getIconFontPath($icon)
-    {
-        return FontAwesomeV5Encoder::getFile($icon);
-    }
+    const FORCE_ODD_SIZE = false;
 
-    protected function getTextFontPath()
+    public function show(Request $request)
     {
-        return base_path('resources/fonts/monofonto.ttf');
-    }
+        $img = CreateIconStack::run($request->all(), self::SCALE, self::FORCE_ODD_SIZE);
 
-    protected function getUnicodeCharFromIcon($icon)
-    {
-        return FontAwesomeV5Encoder::getUnicodeFromIcon($icon);
+        return $img->response('png');
     }
 }
