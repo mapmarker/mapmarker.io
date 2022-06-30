@@ -30,9 +30,10 @@ class CloudflareCacheHeaderMiddlewareTest extends TestCase
     /**
      * @dataProvider markerEndpointDataProvider
      */
-    public function test_handle_sets_cache_for_api_endpoints($uri)
+    public function test_handle_sets_cache_and_strips_cookies_for_api_endpoints($uri)
     {
         $response = $this->get($uri);
+        $this->assertCount(0, $response->headers->getCookies(), 'the response should not include any cookie headers');
         $this->assertEquals('max-age=60, public, s-maxage=60', $response->headers->get('cache-control'), 'resource should be declared public for cloudflare to cache');
     }
 
@@ -49,9 +50,10 @@ class CloudflareCacheHeaderMiddlewareTest extends TestCase
     /**
      * @dataProvider pageDataProvider
      */
-    public function test_handle_does_not_set_cache_for_page_endpoints($uri)
+    public function test_handle_does_not_set_cache_or_strip_cookies_for_page_endpoints($uri)
     {
         $response = $this->get($uri);
+        $this->assertCount(2, $response->headers->getCookies(), 'the response should include cookie headers');
         $this->assertEquals('no-cache, private', $response->headers->get('cache-control'), 'resource should be declared public for cloudflare to cache');
     }
 }
