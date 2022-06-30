@@ -1,3 +1,13 @@
+# [1.31.0](https://github.com/mapmarker/mapmarker.io/compare/1.30.1...1.31.0) (2022-06-30)
+
+
+### Features
+
+* **api-gateway-2:** use api gateway v2 for all environments due to cost & performance ([a592ff1](https://github.com/mapmarker/mapmarker.io/commit/a592ff18ce0b975ac8082a1ddbc8718e3865fb28))
+* **env:** added new test env with workflow in circleci ([56d6a9a](https://github.com/mapmarker/mapmarker.io/commit/56d6a9a4226fc6659157f77c8508d4778086418d))
+* **gateway-version:** use version 2 ([71f3f2d](https://github.com/mapmarker/mapmarker.io/commit/71f3f2df236052b802ed8f39ac0a942e91b6f8fe))
+* **test-env:** added custom domain record ([f882f60](https://github.com/mapmarker/mapmarker.io/commit/f882f60586e6d24bbdb32e858788b4b8fa7a47b3))
+
 ## [1.30.1](https://github.com/mapmarker/mapmarker.io/compare/1.30.0...1.30.1) (2022-06-29)
 
 
