@@ -1329,6 +1329,9 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
+.bg-slate-700\/80 {
+  background-color: rgb(51 65 85 / 0.8);
+}
 .p-6 {
   padding: 1.5rem;
 }
@@ -1691,6 +1694,11 @@ select {
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .lg\:text-center {

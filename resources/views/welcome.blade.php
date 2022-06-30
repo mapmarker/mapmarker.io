@@ -5,8 +5,8 @@
 
         <div class="md:grid grid-cols-3 gap-8">
             <div class="col-span-3">
-                <div class="rounded-lg mb-8 md:mb-0 hero">
-                    <div class="rounded-lg lg:text-center bg-indigo-700/80 p-6 lg:py-36">
+                <div class="rounded-lg mb-8 md:mb-0">
+                    <div class="rounded-lg lg:text-center bg-slate-700/80 p-6 lg:py-24">
                         <h1 class="text-3xl lg:text-5xl font-bold">
                             Generate complex map markers on the fly.
                         </h1>
@@ -69,13 +69,6 @@
                     class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Get Started
                 </a>
-            </div>
-            <div class="col-span-2">
-                <div class="bg-slate-800 p-8 rounded-lg mt-4 mb-8 md:mb-0">
-                    <div class="changelog changelog-slim">
-                        <x-markdown>{{ $versionEntry }}</x-markdown>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
