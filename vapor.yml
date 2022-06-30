@@ -23,6 +23,7 @@ environments:
             - "yarn prod && rm -rf node_modules"
     test:
         domain: test.mapmarker.io
+        gateway-version: 2
         memory: 1024
         cli-memory: 512
         runtime: docker
