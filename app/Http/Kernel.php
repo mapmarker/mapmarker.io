@@ -39,8 +39,7 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\CloudflareCacheHeaderMiddleware::class,
         ],
     ];
 
@@ -62,6 +61,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'cache' => \App\Http\Middleware\CacheMiddleware::class,
+        'cloudflare.cache.header' => \App\Http\Middleware\CloudflareCacheHeaderMiddleware::class,
     ];
 }
