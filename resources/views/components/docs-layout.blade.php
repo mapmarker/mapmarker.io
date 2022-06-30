@@ -4,7 +4,7 @@
 
             <div class="md:grid grid-cols-5 gap-8">
                 {{-- DOCS NAVIGATION --}}
-                <div>
+                <div class="hidden md:block">
                     <div class="mb-6">
                         <a href="/documentation" class="block mb-1">Getting Started</a>
                         <a href="/documentation/versions" class="block mb-1">API Versions</a>

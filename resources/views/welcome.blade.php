@@ -5,8 +5,8 @@
 
         <div class="md:grid grid-cols-3 gap-8">
             <div class="col-span-3">
-                <div class="rounded-lg mb-8 md:mb-0 hero">
-                    <div class="rounded-lg lg:text-center bg-indigo-700/80 p-6 lg:py-36">
+                <div class="rounded-lg mb-8 md:mb-0">
+                    <div class="rounded-lg lg:text-center bg-slate-700/80 p-6 lg:py-24">
                         <h1 class="text-3xl lg:text-5xl font-bold">
                             Generate complex map markers on the fly.
                         </h1>
@@ -17,7 +17,7 @@
                 </div>
             </div>
             {{-- PINS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10 pb-4">
                 <div class="-mb-4">
                     <img src="/api/v2/font-awesome/v5/pin?text=A&background=992DE5&size=50" class="inline h-12 m-0 mx-1" />
                     <img src="/api/v2/font-awesome/v5/pin?text=AC&background=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
@@ -34,7 +34,7 @@
                 </a>
             </div>
             {{-- ICONS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10 pb-4">
                 <div class="-mb-4">
                     <img src="/api/v2/font-awesome/v5/icon?icon=fa-users&color=992DE5&size=50"
                         class="inline h-12 m-0 mx-1" />
@@ -52,7 +52,7 @@
                 </a>
             </div>
             {{-- ICON STACKS --}}
-            <div class="prose prose-invert text-center">
+            <div class="prose prose-invert text-center pt-10 pb-4">
                 <div class="-mb-4">
                     <img src="/api/v2/font-awesome/v5/icon-stack?size=64&icon=fa-map-marker-alt&color=171719&on=fa-map-solid&oncolor=992DE5&iconsize=14&hoffset=21&voffset=8"
                         class="inline h-12 m-0 mx-1" />
@@ -69,13 +69,6 @@
                     class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Get Started
                 </a>
-            </div>
-            <div class="col-span-2">
-                <div class="bg-slate-800 p-8 rounded-lg mb-8 md:mb-0">
-                    <div class="changelog changelog-slim">
-                        <x-markdown>{{ $versionEntry }}</x-markdown>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -1,3 +1,24 @@
+# [1.35.0](https://github.com/mapmarker/mapmarker.io/compare/1.34.0...1.35.0) (2022-06-30)
+
+
+### Features
+
+* **homepage:** speedup by removing slow image ([15f4613](https://github.com/mapmarker/mapmarker.io/commit/15f46134e81e4354d33a16edfb312a8dd918bcd0))
+
+# [1.34.0](https://github.com/mapmarker/mapmarker.io/compare/1.33.0...1.34.0) (2022-06-30)
+
+
+### Features
+
+* **cloudflare-middleware:** cache all api responses only ([58dfe04](https://github.com/mapmarker/mapmarker.io/commit/58dfe044ada4e130ea2a01346f9306f6c763dcb8))
+
+# [1.33.0](https://github.com/mapmarker/mapmarker.io/compare/1.32.0...1.33.0) (2022-06-30)
+
+
+### Features
+
+* **mobile:** handling lots of responsive issues ([1b965f5](https://github.com/mapmarker/mapmarker.io/commit/1b965f510d9de32538847c15813a21bb37919403))
+
 # [1.32.0](https://github.com/mapmarker/mapmarker.io/compare/1.31.0...1.32.0) (2022-06-30)
 
 

@@ -58,7 +58,7 @@
 
         <!-- Mobile menu, show/hide based on menu state. -->
         <div x-show="mobileMenuOpen" x-cloak id="mobile-menu" class="sm:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1">
+            <div class="px-2 pt-2 pb-3 space-y-1 text-center">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="/"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
