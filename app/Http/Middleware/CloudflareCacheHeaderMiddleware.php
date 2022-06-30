@@ -13,10 +13,7 @@ class CloudflareCacheHeaderMiddleware
         /** @var Response $response */
         $response = $next($request);
 
-        if (auth()->check() || $this->hasForms($response)) {
-            // Don't cache anything
-            $response->setCache(['private' => true, 'max_age' => 0, 's_maxage' => 0, 'no_store' => true]);
-        } else {
+        if (Str::startsWith($request->route()->uri, 'api/')) {
             // Cache all responses for 1 minute
             $response->setCache(['public' => true, 'max_age' => 60, 's_maxage' => 60]);
 
