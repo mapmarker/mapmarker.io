@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/mapmarker/mapmarker.io/compare/1.34.0...1.35.0) (2022-06-30)
+
+
+### Features
+
+* **homepage:** speedup by removing slow image ([15f4613](https://github.com/mapmarker/mapmarker.io/commit/15f46134e81e4354d33a16edfb312a8dd918bcd0))
+
 # [1.34.0](https://github.com/mapmarker/mapmarker.io/compare/1.33.0...1.34.0) (2022-06-30)
 
 
