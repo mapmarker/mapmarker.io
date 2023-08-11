@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/mapmarker/mapmarker.io/compare/1.36.0...1.37.0) (2023-08-11)
+
+
+### Features
+
+* **vapor:** use www as the root domain ([f2d96bf](https://github.com/mapmarker/mapmarker.io/commit/f2d96bf1faa944700557d0c9432ea5a660703bd2))
+
 # [1.36.0](https://github.com/mapmarker/mapmarker.io/compare/1.35.0...1.36.0) (2022-06-30)
 
 
