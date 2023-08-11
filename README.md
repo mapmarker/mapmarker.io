@@ -21,6 +21,7 @@ composer install
 nvm use
 yarn
 cp ./.env.example ./.env
+php artisan key:generate
 ```
 
 ### Development Environment
