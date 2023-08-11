@@ -48,6 +48,12 @@
                 </div>
                 <div
                     class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 text-gray-400 font-bold">
+                    <a href="https://github.com/mapmarker" target="_blank"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-black">
+                        <img src="https://mapmarker.io/api/v2/font-awesome/v5/icon?icon=fa-github&size=80&color=fff" /
+                            alt="Github Logo" width="30" height="30" />
+                        <span class="sr-only">View Source Code</span>
+                    </a>
                     <a href="/changelog"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-black">
                         {{ config('app.version') }}
