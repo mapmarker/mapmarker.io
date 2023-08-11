@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69f1bdaf862ee13df4ee7e37b5dd8220",
+    "content-hash": "5e57f7e8815bd166d377f42484355752",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -6696,16 +6696,16 @@
         },
         {
             "name": "laravel/dusk",
-            "version": "v6.24.0",
+            "version": "v6.25.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/dusk.git",
-                "reference": "7fed3695741787d9998c5f04c94adfd62d70e766"
+                "reference": "25a595ac3dc82089a91af10dd23b0d58fd3f6d0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/7fed3695741787d9998c5f04c94adfd62d70e766",
-                "reference": "7fed3695741787d9998c5f04c94adfd62d70e766",
+                "url": "https://api.github.com/repos/laravel/dusk/zipball/25a595ac3dc82089a91af10dd23b0d58fd3f6d0b",
+                "reference": "25a595ac3dc82089a91af10dd23b0d58fd3f6d0b",
                 "shasum": ""
             },
             "require": {
@@ -6763,9 +6763,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/dusk/issues",
-                "source": "https://github.com/laravel/dusk/tree/v6.24.0"
+                "source": "https://github.com/laravel/dusk/tree/v6.25.2"
             },
-            "time": "2022-05-09T13:43:52+00:00"
+            "time": "2022-09-29T09:37:07+00:00"
         },
         {
             "name": "laravel/pint",
