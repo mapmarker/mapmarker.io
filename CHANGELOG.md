@@ -1,3 +1,11 @@
+## [1.37.1](https://github.com/mapmarker/mapmarker.io/compare/1.37.0...1.37.1) (2023-08-11)
+
+
+### Bug Fixes
+
+* **tests:** update laravel dusk verions to see if chrome driver download works ([88a037d](https://github.com/mapmarker/mapmarker.io/commit/88a037da8d4d3098541f81a60e1f71aa4d920d10))
+* **tests:** upgrade to laravel/dusk v7 ([fd282dd](https://github.com/mapmarker/mapmarker.io/commit/fd282dd9635a563f1698c45e6b33f76a020808d4))
+
 # [1.37.0](https://github.com/mapmarker/mapmarker.io/compare/1.36.0...1.37.0) (2023-08-11)
 
 
