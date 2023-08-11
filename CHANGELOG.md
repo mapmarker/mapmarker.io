@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/mapmarker/mapmarker.io/compare/1.37.1...1.38.0) (2023-08-11)
+
+
+### Features
+
+* **nav:** add link to source on github ([1941963](https://github.com/mapmarker/mapmarker.io/commit/19419631c52d9bd91ab92f7b741033b09a57dfbe))
+
 ## [1.37.1](https://github.com/mapmarker/mapmarker.io/compare/1.37.0...1.37.1) (2023-08-11)
 
 
