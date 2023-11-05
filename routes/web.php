@@ -109,4 +109,16 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
             });
         });
     });
+
+    Route::group(['prefix' => 'v3', 'namespace' => 'v3'], function () {
+        // FONT-AWESOME
+        Route::group(['prefix' => 'font-awesome', 'namespace' => 'FontAwesome'], function () {
+            // FONT-AWESOME 5
+            Route::group(['prefix' => 'v6', 'namespace' => 'v6'], function () {
+                Route::get('icon', 'IconController@show');
+                // Route::get('pin', 'PinController@show');
+                // Route::get('icon-stack', 'IconStackController@show');
+            });
+        });
+    });
 });
