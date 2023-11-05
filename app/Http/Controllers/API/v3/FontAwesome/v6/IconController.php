@@ -14,7 +14,7 @@ class IconController extends Controller
     {
         // GET MARKER CONFIG
         $markerSize = $request->get('size', 100);
-        $markerColor = $request->get('color', '#333');
+        $markerColor = '#'.$request->get('color', '333');
 
         // GET ICON
         $iconMarkup = GetIconMarkup::run($request->get('icon', ''));

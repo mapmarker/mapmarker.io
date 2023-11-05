@@ -1203,6 +1203,9 @@ select {
 .h-\[75px\] {
   height: 75px;
 }
+.h-\[100px\] {
+  height: 100px;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1226,6 +1229,9 @@ select {
 }
 .w-\[41px\] {
   width: 41px;
+}
+.w-\[100px\] {
+  width: 100px;
 }
 .max-w-3xl {
   max-width: 48rem;
