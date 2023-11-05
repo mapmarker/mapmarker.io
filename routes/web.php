@@ -46,6 +46,7 @@ Route::group(['prefix' => 'documentation'], function () {
 
         Route::group(['prefix' => 'v6'], function () {
             Route::get('/', [DocumentationController::class, 'fontAwesomeV6']);
+            Route::get('/pins', [DocumentationController::class, 'fontAwesomeV6Pins']);
             Route::get('/icons', [DocumentationController::class, 'fontAwesomeV6Icons']);
             Route::get('/icon-stacks', [DocumentationController::class, 'fontAwesomeV6IconStacks']);
         });

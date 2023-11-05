@@ -33,7 +33,7 @@
                     <template x-for="(parameter,key) in parameters">
                         <tr>
                             <td x-text="key" class="font-mono font-black pr-4"></td>
-                            <td>
+                            <td class="min-w-[200px]">
                                 <input x-model="parameter.value" :type="parameter.type"
                                     @input.debounce.1000ms="updateMarkerUrl"
                                     class="font-mono w-36 -mb-2 pb-2 pl-0 focus:outline-none focus:ring-0 block w-full bg-transparent border-0 text-gray-500">
@@ -44,11 +44,6 @@
                     </template>
                 </tbody>
             </table>
-
-
-
-
         </div>
     </div>
-
 </div>

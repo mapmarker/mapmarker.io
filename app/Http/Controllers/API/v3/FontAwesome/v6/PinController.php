@@ -25,7 +25,7 @@ class PinController extends Controller
 
         // FOREGROUND ICON
         $foregroundIcon = $request->get('icon') ?: null;
-        $foregroundIconColor = '#'.$request->get('color', '000');
+        $foregroundIconColor = '#'.$request->get('color', 'FFF');
         $foregroundIconMarkup = GetIconMarkup::run($foregroundIcon);
 
         // FOREGROUND ICON SHIFTING
@@ -72,7 +72,7 @@ class PinController extends Controller
         $text = $request->get('text', '');
         $textSize = $markerSize / 3.00;
         $textFont = 'Arial';
-        $textFontColor = '#'.$request->get('color', '000');
+        $textFontColor = '#'.$request->get('color', 'FFF');
 
         // BACKGROUND ICON
         $backgroundIcon = 'fa-solid fa-location-pin';

@@ -44,6 +44,11 @@ class DocumentationController extends Controller
         return view('docs.font-awesome.v6.index');
     }
 
+    public function fontAwesomeV6Pins()
+    {
+        return view('docs.font-awesome.v6.pins');
+    }
+
     public function fontAwesomeV6Icons()
     {
         return view('docs.font-awesome.v6.icons');
