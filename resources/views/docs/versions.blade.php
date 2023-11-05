@@ -18,9 +18,9 @@
                 <thead>
                     <tr>
                         <td>Version</td>
-                        <td>Output Format</td>
-                        <td>Year Introduced</td>
-                        <td>Support Status</td>
+                        <td>Output&nbsp;Format</td>
+                        <td>Year&nbsp;Introduced</td>
+                        <td>Support&nbsp;Status</td>
                         <td>Description</td>
                     </tr>
                 </thead>
@@ -43,8 +43,17 @@
                         <td>v2</td>
                         <td>png</td>
                         <td>2022</td>
-                        <td class="text-green-400">Active</td>
+                        <td class="text-green-400">LTS</td>
                         <td>We have learned a few things and made rendering icons even better.</td>
+                    </tr>
+                    <tr>
+                        <td>v3</td>
+                        <td>svg</td>
+                        <td>2023</td>
+                        <td class="text-purple-400">BETA</td>
+                        <td>
+                            We are working on SVG rendering for improved performance and appearance.
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -60,6 +69,7 @@
                         <td>Legacy</td>
                         <td>v1</td>
                         <td>v2</td>
+                        <td>v3</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -68,15 +78,18 @@
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-orange-400">WIP</td>
                     </tr>
                     <tr>
                         <td>Pins with Icon</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-orange-400">WIP</td>
                     </tr>
                     <tr>
                         <td>Icons</td>
+                        <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
@@ -86,11 +99,13 @@
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-orange-400">WIP</td>
                     </tr>
                     <tr>
                         <td>Font-Awesome 4</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                     </tr>
                     <tr>
@@ -98,9 +113,11 @@
                         <td class="text-red-400">No</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-red-400">No</td>
                     </tr>
                     <tr>
                         <td>Font-Awesome 6</td>
+                        <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-green-400">Yes</td>
@@ -110,12 +127,14 @@
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-gray-400">-</td>
                     </tr>
                     <tr>
                         <td>Improved Sizing</td>
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-green-400">Yes</td>
+                        <td class="text-gray-400">-</td>
                     </tr>
                 </tbody>
             </table>
