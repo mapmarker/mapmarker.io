@@ -16,6 +16,7 @@
                         <div class="ml-2">
                             <a href="/documentation/font-awesome/v6" class="block mb-1">Overview</a>
                             <a href="/documentation/font-awesome/v6/icons" class="block mb-1">Icons</a>
+                            <a href="/documentation/font-awesome/v6/icon-stacks" class="block mb-1">Icon Stacks</a>
                         </div>
                     </div>
 

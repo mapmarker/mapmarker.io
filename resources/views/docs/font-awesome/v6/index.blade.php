@@ -66,12 +66,12 @@
         </div>
 
         {{-- ICON STACKS --}}
-          {{-- PINS --}}
-          <div class="prose prose-invert text-center pt-10">
+        {{-- PINS --}}
+        <div class="prose prose-invert text-center pt-10">
             <div class="mb-4">
-                <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-users&color=992DE5&size=50" class="inline h-12 m-0 mx-1" />
-                <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-box&color=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
-                <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-wind&color=CE86F5&size=50" class="inline-block h-12 m-0 mx-1" />
+                <img src="/api/v3/font-awesome/v6/icon-stack?size=64&icon=fa-solid+fa-map-pin&color=171719&on=fa-solid+fa-map&oncolor=992DE5&iconsize=20&hoffset=23&voffset=7" class="inline h-12 m-0 mx-1" />
+                <img src="/api/v3/font-awesome/v6/icon-stack?size=64&icon=fa-brands+fa-amazon&color=171719&on=fa-solid+fa-truck&oncolor=BC5AF4&iconsize=30&voffset=-6&hoffset=-11" class="inline h-12 m-0 mx-1" />
+                <img src="/api/v3/font-awesome/v6/icon-stack?size=64&icon=fa-brands+fa-apple&color=171719&on=fa-solid+fa-box&oncolor=CE86F5&iconsize=25&voffset=10" class="inline h-12 m-0 mx-1" />
             </div>
             <div class="prose">
                 <h3 class="text-white">Icon Stacks</h3>
