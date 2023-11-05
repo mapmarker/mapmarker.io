@@ -118,7 +118,7 @@ Route::group(['prefix' => 'api', 'namespace' => '\App\Http\Controllers\API', 'mi
             // FONT-AWESOME 6
             Route::group(['prefix' => 'v6', 'namespace' => 'v6'], function () {
                 Route::get('icon', 'IconController@show');
-                // Route::get('pin', 'PinController@show');
+                Route::get('pin', 'PinController@show');
                 Route::get('icon-stack', 'IconStackController@show');
             });
         });
