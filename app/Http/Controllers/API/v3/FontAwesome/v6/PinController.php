@@ -62,4 +62,39 @@ class PinController extends Controller
 
         return response($mapMarkerMarkup)->header('Content-Type', 'image/svg+xml');
     }
+
+    protected function showTextPin(Request $request)
+    {
+        // GET MARKER CONFIG
+        $markerSize = $request->get('size', 100);
+
+        // TEXT
+        $text = $request->get('text', '');
+        $textSize = $markerSize / 3.00;
+        $textFont = 'Arial';
+        $textFontColor = '#'.$request->get('color', '000');
+
+        // BACKGROUND ICON
+        $backgroundIcon = 'fa-solid fa-location-pin';
+        $backgroundIconColor = '#'.$request->get('background', 'CCC');
+        $backgroundIconMarkup = GetIconMarkup::run($backgroundIcon);
+
+        // LABEL
+        $labelMarkup = GetLabelMarkup::run(request: $request, markerSize: $markerSize);
+
+        $mapMarkerMarkup = <<<EOD
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" width="{$markerSize}" height="{$markerSize}">
+             <!--! Generated with MapMarker.io - https://mapmarker.io License - https://www.mapmarker.io/license -->
+             <svg fill="{$backgroundIconColor}">
+                 {$backgroundIconMarkup}
+             </svg>
+
+             <text x="50%" y="30%" fill="{$textFontColor}" text-anchor="middle" dy=".5em" font-size="{$textSize}" font-family="{$textFont}">{$text}</text>
+
+             {$labelMarkup}
+         </svg>
+         EOD;
+
+        return response($mapMarkerMarkup)->header('Content-Type', 'image/svg+xml');
+    }
 }
