@@ -4,7 +4,7 @@
     <x-docs-layout>
 
         <x-docs-box>
-            <x-icon-spectrum icon="fa-rocket" class="opacity-40" iconClass="-mr-12 w-[49px]" />
+            <x-icon-spectrum icon="fa-solid fa-rocket" iconClass="-mr-12 w-[49px]" />
 
             <h2> Getting Started</h2>
 

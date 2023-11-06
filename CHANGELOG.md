@@ -1,3 +1,11 @@
+# [1.41.0](https://github.com/mapmarker/mapmarker.io/compare/1.40.1...1.41.0) (2023-11-06)
+
+
+### Features
+
+* **branding:** re-create mapmarker logo using svg endpoint ([dbb0b00](https://github.com/mapmarker/mapmarker.io/commit/dbb0b00817538f8e6d302fbd8ceee0bdca5b9211))
+* **docs:** updated homepage / docs components to use new svg icons ([a436340](https://github.com/mapmarker/mapmarker.io/commit/a436340873d52b61d7ab1ae617ca3ff49670bc40))
+
 ## [1.40.1](https://github.com/mapmarker/mapmarker.io/compare/1.40.0...1.40.1) (2023-11-06)
 
 
