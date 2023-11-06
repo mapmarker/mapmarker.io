@@ -14,7 +14,10 @@
                     <div class="mb-6">
                         <div class="text-black text-sm text-slate-300 mb-2">Font Awesome 6</div>
                         <div class="ml-2">
-                            <a href="/documentation/font-awesome/v6" class="block mb-1">Coming Soon...</a>
+                            <a href="/documentation/font-awesome/v6" class="block mb-1">Overview</a>
+                            <a href="/documentation/font-awesome/v6/pins" class="block mb-1">Pins</a>
+                            <a href="/documentation/font-awesome/v6/icons" class="block mb-1">Icons</a>
+                            <a href="/documentation/font-awesome/v6/icon-stacks" class="block mb-1">Icon Stacks</a>
                         </div>
                     </div>
 

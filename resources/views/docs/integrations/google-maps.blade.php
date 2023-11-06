@@ -25,7 +25,7 @@
                             });
                             var marker = new google.maps.Marker({
                                 position: uluru,
-                                icon: '{{ config('app.url') }}/api/v2/font-awesome/v5/pin?icon=fa-star-solid&size=50&hoffset=0&voffset=-1',
+                                icon: '{{ config('app.url') }}/api/v3/font-awesome/v6/pin?icon=fa-solid+fa-star&size=50&hoffset=0&voffset=-1',
                                 map: map
                             });
                         }
@@ -38,27 +38,14 @@
         zoom: 4,
         center: uluru
     });
-    
+
     // a more conventional map pin
     var marker = new google.maps.Marker({
         position: uluru,
-        icon: '{{ config('app.url') }}/api/v2/font-awesome/v5/pin?icon=fa-star-solid&size=50&hoffset=0&voffset=-1',
+        icon: '{{ config('app.url') }}/api/v3/font-awesome/v6/pin?icon=fa-solid+fa-star&size=50&hoffset=0&voffset=-1',
         map: map
     });
-    
-    // a square icon whose center is on the lat / long
-    var circle = new google.maps.Marker({
-        position: {lat: 37.827125, lng: -122.422844},
-        map: map,
-        icon: {
-            size: new google.maps.Size(120, 120),
-            scaledSize: new google.maps.Size(60,60),
-            url: 'https://cdn.mapmarker.io/api/v1/fa?size=120&icon=fa-bullseye&color=%23D33115',
-            anchor: new google.maps.Point(30, 30),
-        },
-        title: "Alert",
-    });
-    
+
 }</pre>
 
                 </x-docs-box>
