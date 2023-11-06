@@ -40,7 +40,7 @@ class PinController extends Controller
 
         // BACKGROUND ICON
         $backgroundIcon = 'fa-solid fa-location-pin';
-        $backgroundIconColor = '#'.$request->get('background', 'CCC');
+        $backgroundIconColor = '#'.$request->get('background', 'de604e');
         $backgroundIconMarkup = GetIconMarkup::run($backgroundIcon);
 
         // LABEL
@@ -76,7 +76,7 @@ class PinController extends Controller
 
         // BACKGROUND ICON
         $backgroundIcon = 'fa-solid fa-location-pin';
-        $backgroundIconColor = '#'.$request->get('background', 'CCC');
+        $backgroundIconColor = '#'.$request->get('background', 'de604e');
         $backgroundIconMarkup = GetIconMarkup::run($backgroundIcon);
 
         // LABEL
