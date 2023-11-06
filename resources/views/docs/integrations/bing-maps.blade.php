@@ -18,7 +18,7 @@
                                 disableScrollWheelZoom: true
                             });
                             var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), {
-                                icon: '{{ config('app.url') }}/api/v2/font-awesome/v5/pin?icon=fa-star-solid&size=50&hoffset=0&voffset=-1',
+                                icon: '{{ config('app.url') }}/api/v3/font-awesome/v6/pin?icon=fa-solid+fa-star&size=50&hoffset=0&voffset=-1',
                                 anchor: new Microsoft.Maps.Point(12, 39)
                             });
                             map.entities.push(pushpin);
@@ -31,8 +31,8 @@
     credentials: 'Your Bing Maps Key'
 });
 
-var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), { 
-    icon: '{{ config('app.url') }}/api/v2/font-awesome/v5/pin?icon=fa-star-solid&size=50&hoffset=0&voffset=-1',
+var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), {
+    icon: '{{ config('app.url') }}/api/v3/font-awesome/v6/pin?icon=fa-solid+fa-star&size=50&hoffset=0&voffset=-1',
     anchor: new Microsoft.Maps.Point(12, 39)
 });
 
