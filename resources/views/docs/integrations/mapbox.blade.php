@@ -28,7 +28,7 @@
 
                         var markerElement = document.createElement('div');
                         markerElement.style.backgroundImage =
-                            "url('{{ config('app.url') }}/api/v2/font-awesome/v5/pin?icon=fa-star-solid&size=50&hoffset=0&voffset=-1')";
+                            "url('{{ config('app.url') }}/api/v3/font-awesome/v6/pin?icon=fa-solid+fa-star&size=50&hoffset=0&voffset=-1')";
                         markerElement.style.width = '50px';
                         markerElement.style.height = '50px';
 
@@ -39,7 +39,7 @@
                             .addTo(map);
                     </script>
                     <pre>var markerElement = document.createElement('div');
-markerElement.style.backgroundImage = "url('{{ config('app.url') }}/api/v2/font-awesome/v5/pin?icon=fa-star-solid&size=50&hoffset=0&voffset=-1')";
+markerElement.style.backgroundImage = "url('{{ config('app.url') }}/api/v3/font-awesome/v6/pin?icon=fa-solid+fa-star&size=50&hoffset=0&voffset=-1')";
 markerElement.style.width = '50px';
 markerElement.style.height = '50px';
 
