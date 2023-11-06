@@ -1,3 +1,21 @@
+# [1.40.0](https://github.com/mapmarker/mapmarker.io/compare/1.39.0...1.40.0) (2023-11-06)
+
+
+### Features
+
+* **docs:** update version summary to show support for marker types for api v3 ([3968632](https://github.com/mapmarker/mapmarker.io/commit/3968632490bacdb033ecbbba8fd2a89d6c6b6d42))
+
+# [1.39.0](https://github.com/mapmarker/mapmarker.io/compare/1.38.0...1.39.0) (2023-11-05)
+
+
+### Features
+
+* **font awesome 6:** added svg endpoint for font-awesome-6 ([fed9760](https://github.com/mapmarker/mapmarker.io/commit/fed97602cd1d143fe28b720f7975d206030652d1))
+* **font awesome 6:** implement icon pins using svgs ([6ffa574](https://github.com/mapmarker/mapmarker.io/commit/6ffa574e1f9bb3fab39f486e9d3a4971f292b2d5))
+* **font awesome 6:** implemented icon stack ([94ea806](https://github.com/mapmarker/mapmarker.io/commit/94ea806776ddce9a2269e07d0ae3095d8422ba08))
+* **font awesome 6:** implemented icon stacks ([c342eef](https://github.com/mapmarker/mapmarker.io/commit/c342eefe3297562357bfa26db8cfb4bd2fed2fbf))
+* **font-awesome 6:** added support for text pins ([1c51441](https://github.com/mapmarker/mapmarker.io/commit/1c51441ae09ecb8ddb6cd9e972ac8fe4d1fd1fdd))
+
 # [1.38.0](https://github.com/mapmarker/mapmarker.io/compare/1.37.1...1.38.0) (2023-08-11)
 
 
