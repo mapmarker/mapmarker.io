@@ -78,14 +78,14 @@
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
-                        <td class="text-orange-400">WIP</td>
+                        <td class="text-green-400">Yes</td>
                     </tr>
                     <tr>
                         <td>Pins with Icon</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
                         <td class="text-green-400">Yes</td>
-                        <td class="text-orange-400">WIP</td>
+                        <td class="text-green-400">Yes</td>
                     </tr>
                     <tr>
                         <td>Icons</td>

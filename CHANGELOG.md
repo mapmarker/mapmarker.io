@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/mapmarker/mapmarker.io/compare/1.39.0...1.40.0) (2023-11-06)
+
+
+### Features
+
+* **docs:** update version summary to show support for marker types for api v3 ([3968632](https://github.com/mapmarker/mapmarker.io/commit/3968632490bacdb033ecbbba8fd2a89d6c6b6d42))
+
 # [1.39.0](https://github.com/mapmarker/mapmarker.io/compare/1.38.0...1.39.0) (2023-11-05)
 
 
