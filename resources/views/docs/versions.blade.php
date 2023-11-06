@@ -4,7 +4,7 @@
     <x-docs-layout>
 
         <x-docs-box class="mb-8">
-            <x-icon-spectrum icon="fa-boxes" class="opacity-40" iconClass="-mr-12 w-[49px]" />
+            <x-icon-spectrum icon="fa-solid fa-boxes-stacked" iconClass="-mr-12 w-[49px]" />
 
             <h2>API Versions</h2>
 

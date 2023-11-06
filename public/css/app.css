@@ -1197,8 +1197,8 @@ select {
 .h-6 {
   height: 1.5rem;
 }
-.h-8 {
-  height: 2rem;
+.h-auto {
+  height: auto;
 }
 .h-\[75px\] {
   height: 75px;
@@ -1220,9 +1220,6 @@ select {
 }
 .w-6 {
   width: 1.5rem;
-}
-.w-auto {
-  width: auto;
 }
 .w-\[41px\] {
   width: 41px;
@@ -1492,9 +1489,6 @@ select {
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.opacity-40 {
-  opacity: 0.4;
 }
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);

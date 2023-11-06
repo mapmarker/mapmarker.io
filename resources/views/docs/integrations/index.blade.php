@@ -5,7 +5,7 @@
         <div class="md:grid grid-cols-3 gap-8">
             <div class="col-span-3 mb-8 md:mb-0">
                 <x-docs-box>
-                    <x-icon-spectrum icon="fa-cog" class="opacity-40" iconClass="-mr-12 w-[49px]" />
+                    <x-icon-spectrum icon="fa-solid fa-gear" iconClass="-mr-12 w-[49px]" />
 
                     <h2>Integrations</h2>
 
