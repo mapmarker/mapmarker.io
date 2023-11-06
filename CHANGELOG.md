@@ -1,3 +1,10 @@
+## [1.40.1](https://github.com/mapmarker/mapmarker.io/compare/1.40.0...1.40.1) (2023-11-06)
+
+
+### Bug Fixes
+
+* **font-awesome 6:** set pin marker default color to be backwards compatible ([13807a8](https://github.com/mapmarker/mapmarker.io/commit/13807a87d7c9599e06c43575decbe54a83a1f133))
+
 # [1.40.0](https://github.com/mapmarker/mapmarker.io/compare/1.39.0...1.40.0) (2023-11-06)
 
 
