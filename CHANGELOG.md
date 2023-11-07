@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/mapmarker/mapmarker.io/compare/1.41.0...1.42.0) (2023-11-07)
+
+
+### Features
+
+* **welcome:** better homepage styling ([66246df](https://github.com/mapmarker/mapmarker.io/commit/66246df25c4c873665e836370f959e18f8c658e7))
+
 # [1.41.0](https://github.com/mapmarker/mapmarker.io/compare/1.40.1...1.41.0) (2023-11-06)
 
 
