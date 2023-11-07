@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/mapmarker/mapmarker.io/compare/1.44.0...1.45.0) (2023-11-07)
+
+
+### Features
+
+* **welcome:** animate background on landing page ([936fc59](https://github.com/mapmarker/mapmarker.io/commit/936fc5982a911e089eaa88529ea11d36358e948b))
+
 # [1.44.0](https://github.com/mapmarker/mapmarker.io/compare/1.43.0...1.44.0) (2023-11-07)
 
 
