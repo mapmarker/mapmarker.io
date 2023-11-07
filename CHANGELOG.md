@@ -1,3 +1,10 @@
+# [1.44.0](https://github.com/mapmarker/mapmarker.io/compare/1.43.0...1.44.0) (2023-11-07)
+
+
+### Features
+
+* **documentation:** remove under development warning from font-awesome 6 section ([fbea883](https://github.com/mapmarker/mapmarker.io/commit/fbea883cee446ed7cd7da00a361ff6930f8348b6))
+
 # [1.43.0](https://github.com/mapmarker/mapmarker.io/compare/1.42.0...1.43.0) (2023-11-07)
 
 
