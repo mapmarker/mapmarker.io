@@ -3,8 +3,8 @@
 @section('content')
     <div class="container mx-auto px-2 text-gray-200">
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div class="col-span-2 md:col-span-3">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="col-span-1 md:col-span-3">
                 <div>
                     <div class="rounded-lg lg:text-center p-6 lg:py-24 bg-animated">
                         <h1 class="text-3xl lg:text-5xl font-bold">
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div class="col-span-2 md:col-span-1 lg:xl-span-1 xl:col-span-1">
+            <div class="col-span-1 lg:xl-span-1 xl:col-span-1">
                 <div class="rounded-lg">
                     <div class="rounded-lg text-right p-6"style="background: linear-gradient(0deg, #0f0f10, #131314);">
                         <h1 class="text-3xl lg:text-5xl font-bold">
@@ -57,7 +57,7 @@
             </div>
 
             {{-- PINS --}}
-            <div class="col-span-2 md:col-span-1 lg:xl-span-1 xl:col-span-1 prose prose-invert text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+            <div class="col-span-1 lg:xl-span-1 xl:col-span-1 prose prose-invert text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
                 <div class="-mb-4">
                     <img src="/api/v3/font-awesome/v6/pin?text=A&background=992DE5&size=50" class="inline h-12 m-0" />
                     <img src="/api/v3/font-awesome/v6/pin?text=AC&background=BC5AF4&size=50" class="inline h-12 m-0" />
@@ -74,7 +74,7 @@
                 </a>
             </div>
             {{-- ICONS --}}
-            <div class="col-span-2 md:col-span-1 lg:xl-span-1 xl:col-span-1 prose prose-invert text-left p-10 rounded-lg"  style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+            <div class="col-span-1 lg:xl-span-1 xl:col-span-1 prose prose-invert text-left p-10 rounded-lg"  style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
                 <div class="-mb-4">
                     <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-users&color=992DE5&size=50"
                         class="inline h-12 m-0 mx-1" />
@@ -92,7 +92,7 @@
                 </a>
             </div>
             {{-- ICON STACKS --}}
-            <div class="col-span-2 md:col-span-1 lg:xl-span-1 xl:col-span-1 prose prose-invert text-left p-10 rounded-lg"  style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+            <div class="col-span-1 lg:xl-span-1 xl:col-span-1 prose prose-invert text-left p-10 rounded-lg"  style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
                 <div class="-mb-4">
                     <img src="/api/v3/font-awesome/v6/icon-stack?size=64&icon=fa-solid+fa-location&color=171719&on=fa-solid+fa-map&oncolor=992DE5&iconsize=14&hoffset=23&voffset=8"
                         class="inline h-12 m-0 mx-1" />
