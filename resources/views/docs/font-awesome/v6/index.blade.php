@@ -6,12 +6,7 @@
     <div class="md:grid grid-cols-3 gap-8">
         <div class="col-span-3">
             <x-docs-box>
-                <div class="mb-4">
-                    <img src="/api/v3/font-awesome/v6/icon?icon=fa-brands+fa-fort-awesome&size=50&color=6013CC" class="m-0 inline h-12 -mr-12 w-[49px]" />
-                    <img src="/api/v3/font-awesome/v6/icon?icon=fa-brands+fa-fort-awesome&&size=50&color=992DE5" class="m-0 inline h-12 -mr-12 w-[49px]" />
-                    <img src="/api/v3/font-awesome/v6/icon?icon=fa-brands+fa-fort-awesome&&size=50&color=BC5AF4" class="m-0 inline h-12 -mr-12 w-[49px]" />
-                    <img src="/api/v3/font-awesome/v6/icon?icon=fa-brands+fa-fort-awesome&&size=50&color=CE86F5" class="m-0 inline h-12 -mr-12 w-[49px]" />
-                </div>
+                <x-icon-spectrum icon="fa-brands fa-fort-awesome" iconClass="-mr-12 w-[49px]" />
 
 
                 <h2>Font Awesome 6</h2>
@@ -24,14 +19,14 @@
         </div>
 
         {{-- BETA WARNING --}}
-        <div class="col-span-3">
+        {{-- <div class="col-span-3">
             <x-docs-box class="bg-yellow-600 text-gray-900">
                 <div class="font-black text-lg mb-4">Under Development</div>
                 <div>
                     Our latest implementation of Font Awesome v6 introduces a new generation of our API to bring SVG map markers to your applications for a faster, sleeker look. Please note that this feature is currently in public BETA. Expect ongoing development and potential breaking changes. Use with care!
                 </div>
             </x-docs-box>
-        </div>
+        </div> --}}
 
         {{-- PINS --}}
         <div class="prose prose-invert text-center pt-10">
