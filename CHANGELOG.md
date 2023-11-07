@@ -1,3 +1,10 @@
+## [1.45.1](https://github.com/mapmarker/mapmarker.io/compare/1.45.0...1.45.1) (2023-11-07)
+
+
+### Bug Fixes
+
+* **welcome:** fix responsive layout on mobile ([d19594e](https://github.com/mapmarker/mapmarker.io/commit/d19594e6129cc2f7dc9aaaebc535c8b20f41fe85))
+
 # [1.45.0](https://github.com/mapmarker/mapmarker.io/compare/1.44.0...1.45.0) (2023-11-07)
 
 
