@@ -5,8 +5,8 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div class="col-span-2 md:col-span-3">
-                <div class="rounded-lg" style="background: linear-gradient(-45deg, #441580, #055e6b);">
-                    <div class="rounded-lg lg:text-center p-6 lg:py-24">
+                <div>
+                    <div class="rounded-lg lg:text-center p-6 lg:py-24 bg-animated">
                         <h1 class="text-3xl lg:text-5xl font-bold">
                             Generate complex map markers on the fly.
                         </h1>

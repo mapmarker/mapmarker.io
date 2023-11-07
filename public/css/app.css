@@ -1524,6 +1524,42 @@ select {
     display: none !important;
 }
 
+/* ANIMATED BACKGROUND */
+.bg-animated {
+    background: linear-gradient(-45deg, #441580, #055e6b, #036042);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 20s ease infinite;
+            animation: gradient 20s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .hero {
     background-image: url('/images/map.jpg');
     background-size: cover;
@@ -1720,3 +1756,4 @@ select {
     grid-column: span 1 / span 1;
   }
 }
+
