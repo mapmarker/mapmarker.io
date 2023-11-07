@@ -19,14 +19,14 @@
         </div>
 
         {{-- BETA WARNING --}}
-        <div class="col-span-3">
+        {{-- <div class="col-span-3">
             <x-docs-box class="bg-yellow-600 text-gray-900">
                 <div class="font-black text-lg mb-4">Under Development</div>
                 <div>
                     Our latest implementation of Font Awesome v6 introduces a new generation of our API to bring SVG map markers to your applications for a faster, sleeker look. Please note that this feature is currently in public BETA. Expect ongoing development and potential breaking changes. Use with care!
                 </div>
             </x-docs-box>
-        </div>
+        </div> --}}
 
         {{-- PINS --}}
         <div class="prose prose-invert text-center pt-10">
