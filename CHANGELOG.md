@@ -1,3 +1,10 @@
+# [1.43.0](https://github.com/mapmarker/mapmarker.io/compare/1.42.0...1.43.0) (2023-11-07)
+
+
+### Features
+
+* **welcome:** added homepage stats / credit ([10bd086](https://github.com/mapmarker/mapmarker.io/commit/10bd086a30bd09cdbab2d18813c84282da0e3894))
+
 # [1.42.0](https://github.com/mapmarker/mapmarker.io/compare/1.41.0...1.42.0) (2023-11-07)
 
 
