@@ -1092,20 +1092,23 @@ select {
 .right-0 {
   right: 0px;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-.col-span-4 {
-  grid-column: span 4 / span 4;
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 .col-span-9 {
   grid-column: span 9 / span 9;
 }
 .col-span-10 {
   grid-column: span 10 / span 10;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .m-0 {
   margin: 0px;
@@ -1130,6 +1133,9 @@ select {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .-mb-4 {
   margin-bottom: -1rem;
@@ -1239,14 +1245,17 @@ select {
 .flex-shrink-0 {
   flex-shrink: 0;
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .grid-cols-10 {
   grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -1294,9 +1303,6 @@ select {
 .border-transparent {
   border-color: transparent;
 }
-.bg-slate-700\/80 {
-  background-color: rgb(51 65 85 / 0.8);
-}
 .bg-indigo-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
@@ -1326,6 +1332,9 @@ select {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .p-12 {
   padding: 3rem;
@@ -1359,12 +1368,6 @@ select {
 .pb-24 {
   padding-bottom: 6rem;
 }
-.pt-10 {
-  padding-top: 2.5rem;
-}
-.pb-4 {
-  padding-bottom: 1rem;
-}
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1383,8 +1386,17 @@ select {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1404,6 +1416,10 @@ select {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1429,6 +1445,10 @@ select {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1482,6 +1502,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
 .no-underline {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -1498,6 +1522,42 @@ select {
 
 [x-cloak] {
     display: none !important;
+}
+
+/* ANIMATED BACKGROUND */
+.bg-animated {
+    background: linear-gradient(-45deg, #441580, #055e6b, #036042);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 20s ease infinite;
+            animation: gradient 20s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hero {
@@ -1631,6 +1691,14 @@ select {
 
 @media (min-width: 768px) {
 
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1650,6 +1718,10 @@ select {
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:p-10 {
@@ -1677,3 +1749,11 @@ select {
     line-height: 1;
   }
 }
+
+@media (min-width: 1280px) {
+
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+}
+

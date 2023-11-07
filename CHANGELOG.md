@@ -1,3 +1,31 @@
+# [1.45.0](https://github.com/mapmarker/mapmarker.io/compare/1.44.0...1.45.0) (2023-11-07)
+
+
+### Features
+
+* **welcome:** animate background on landing page ([936fc59](https://github.com/mapmarker/mapmarker.io/commit/936fc5982a911e089eaa88529ea11d36358e948b))
+
+# [1.44.0](https://github.com/mapmarker/mapmarker.io/compare/1.43.0...1.44.0) (2023-11-07)
+
+
+### Features
+
+* **documentation:** remove under development warning from font-awesome 6 section ([fbea883](https://github.com/mapmarker/mapmarker.io/commit/fbea883cee446ed7cd7da00a361ff6930f8348b6))
+
+# [1.43.0](https://github.com/mapmarker/mapmarker.io/compare/1.42.0...1.43.0) (2023-11-07)
+
+
+### Features
+
+* **welcome:** added homepage stats / credit ([10bd086](https://github.com/mapmarker/mapmarker.io/commit/10bd086a30bd09cdbab2d18813c84282da0e3894))
+
+# [1.42.0](https://github.com/mapmarker/mapmarker.io/compare/1.41.0...1.42.0) (2023-11-07)
+
+
+### Features
+
+* **welcome:** better homepage styling ([66246df](https://github.com/mapmarker/mapmarker.io/commit/66246df25c4c873665e836370f959e18f8c658e7))
+
 # [1.41.0](https://github.com/mapmarker/mapmarker.io/compare/1.40.1...1.41.0) (2023-11-06)
 
 
