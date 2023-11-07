@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/mapmarker/mapmarker.io/compare/1.45.1...1.46.0) (2023-11-07)
+
+
+### Features
+
+* **dependencies:** updated composer deps ([7d38471](https://github.com/mapmarker/mapmarker.io/commit/7d38471a796d065ae1f9c7ebf46dc0c8cb7b0837))
+
 ## [1.45.1](https://github.com/mapmarker/mapmarker.io/compare/1.45.0...1.45.1) (2023-11-07)
 
 
