@@ -19,7 +19,7 @@
 
             <div class="col-span-1">
                 <div class="rounded-lg">
-                    <div class="rounded-lg text-right p-6" style="background: linear-gradient(-20deg, #391971, #24183c, #0f0f10);">
+                    <div class="rounded-lg text-right p-6" style="background: linear-gradient(0deg, #0f0f10, #131314);">
                         <h1 class="text-3xl lg:text-5xl font-bold">
                            250,000
                         </h1>
@@ -32,7 +32,7 @@
 
             <div class="col-span-1">
                 <div class="rounded-lg">
-                    <div class="rounded-lg text-right p-6" style="background: linear-gradient(-20deg, #391971, #24183c, #0f0f10);">
+                    <div class="rounded-lg text-right p-6" style="background: linear-gradient(0deg, #0f0f10, #131314);">
                         <h1 class="text-3xl lg:text-5xl font-bold">
                             2,840,000
                         </h1>
@@ -45,9 +45,9 @@
 
             <div class="col-span-2 md:col-span-1 lg:xl-span-1 xl:col-span-1">
                 <div class="rounded-lg">
-                    <div class="rounded-lg text-right p-6" style="background: linear-gradient(-20deg, #391971, #24183c, #0f0f10);">
+                    <div class="rounded-lg text-right p-6"style="background: linear-gradient(0deg, #0f0f10, #131314);">
                         <h1 class="text-3xl lg:text-5xl font-bold">
-                            40ms
+                            <span class="text-green-500">40 ms</span>
                         </h1>
                         <p class="text-sm mt-2">
                             Average latency for markers
