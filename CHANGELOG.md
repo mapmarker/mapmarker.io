@@ -1,3 +1,18 @@
+# [1.47.0](https://github.com/mapmarker/mapmarker.io/compare/1.46.0...1.47.0) (2023-11-07)
+
+
+### Features
+
+* **dependencies:** upgraded node dependencies ([c754761](https://github.com/mapmarker/mapmarker.io/commit/c754761383fc810b0d161e4353026cf355c51310))
+* **node:** use node 18 going forward ([1caea64](https://github.com/mapmarker/mapmarker.io/commit/1caea64cc54c79eeb4acc854fb9c07b1b74fdad5))
+
+# [1.46.0](https://github.com/mapmarker/mapmarker.io/compare/1.45.1...1.46.0) (2023-11-07)
+
+
+### Features
+
+* **dependencies:** updated composer deps ([7d38471](https://github.com/mapmarker/mapmarker.io/commit/7d38471a796d065ae1f9c7ebf46dc0c8cb7b0837))
+
 ## [1.45.1](https://github.com/mapmarker/mapmarker.io/compare/1.45.0...1.45.1) (2023-11-07)
 
 
