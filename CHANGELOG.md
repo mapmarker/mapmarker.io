@@ -1,3 +1,11 @@
+# [1.48.0](https://github.com/mapmarker/mapmarker.io/compare/1.47.0...1.48.0) (2023-11-10)
+
+
+### Features
+
+* **editor:** added route to capture existing links and redirect to homepage ([f8705a1](https://github.com/mapmarker/mapmarker.io/commit/f8705a1e20b9e03cc2f85cc7161c2d5eca6f1fde))
+* **editor:** added test to ensure redirect to the homepage works ([a4b598c](https://github.com/mapmarker/mapmarker.io/commit/a4b598ca2f7233dee5c6822f3b1bc4ed2dd88ea5))
+
 # [1.47.0](https://github.com/mapmarker/mapmarker.io/compare/1.46.0...1.47.0) (2023-11-07)
 
 
