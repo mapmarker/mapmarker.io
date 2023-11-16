@@ -1,6 +1,10 @@
 <div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12" x-data="{
-        experience: 'pin-with-text'
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12"
+    id="editor"
+    @icon-changed.window="console.log($event.detail)"
+    x-data="{
+        iconName: undefined,
+        experience: 'pin-with-text',
     }">
 
         <div class="md:col-span-2 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
@@ -53,7 +57,12 @@
             <div class="mb-9">
                 {{-- PIN WITH TEXT --}}
                 <div>
-                    <h2 class="font-bold text-xl mb-4">Customize your marker:</h2>
+                    <h2 class="font-bold text-xl mb-4" x-on:click="console.log($refs)">
+                        Customize your marker:
+                    </h2>
+
+                    <div x-ref="test">lorem</div>
+                    <x-editor-icon-select change-event="icon-changed" />
                 </div>
 
                 {{-- PIN WITH ICON --}}
