@@ -12,9 +12,13 @@
                     multiple: this.multiple,
                     data: this.options.map(i => ({
                         id: i.value,
-                        text: i.label,
+                        text:  i.label,
+                        title: i.value,
                         selected: selections.map(i => String(i)).includes(String(i.value)),
                     })),
+                    escapeMarkup: function(markup) {
+                        return markup;
+                    },
                 })
             }
 
