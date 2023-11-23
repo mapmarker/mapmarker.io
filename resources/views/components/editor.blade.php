@@ -2,13 +2,16 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12"
     id="editor"
     @icon-changed.window="iconName = $event.detail"
+    @color-changed.window="color = $event.detail.replace('#', '')"
     x-data="{
+        {{-- PARAMETER VALUES --}}
         size: 100,
         iconName: 'fa-solid fa-map-location',
+        color: '333',
         experience: 'icon',
 
         iconUrl() {
-            return '/api/v3/font-awesome/v6/icon?size=100&icon='+this.iconName;
+            return '/api/v3/font-awesome/v6/icon?size=100&icon='+this.iconName+'&color='+this.color;
         }
     }">
 
@@ -29,7 +32,8 @@
                         Customize your marker:
                     </h2>
 
-                    <x-editor-icon-select change-event="icon-changed" />
+                    <x-editor.input-icon-select change-event="icon-changed" />
+                    <x-editor.input-color-select change-event="color-changed" default="#333" />
                 </div>
 
                 {{-- PIN WITH ICON --}}

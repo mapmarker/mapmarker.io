@@ -1,11 +1,11 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Editor;
 
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class EditorIconSelect extends Component
+class InputIconSelect extends Component
 {
     public $changeEvent;
 
@@ -66,6 +66,6 @@ class EditorIconSelect extends Component
      */
     public function render()
     {
-        return view('components.editor-icon-select');
+        return view('components.editor.input-icon-select');
     }
 }
