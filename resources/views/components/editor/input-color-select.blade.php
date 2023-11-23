@@ -1,6 +1,6 @@
 
 
-<div x-data="app()" x-init="$watch('colorSelected', value => colorChanged())" x-cloak>
+<div x-data="InputColorSelect()" x-init="$watch('colorSelected', value => colorChanged())" x-cloak>
     <div>
 
         <div class="mb-5">
@@ -61,7 +61,7 @@
 </div>
 
 <script>
-    function app() {
+    function InputColorSelect() {
         return {
             isOpen: false,
             colors: ['#2196F3', '#009688', '#9C27B0', '#FFEB3B', '#afbbc9', '#4CAF50', '#2d3748', '#f56565', '#ed64a6'],
