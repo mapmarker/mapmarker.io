@@ -11,20 +11,17 @@
             <div class="mb-8">
                 <h2 class="font-bold text-xl mb-4">Pick what you want to create:</h2>
                 <x-editor.experience-selector />
-
             </div>
 
             {{-- CREATOR EXPERIENCES --}}
             <div class="mb-9">
                 {{-- PIN WITH TEXT --}}
                 <div>
-                    <h2 class="font-bold text-xl mb-4">
-                        Customize your marker:
-                    </h2>
 
+                    {{-- ICON --}}
                     <x-editor.input-icon-select change-event="icon-changed" />
 
-                    <div class="grid grid-cols-3 gap-8">
+                    <div class="md:grid grid-cols-3 gap-8">
                         <div class="col-span-1">
                             <x-editor.input-color-select change-event="color-changed" default="#333" />
                         </div>

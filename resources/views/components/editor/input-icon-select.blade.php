@@ -1,6 +1,7 @@
 <div
     {{ $attributes->merge(['class' => 'mb-8 w-full']) }}
     x-data="InputIconSelect()">
+        <label for="" class="block font-bold mb-1">Select Icon</label>
         <select class="w-full" x-ref="select"></select>
 </div>
 
