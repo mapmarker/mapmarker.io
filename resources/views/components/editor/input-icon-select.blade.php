@@ -15,6 +15,7 @@
                     let selections = this.multiple ? this.value : [this.value]
 
                     $(this.$refs.select).select2({
+                        selectionCssClass: 'py-5 :all:',
                         multiple: this.multiple,
                         data: this.options.map(i => ({
                             id: i.value,
@@ -52,3 +53,12 @@
         }
     }
 </script>
+
+<style>
+    .select2-selection__arrow {
+        margin-top: 7px;
+    }
+    .select2-selection__rendered {
+        margin-top: -14px;
+    }
+</style>

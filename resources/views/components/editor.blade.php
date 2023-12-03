@@ -23,8 +23,15 @@
                     </h2>
 
                     <x-editor.input-icon-select change-event="icon-changed" />
-                    <x-editor.input-color-select change-event="color-changed" default="#333" />
-                    <x-editor.input-range change-event="size-changed" default="50" />
+
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="col-span-1">
+                            <x-editor.input-color-select change-event="color-changed" default="#333" />
+                        </div>
+                        <div class="col-span-2">
+                            <x-editor.input-range change-event="size-changed" default="50" />
+                        </div>
+                    </div>
                 </div>
 
                 {{-- PIN WITH ICON --}}
