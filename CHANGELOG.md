@@ -1,3 +1,18 @@
+# [1.49.0](https://github.com/mapmarker/mapmarker.io/compare/1.48.0...1.49.0) (2023-12-05)
+
+
+### Features
+
+* **documentation:** added movile navigation using select input ([18635b7](https://github.com/mapmarker/mapmarker.io/commit/18635b727f243786eb717b6d4c25c77dcb18f635))
+* **editor:** added more helpful headlines ([dbc8a6c](https://github.com/mapmarker/mapmarker.io/commit/dbc8a6c82c09da840512a0b6b62ad5a9ab1384e0))
+* **editor:** added searchable icon select input ([b26ea6e](https://github.com/mapmarker/mapmarker.io/commit/b26ea6efb4f746f5ea344cf426b43c0dceadf8e2))
+* **editor:** added working number input with range slider ([5488074](https://github.com/mapmarker/mapmarker.io/commit/5488074b0afffa570d42fe41e3d41f665229c8b6))
+* **editor:** limit editor to icon experience only for now ([dfe8b22](https://github.com/mapmarker/mapmarker.io/commit/dfe8b22545513795a05920a4984ef25df2510c0a))
+* **editor:** styled experrience selector ([abe0b34](https://github.com/mapmarker/mapmarker.io/commit/abe0b34b845d1ee7c34c0205b0e07afeef29dff7))
+* **editor:** working color picker ([26aee93](https://github.com/mapmarker/mapmarker.io/commit/26aee934563887af912938a523bcc256495361ca))
+* **editor:** working experience selector & dynamic icon example ([e20e37a](https://github.com/mapmarker/mapmarker.io/commit/e20e37af1b466e413758c262dcff8eb113f949d3))
+* **editor:** working number input and improved styling for icon selector ([11a8071](https://github.com/mapmarker/mapmarker.io/commit/11a80711b945e85114f9e3fb6b40a29231f7b03d))
+
 # [1.48.0](https://github.com/mapmarker/mapmarker.io/compare/1.47.0...1.48.0) (2023-11-10)
 
 
