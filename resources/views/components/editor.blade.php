@@ -8,10 +8,10 @@
         <div class="md:col-span-2 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
 
             {{-- EDITOR ICON STYLE SELECTOR --}}
-            <div class="mb-8">
+            {{-- <div class="mb-8">
                 <h2 class="font-bold text-xl mb-4">Pick what you want to create:</h2>
                 <x-editor.experience-selector />
-            </div>
+            </div> --}}
 
             {{-- CREATOR EXPERIENCES --}}
             <div class="mb-9">
@@ -54,8 +54,6 @@
             <div class="bg-gray-200 p-12 rounded-lg">
                 <img x-cloak :src="iconUrl()" alt="Preview" class="block mx-auto" />
             </div>
-
-            <div x-text="'Test: '+iconUrl()" class="text-white"></div>
         </div>
     </div>
 </div>
