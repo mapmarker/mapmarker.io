@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MapMarker</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    @section('scripts') @show
 </head>
 
 <body class="antialiased bg-zinc-900 p-2 md:p-10">
