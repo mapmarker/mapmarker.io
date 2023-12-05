@@ -8,6 +8,6 @@ class EditorController extends Controller
 {
     public function show(Request $request)
     {
-        return redirect('/');
+        return view('editor');
     }
 }
