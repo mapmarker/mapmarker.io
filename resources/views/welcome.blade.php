@@ -21,7 +21,7 @@
             <img src="/api/v3/font-awesome/v6/pin?text=A2&background=CE86F5&size=50" class="absolute left-3/4 top-1/3" alt="Stop #2 Icon" />
             <img src="/api/v3/font-awesome/v6/pin?text=A3&background=CE86F5&size=50" class="absolute left-1/2 top-[30px]" alt="Stop #3 Icon" />
             <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-truck&color=FFF&size=50" class="absolute left-1/3 top-1/3" alt="Truck #1 Icon" />
-            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-box&color=FFF&size=50&label=!" class="absolute left-[60%] top-2/3" alt="Truck #1 Icon" />
+            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-box&color=FFF&size=50&label=!&labelAnimation=blink&labelAnimationDuration=2s" class="absolute left-[60%] top-2/3" alt="Truck #1 Icon" />
             <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-house&color=FFF&size=50" class="absolute left-[15%] top-1/4" alt="Home" />
         </div>
     </div>
