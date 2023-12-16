@@ -1,3 +1,10 @@
+## [1.50.1](https://github.com/mapmarker/mapmarker.io/compare/1.50.0...1.50.1) (2023-12-16)
+
+
+### Bug Fixes
+
+* **homepage:** minor copy changes & layout improvements on mobile ([6376022](https://github.com/mapmarker/mapmarker.io/commit/63760226960970b1ae2b62167a6fd0617ca8fdec))
+
 # [1.50.0](https://github.com/mapmarker/mapmarker.io/compare/1.49.0...1.50.0) (2023-12-16)
 
 
