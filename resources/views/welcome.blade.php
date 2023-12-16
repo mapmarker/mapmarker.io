@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
         {{-- PETRONAS --}}
         <div class="text-left p-10 rounded-lg" style="background: linear-gradient(0deg, #0f0f10, #131314);">
             <svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="48 5 78 94" class="mb-2">
