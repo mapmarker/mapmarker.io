@@ -5,60 +5,88 @@
     @label-color-changed.window="labelColor = $event.detail.replace('#', '')"
     @size-changed.window="size = $event.detail"
     x-data="Editor()">
+        <div class="md:col-span-2">
 
-        <div class="md:col-span-2 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+            {{-- PANEL --}}
+            <div class="text-left p-10 rounded-lg mb-4" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
 
-            {{-- EDITOR ICON STYLE SELECTOR --}}
-            {{-- <div class="mb-8">
-                <h2 class="font-bold text-xl mb-4">Pick what you want to create:</h2>
-                <x-editor.experience-selector />
-            </div> --}}
+                {{-- EDITOR ICON STYLE SELECTOR --}}
+                {{-- <div class="mb-8">
+                    <h2 class="font-bold text-xl mb-4">Pick what you want to create:</h2>
+                    <x-editor.experience-selector />
+                </div> --}}
 
-            {{-- CREATOR EXPERIENCES --}}
-            <div class="mb-9">
-                {{-- PIN WITH TEXT --}}
+                {{-- CREATOR EXPERIENCES --}}
                 <div>
+                    {{-- PIN WITH TEXT --}}
+                    <div>
+                        <h2 class="font-bold text-xl mb-4">Icon</h2>
+                        {{-- ICON --}}
+                        <div class="grid grid-cols-1 grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <x-editor.input-icon-select change-event="icon-changed" />
+                            </div>
+                            <div>
+                                <x-editor.input-color-select change-event="color-changed" default="#333" />
+                            </div>
+                        </div>
+
+                        <x-editor.input-range change-event="size-changed" default="50" />
+                    </div>
+
+                    {{-- PIN WITH ICON --}}
+                    <div>
+                        {{-- @todo: implement this --}}
+                    </div>
 
                     {{-- ICON --}}
-                    <x-editor.input-icon-select change-event="icon-changed" />
+                    <div>
+                        {{-- @todo: implement this --}}
+                    </div>
 
-                    <div class="md:grid grid-cols-3 gap-8">
-                        <div class="col-span-1">
-                            <x-editor.input-color-select change-event="color-changed" default="#333" />
-                        </div>
-                        <div class="col-span-2">
-                            <x-editor.input-range change-event="size-changed" default="50" />
-                        </div>
+                    {{-- ICON STACK --}}
+                    <div>
+                        {{-- @todo: implement this --}}
+                    </div>
+                </div>
+            </div>
+
+            {{-- PANEL --}}
+            <div class="text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+                <h2 class="font-bold text-xl mb-4">Label</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 mb-8">
+                    <div>
+                        <label for="" class="block font-bold mb-1">Enable Label</label>
+                        <input type="checkbox" x-model="labelEnabled">
+                    </div>
+                    <div>
+                        <label for="" class="block font-bold mb-1">Label Text</label>
+                        <input type="text" x-model="labelText" class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
                     </div>
                 </div>
 
-                {{-- PIN WITH ICON --}}
-                <div>
-                    {{-- @todo: implement this --}}
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div>
+                        <x-editor.input-color-select change-event="label-color-changed" default="#D9534F" />
+                    </div>
+                    <div>
+                        <label for="" class="block font-bold mb-1">Animation</label>
+                        <select x-model="labelAnimation"  class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
+                            <option>none</option>
+                            <option>blink</option>
+                        </select>
+                    </div>
                 </div>
 
-                {{-- ICON --}}
-                <div>
-                    {{-- @todo: implement this --}}
-                </div>
 
-                {{-- ICON STACK --}}
-                <div>
-                    {{-- @todo: implement this --}}
-                </div>
 
-                {{-- LABEL --}}
-                <input type="checkbox" x-model="labelEnabled">
-                <input type="text" x-model="labelText">
-                <select x-model="labelAnimation">
-                    <option>none</option>
-                    <option>blink</option>
-                </select>
-                <x-editor.input-color-select change-event="label-color-changed" default="#D9534F" />
+
+
             </div>
-
         </div>
-        <div class="col-span-1 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+
+        <div class="col-span-1 text-left p-10 rounded-lg mb-4" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
             <h2 class="font-bold text-xl mb-4">Preview</h2>
 
             <div class="bg-gray-200 p-12 rounded-lg">
@@ -82,7 +110,7 @@
 
             // LABEL INPUTS
             labelEnabled: false,
-            labelText: '',
+            labelText: '!',
             labelAnimation: 'none',
             labelAnimationDuration: '2s',
             labelColor: 'D9534F',
