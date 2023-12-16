@@ -50,7 +50,7 @@
                         <td>v3</td>
                         <td>svg</td>
                         <td>2023</td>
-                        <td class="text-purple-400">BETA</td>
+                        <td class="text-green-400">Active Development</td>
                         <td>
                             We are working on SVG rendering for improved performance and appearance.
                         </td>
@@ -137,11 +137,11 @@
                         <td class="text-green-400">Yes</td>
                     </tr>
                     <tr>
-                        <td>Animations (In Development)</td>
+                        <td>Animations</td>
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
-                        <td class="text-green-400">Yes</td>
+                        <td class="text-orange-400">WIP</td>
                     </tr>
                 </tbody>
             </table>
