@@ -78,7 +78,7 @@
                         </select>
                     </div>
                     <div>
-                        <label for="" class="block font-bold mb-1">Animation Duration</label>
+                        <label for="" class="block font-bold mb-1">Duration</label>
                         <input type="text" x-model="labelAnimationDuration" class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
                     </div>
                 </div>
