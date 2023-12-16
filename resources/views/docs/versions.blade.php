@@ -127,14 +127,21 @@
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-green-400">Yes</td>
-                        <td class="text-gray-400">-</td>
+                        <td class="text-green-400">Yes</td>
                     </tr>
                     <tr>
                         <td>Improved Sizing</td>
                         <td class="text-red-400">No</td>
                         <td class="text-red-400">No</td>
                         <td class="text-green-400">Yes</td>
-                        <td class="text-gray-400">-</td>
+                        <td class="text-green-400">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Animations (In Development)</td>
+                        <td class="text-red-400">No</td>
+                        <td class="text-red-400">No</td>
+                        <td class="text-red-400">No</td>
+                        <td class="text-green-400">Yes</td>
                     </tr>
                 </tbody>
             </table>
