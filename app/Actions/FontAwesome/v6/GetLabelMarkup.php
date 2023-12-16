@@ -14,9 +14,9 @@ class GetLabelMarkup
         // GET LABEL
         $labelText = $request->get('label');
         $labelTextSize = $markerSize / 5;
-        $labelColor = $request->get('lc', '#D9534F');
+        $labelColor = '#'.$request->get('lc', 'D9534F');
         $labelFont = $request->get('lf', 'Arial');
-        $labelFontColor = $request->get('lfc', '#FFF');
+        $labelFontColor = '#'.$request->get('lfc', 'FFF');
 
         // LABEL ANIMATION
         $labelAnimation = $request->get('labelAnimation', null);
@@ -73,7 +73,7 @@ class GetLabelMarkup
 
         // GENERATE LABEL MARKUP
         $labelMarkup = '';
-        if ($labelText) {
+        if ($request->has('label')) {
             $labelMarkup = <<<EOD
             <!--! Icon Label -->
             <svg x="60%" y="60%" width="40%" height="40%" viewbox="0 0 100 100" class="labelAnimation">

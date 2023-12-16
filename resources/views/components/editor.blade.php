@@ -2,6 +2,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12"
     @icon-changed.window="iconName = $event.detail"
     @color-changed.window="color = $event.detail.replace('#', '')"
+    @label-color-changed.window="labelColor = $event.detail.replace('#', '')"
     @size-changed.window="size = $event.detail"
     x-data="Editor()">
 
@@ -45,6 +46,15 @@
                 <div>
                     {{-- @todo: implement this --}}
                 </div>
+
+                {{-- LABEL --}}
+                <input type="checkbox" x-model="labelEnabled">
+                <input type="text" x-model="labelText">
+                <select x-model="labelAnimation">
+                    <option>none</option>
+                    <option>blink</option>
+                </select>
+                <x-editor.input-color-select change-event="label-color-changed" default="#D9534F" />
             </div>
 
         </div>
@@ -61,13 +71,32 @@
 <script>
     function Editor() {
        return {
+
+            // EDITOR OPTIONS
+            experience: 'icon',
+
+            // ICON OPTIONS
             size: 50,
             iconName: 'fa-solid fa-map-location',
             color: '333',
-            experience: 'icon',
+
+            // LABEL INPUTS
+            labelEnabled: false,
+            labelText: '',
+            labelAnimation: 'none',
+            labelAnimationDuration: '2s',
+            labelColor: 'D9534F',
+
 
             iconUrl() {
-                return '/api/v3/font-awesome/v6/icon?size='+this.size+'&icon='+this.iconName+'&color='+this.color;
+                var iconUrl = '/api/v3/font-awesome/v6/icon?size='+this.size+'&icon='+this.iconName+'&color='+this.color;
+
+                // ADD LABEL
+                if(this.labelEnabled) {
+                    var label = this.labelText ? this.labelText : '%20';
+                    iconUrl = iconUrl + '&label=' + label + '&labelAnimation='+this.labelAnimation+'&lc='+this.labelColor
+                }
+                return iconUrl;
             }
         }
     }
