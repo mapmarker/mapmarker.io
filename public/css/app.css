@@ -1389,6 +1389,15 @@ select {
 .h-\[300px\] {
   height: 300px;
 }
+.h-\[3250px\] {
+  height: 3250px;
+}
+.h-\[250px\] {
+  height: 250px;
+}
+.h-\[200px\] {
+  height: 200px;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2154,6 +2163,10 @@ select {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[350px\] {
+    height: 350px;
   }
 
   .md\:grid-cols-3 {
