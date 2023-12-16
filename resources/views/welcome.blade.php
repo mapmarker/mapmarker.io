@@ -11,7 +11,7 @@
                 Custom map markers for your app
             </h1>
             <p class="text-xl mt-6">
-                Simplify map-based experiences with better icons.
+                Simplify creating better icons for your users.
             </p>
         </div>
 
