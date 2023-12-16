@@ -17,7 +17,7 @@
                         </div>
 
                         {{-- MAP --}}
-                        <div class="perspective-800 h-[300px] overflow-hidden relative">
+                        <div class="perspective-800 h-[200px] md:h-[350px] overflow-hidden relative">
                             <img src="{{ asset('/images/map.png') }}" class="w-full transform rotate-x-45 drop-shadow-xl mx-auto opacity-20 absolute left-0 -top-[20vw]">
 
                             <img src="/api/v3/font-awesome/v6/pin?text=A1&background=CE86F5&size=50" class="absolute left-1/4 top-2/3" alt="Stop #1 Icon" />
@@ -116,7 +116,7 @@
                     The Tafel supports 1.6 to 2 million people in need of food throughout the country of Germany – nearly one third of them are children and youth.
                 </p>
                 <p>
-                    The Tafel leverages MapMarker.io as part of their digitization efforts to simplify the coordination across teams running food collection amd distibution routes.
+                    The Tafel leverages MapMarker.io as part of their digitization efforts to simplify the coordination across teams running food collection and distibution routes.
                 </p>
             </div>
 
