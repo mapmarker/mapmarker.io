@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/mapmarker/mapmarker.io/compare/1.50.1...1.51.0) (2023-12-16)
+
+
+### Features
+
+* **homepage:** added more users to the homepage ([4a1bdb9](https://github.com/mapmarker/mapmarker.io/commit/4a1bdb91e875974104cf461f332f776892aa0205))
+
 ## [1.50.1](https://github.com/mapmarker/mapmarker.io/compare/1.50.0...1.50.1) (2023-12-16)
 
 
