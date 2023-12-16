@@ -1,3 +1,10 @@
+# [1.50.0](https://github.com/mapmarker/mapmarker.io/compare/1.49.0...1.50.0) (2023-12-16)
+
+
+### Features
+
+* **homepage:** updated homepage copy ([f94d328](https://github.com/mapmarker/mapmarker.io/commit/f94d32855cb10cf91d85ca48cca8a5f043d46b02))
+
 # [1.49.0](https://github.com/mapmarker/mapmarker.io/compare/1.48.0...1.49.0) (2023-12-05)
 
 
