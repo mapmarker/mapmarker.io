@@ -191,7 +191,7 @@
 
         {{-- TRANS-SYSTEM --}}
         <div class="text-left p-10 rounded-lg" style="background: linear-gradient(0deg, #0f0f10, #131314);">
-            <img src="https://www.trans-system.com/wp-content/uploads/2019/02/Trans-System_Logo_RGB_White-50px.png" height="60" class="mb-4" alt="Trans-System Logo">
+            <img src="https://www.trans-system.com/wp-content/uploads/2019/02/Trans-System_Logo_RGB_White-50px.png" height="60" class="mb-4 opacity-75" alt="Trans-System Logo">
             <div class="text-2xl font-black mb-4">Trans-System</div>
             <div class="mb-5">
                 <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded-full uppercase">Trucking</span>
