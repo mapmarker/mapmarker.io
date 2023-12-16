@@ -1566,11 +1566,11 @@
   resolved "https://codeload.github.com/semantic-release/github/tar.gz/1482296e2c755783115818bf234b0c51d9ada071"
   dependencies:
     "@octokit/core" "^5.0.0"
-    "@octokit/plugin-paginate-rest" "^9.0.0"
+    "@octokit/plugin-paginate-rest" "^8.0.0"
     "@octokit/plugin-retry" "^6.0.0"
-    "@octokit/plugin-throttling" "^8.0.0"
+    "@octokit/plugin-throttling" "^7.0.0"
     "@semantic-release/error" "^4.0.0"
-    aggregate-error "^5.0.0"
+    aggregate-error "^4.0.1"
     debug "^4.3.4"
     dir-glob "^3.0.1"
     globby "^13.1.4"
@@ -1621,16 +1621,16 @@
   version "0.0.0-development"
   resolved "https://codeload.github.com/semantic-release/release-notes-generator/tar.gz/8c47240552f6a7886624cc42702f0aef8022ca96"
   dependencies:
-    conventional-changelog-angular "^7.0.0"
-    conventional-changelog-writer "^7.0.0"
-    conventional-commits-filter "^4.0.0"
-    conventional-commits-parser "^5.0.0"
+    conventional-changelog-angular "^6.0.0"
+    conventional-changelog-writer "^6.0.0"
+    conventional-commits-filter "^3.0.0"
+    conventional-commits-parser "^4.0.0"
     debug "^4.0.0"
     get-stream "^7.0.0"
-    import-from-esm "^1.0.3"
+    import-from "^4.0.0"
     into-stream "^7.0.0"
     lodash-es "^4.17.21"
-    read-pkg-up "^11.0.0"
+    read-pkg-up "^10.0.0"
 
 "@tailwindcss/forms@^0.5.2":
   version "0.5.6"
@@ -2090,6 +2090,11 @@
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@webpack-cli/serve/-/serve-1.7.0.tgz#e1993689ac42d2b16e9194376cfb6753f6254db1"
   integrity sha512-oxnCNGj88fL+xzV+dacXs44HcDwf1ovs3AuEzvP7mqXw7fQntqIhQ1BRmynh4qEKQSSSRSWVyXRjmTbZIX9V2Q==
+
+"@xpd/tailwind-3dtransforms@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@xpd/tailwind-3dtransforms/-/tailwind-3dtransforms-1.0.3.tgz#71871c860943f81333473006b2af88ac49d19233"
+  integrity sha512-LEKfNj57djZAucQ1itu/zinRkYnkhzNjAMhz8DkbguTyBcTDHF1R6CuXO536BFE/YGyHDCYd7tDF5ghSrViUgQ==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
