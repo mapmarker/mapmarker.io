@@ -1,3 +1,12 @@
+# [1.52.0](https://github.com/mapmarker/mapmarker.io/compare/1.51.0...1.52.0) (2023-12-16)
+
+
+### Features
+
+* **editor:** added labels with animation support ([cafafc4](https://github.com/mapmarker/mapmarker.io/commit/cafafc4175d35f149e1ca5d2fd073dc888c09188))
+* **label animations:** added blinking label to homepage showcase ([aaa1b34](https://github.com/mapmarker/mapmarker.io/commit/aaa1b34e53e8c0490b9bebbe28cfb4854268c522))
+* **label animations:** added POC label "blink" animation for map markers ([ab9c6f9](https://github.com/mapmarker/mapmarker.io/commit/ab9c6f98487fbb517c018a0aade94039ce00b8aa))
+
 # [1.51.0](https://github.com/mapmarker/mapmarker.io/compare/1.50.1...1.51.0) (2023-12-16)
 
 
