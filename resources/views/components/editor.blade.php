@@ -75,6 +75,7 @@
                         <select x-model="labelAnimation"  class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
                             <option>none</option>
                             <option>blink</option>
+                            <option>pulse</option>
                         </select>
                     </div>
                     <div>
