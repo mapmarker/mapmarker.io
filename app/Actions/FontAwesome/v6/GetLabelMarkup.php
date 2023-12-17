@@ -21,55 +21,7 @@ class GetLabelMarkup
         // LABEL ANIMATION
         $labelAnimation = $request->get('labelAnimation', null);
         $labelAnimationDuration = $request->get('labelAnimationDuration', '1s');
-        $labelAnimationMarkup = null;
-
-        if ($labelAnimation == 'blink') {
-            $labelAnimationMarkup = <<<EOD
-                <style>
-
-                    @keyframes blink {
-                        0% {
-                            opacity: 1;
-                        }
-                        49% {
-                            opacity: 1;
-                        }
-                        50% {
-                            opacity: 0;
-                        }
-                        99% {
-                            opacity: 0;
-                        }
-                        100% {
-                            opacity: 1;
-                        }
-                    }
-
-                    @-webkit-keyframes blink {
-                        0% {
-                            opacity: 1;
-                        }
-                        49% {
-                            opacity: 1;
-                        }
-                        50% {
-                            opacity: 0;
-                        }
-                        99% {
-                            opacity: 0;
-                        }
-                        100% {
-                            opacity: 1;
-                        }
-                     }
-
-                    .labelAnimation {
-                        animation: blink {$labelAnimationDuration} linear infinite;
-                        -webkit-animation: blink {$labelAnimationDuration} linear infinite;
-                    }
-                    </style>
-            EOD;
-        }
+        $labelAnimationMarkup = GetLabelAnimationMarkup::run($labelAnimation, $labelAnimationDuration);
 
         // GENERATE LABEL MARKUP
         $labelMarkup = '';
