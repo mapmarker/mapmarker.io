@@ -22,7 +22,7 @@
                     <div>
                         <h2 class="font-bold text-xl mb-4">Icon</h2>
                         {{-- ICON --}}
-                        <div class="grid grid-cols-1 grid-cols-2 gap-8 mb-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                             <div>
                                 <x-editor.input-icon-select change-event="icon-changed" />
                             </div>

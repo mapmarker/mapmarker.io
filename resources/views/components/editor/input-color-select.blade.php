@@ -8,10 +8,10 @@
 }" x-init="$watch('colorSelected', value => colorChanged())" x-cloak>
     <div>
         <div class="mb-5">
-            <div class="flex items-center">
-                <div>
+            <div class="flex items-center w-full">
+                <div class="w-full">
                     <label for="colorSelected" class="block font-bold mb-1">Select Color</label>
-                    <input id="colorSelected" type="text" placeholder="Pick a color" x-on:change="colorChanged" class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline" x-model="colorSelected">
+                    <input id="colorSelected" type="text" placeholder="Pick a color" x-on:change="colorChanged" class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full" x-model="colorSelected">
                 </div>
                 <div class="relative ml-3 mt-8">
 
