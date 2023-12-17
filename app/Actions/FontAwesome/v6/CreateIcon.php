@@ -12,8 +12,16 @@ class CreateIcon
     {
         return <<<EOD
         <svg fill="{$markerColor}" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" width="{$markerSize}" height="{$markerSize}">
-            <!--! Generated with MapMarker.io - https://mapmarker.io License - https://www.mapmarker.io/license -->
-            {$iconMarkup} {$labelMarkup}
+
+            <!--
+                Generated with MapMarker.io
+                https://mapmarker.io
+                License: https://www.mapmarker.io/license
+            -->
+
+            {$iconMarkup}
+
+            {$labelMarkup}
         </svg>
         EOD;
     }

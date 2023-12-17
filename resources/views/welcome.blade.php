@@ -20,9 +20,53 @@
             <img src="/api/v3/font-awesome/v6/pin?text=A1&background=CE86F5&size=50" class="absolute left-1/4 top-2/3" alt="Stop #1 Icon" />
             <img src="/api/v3/font-awesome/v6/pin?text=A2&background=CE86F5&size=50" class="absolute left-3/4 top-1/3" alt="Stop #2 Icon" />
             <img src="/api/v3/font-awesome/v6/pin?text=A3&background=CE86F5&size=50" class="absolute left-1/2 top-[30px]" alt="Stop #3 Icon" />
-            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-truck&color=FFF&size=50" class="absolute left-1/3 top-1/3" alt="Truck #1 Icon" />
-            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-box&color=FFF&size=50&label=!&labelAnimation=blink&labelAnimationDuration=2s" class="absolute left-[60%] top-2/3" alt="Truck #1 Icon" />
-            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-house&color=FFF&size=50" class="absolute left-[15%] top-1/4" alt="Home" />
+            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-truck-fast&color=FFF&size=40&label=&labelAnimation=ping&labelAnimationDuration=2s&lc=4CAF50" class="absolute drive" alt="Truck #1 Icon" />
+            <style>
+                @keyframes drive {
+                    0% {
+                        top: 25%;
+                        left: 25%;
+                        transform: scale(1, 1);
+                    }
+
+                    25% {
+                        top: 40%;
+                        left: 25%;
+                        transform: scale(1, 1);
+                    }
+
+                    50% {
+                        top:40%;
+                        left: 33%;
+                        transform: scale(1, 1);
+                    }
+                    51% {
+                        top:40%;
+                        left: 33%;
+                        transform: scale(-1, 1);
+                    }
+
+                    75% {
+                        top: 40%;
+                        left: 25%;
+                        transform: scale(-1, 1);
+                    }
+
+                    100% {
+                        top: 25%;
+                        left: 25%;
+                        transform: scale(-1, 1);
+                    }
+                }
+
+                .drive {
+                    top: 25%;
+                    left: 25%;
+                    animation: drive 45s linear 500ms infinite
+                }
+            </style>
+            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-box&color=FFF&size=50&label=!&labelAnimation=ping&labelAnimationDuration=2s" class="absolute left-[60%] top-2/3" alt="Package Animated Icon" />
+            <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-house&color=FFF&size=30" class="absolute left-[15%] top-1/4" alt="Home" />
         </div>
     </div>
 
@@ -213,10 +257,10 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
 
         {{-- PINS --}}
-        <div class="text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+        <div class="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
             <div class="mb-4">
                 <img src="/api/v3/font-awesome/v6/pin?text=A&background=992DE5&size=50" class="inline h-12 m-0" />
                 <img src="/api/v3/font-awesome/v6/pin?text=AC&background=BC5AF4&size=50" class="inline h-12 m-0" />
@@ -227,11 +271,11 @@
                 Create pins that look native to any map but contain more contextual information for your users.
             </p>
             <a href="/documentation/font-awesome/v6/pins" class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Get Started
+                Read More
             </a>
         </div>
         {{-- ICONS --}}
-        <div class="text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+        <div class="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
             <div class="mb-4">
                 <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-users&color=992DE5&size=50" class="inline h-12 m-0 mx-1" />
                 <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-box&color=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
@@ -242,11 +286,11 @@
                 When simplicity and a minimal look are the goal. Simple icons as map markers are a good go-to.
             </p>
             <a href="/documentation/font-awesome/v6/icons" class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Get Started
+                Read More
             </a>
         </div>
         {{-- ICON STACKS --}}
-        <div class="text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+        <div class="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
             <div class="mb-4">
                 <img src="/api/v3/font-awesome/v6/icon-stack?size=64&icon=fa-solid+fa-location&color=171719&on=fa-solid+fa-map&oncolor=992DE5&iconsize=14&hoffset=23&voffset=8" class="inline h-12 m-0 mx-1" />
                 <img src="/api/v3/font-awesome/v6/icon-stack?size=64&icon=fa-brands+fa-amazon&color=171719&on=fa-solid+fa-truck&oncolor=BC5AF4&iconsize=30&voffset=-6&hoffset=-11" class="inline h-12 m-0 mx-1" />
@@ -257,7 +301,22 @@
                 You can layer your favorite icons to create unique icons tailored to your application and branding.
             </p>
             <a href="/documentation/font-awesome/v6/icon-stacks" class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Get Started
+                Read More
+            </a>
+        </div>
+        {{-- INTEGRATIONS --}}
+        <div class="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1 text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
+            <div class="mb-4">
+                <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-rocket&color=992DE5&size=50" class="inline h-12 m-0 mx-1" />
+                <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-rocket&color=BC5AF4&size=50" class="inline h-12 m-0 mx-1" />
+                <img src="/api/v3/font-awesome/v6/icon?icon=fa-solid+fa-rocket&color=CE86F5&size=50" class="inline-block h-12 m-0 mx-1" />
+            </div>
+            <div class="text-2xl font-black mb-4">Integration Guides</div>
+            <p>
+                Ready to use our icons to make your apps better? Follow these guides to use them in your preferred mapping SDK.
+            </p>
+            <a href="/documentation/integrations" class="no-underline -mb-4 mt-4 inline-block px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Read More
             </a>
         </div>
 

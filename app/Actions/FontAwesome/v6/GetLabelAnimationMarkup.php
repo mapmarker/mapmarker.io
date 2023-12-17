@@ -10,10 +10,13 @@ class GetLabelAnimationMarkup
 
     const ANIMATION_BLINK = 'blink';
 
+    const ANIMATION_PING = 'ping';
+
     const ANIMATION_PULSE = 'pulse';
 
     const ANIMATIONS = [
         self::ANIMATION_BLINK,
+        self::ANIMATION_PING,
         self::ANIMATION_PULSE,
     ];
 
@@ -86,6 +89,24 @@ class GetLabelAnimationMarkup
                         animation-duration: {$animationDuration};
                         animation-iteration-count: infinite;
                         animation-direction: alternate;
+                    }
+                </style>
+            EOD;
+        } elseif ($animation == self::ANIMATION_PING) {
+            return  <<<EOD
+                <style>
+
+                    @keyframes ping {
+                        0%, 5% {
+                            opacity: 1;
+                        }
+                        70%, 100% {
+                            opacity: 0;
+                        }
+                    }
+
+                    .labelAnimation {
+                        animation: ping {$animationDuration} cubic-bezier(0, 0, 0.2, 1) infinite;
                     }
                 </style>
             EOD;
