@@ -1,3 +1,23 @@
+# [1.54.0](https://github.com/mapmarker/mapmarker.io/compare/1.53.0...1.54.0) (2023-12-17)
+
+
+### Features
+
+* **documentation:** upgraded docs for animated icons ([2cc472a](https://github.com/mapmarker/mapmarker.io/commit/2cc472ad361703f53f64baf2ce1291a18b90d174))
+
+# [1.53.0](https://github.com/mapmarker/mapmarker.io/compare/1.52.0...1.53.0) (2023-12-17)
+
+
+### Bug Fixes
+
+* **editoor:** fix responsive layout for icon inputs ([0d2d42c](https://github.com/mapmarker/mapmarker.io/commit/0d2d42c3d5d487e89aec6f554f4626beb6daf850))
+
+
+### Features
+
+* **editor:** add support for animation duration parameter ([52c579c](https://github.com/mapmarker/mapmarker.io/commit/52c579c5b4563211008a76e76701825c501ed17d))
+* **label animations:** added pulse animation ([251a0ad](https://github.com/mapmarker/mapmarker.io/commit/251a0adc47de37522a70dc1d502449b316966f2e))
+
 # [1.52.0](https://github.com/mapmarker/mapmarker.io/compare/1.51.0...1.52.0) (2023-12-16)
 
 

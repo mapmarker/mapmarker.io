@@ -22,7 +22,7 @@
                     <div>
                         <h2 class="font-bold text-xl mb-4">Icon</h2>
                         {{-- ICON --}}
-                        <div class="grid grid-cols-1 grid-cols-2 gap-8 mb-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                             <div>
                                 <x-editor.input-icon-select change-event="icon-changed" />
                             </div>
@@ -55,7 +55,7 @@
             <div class="text-left p-10 rounded-lg" style="background: linear-gradient(145deg, #0f0f10, #171719, #171719, #171719);">
                 <h2 class="font-bold text-xl mb-4">Label</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     <div>
                         <label for="" class="block font-bold mb-1">Enable Label</label>
                         <input type="checkbox" x-model="labelEnabled">
@@ -66,23 +66,24 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="md:col-span-2">
                         <x-editor.input-color-select change-event="label-color-changed" default="#D9534F" />
                     </div>
                     <div>
                         <label for="" class="block font-bold mb-1">Animation</label>
                         <select x-model="labelAnimation"  class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
                             <option>none</option>
-                            <option>blink</option>
+                            @foreach($labelAnimationOptions as $labelAnimationOption)
+                            <option>{{ $labelAnimationOption }}</option>
+                            @endforeach
                         </select>
                     </div>
+                    <div>
+                        <label for="" class="block font-bold mb-1">Duration</label>
+                        <input type="text" x-model="labelAnimationDuration" class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
+                    </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
 
@@ -122,7 +123,7 @@
                 // ADD LABEL
                 if(this.labelEnabled) {
                     var label = this.labelText ? this.labelText : '%20';
-                    iconUrl = iconUrl + '&label=' + label + '&labelAnimation='+this.labelAnimation+'&lc='+this.labelColor
+                    iconUrl = iconUrl + '&label=' + label + '&labelAnimation='+this.labelAnimation+'&labelAnimationDuration='+this.labelAnimationDuration+'&lc='+this.labelColor
                 }
                 return iconUrl;
             }

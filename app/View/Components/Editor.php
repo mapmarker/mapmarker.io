@@ -2,10 +2,13 @@
 
 namespace App\View\Components;
 
+use App\Actions\FontAwesome\v6\GetLabelAnimationMarkup;
 use Illuminate\View\Component;
 
 class Editor extends Component
 {
+    public $labelAnimationOptions;
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +16,7 @@ class Editor extends Component
      */
     public function __construct()
     {
-        //
+        $this->labelAnimationOptions = GetLabelAnimationMarkup::ANIMATIONS;
     }
 
     /**
