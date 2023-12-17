@@ -8,9 +8,18 @@ class GetLabelAnimationMarkup
 {
     use AsAction;
 
-    public function handle(string $animation, string $animationDuration)
+    const ANIMATION_BLINK = 'blink';
+
+    const ANIMATION_PULSE = 'pulse';
+
+    const ANIMATIONS = [
+        self::ANIMATION_BLINK,
+        self::ANIMATION_PULSE,
+    ];
+
+    public function handle(string $animation = null, string $animationDuration = '1s')
     {
-        if ($animation == 'blink') {
+        if ($animation == self::ANIMATION_BLINK) {
             return  <<<EOD
                 <style>
 
@@ -56,7 +65,7 @@ class GetLabelAnimationMarkup
                     }
                 </style>
             EOD;
-        } elseif ($animation == 'pulse') {
+        } elseif ($animation == self::ANIMATION_PULSE) {
             return  <<<EOD
                 <style>
 

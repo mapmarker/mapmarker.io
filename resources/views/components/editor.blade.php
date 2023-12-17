@@ -74,8 +74,9 @@
                         <label for="" class="block font-bold mb-1">Animation</label>
                         <select x-model="labelAnimation"  class="border border-transparent shadow px-4 py-2 leading-normal text-gray-700 bg-white rounded-md focus:outline-none focus:shadow-outline w-full">
                             <option>none</option>
-                            <option>blink</option>
-                            <option>pulse</option>
+                            @foreach($labelAnimationOptions as $labelAnimationOption)
+                            <option>{{ $labelAnimationOption }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div>

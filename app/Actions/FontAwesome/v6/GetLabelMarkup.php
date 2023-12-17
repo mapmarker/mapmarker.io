@@ -28,7 +28,7 @@ class GetLabelMarkup
         if ($request->has('label')) {
             $labelMarkup = <<<EOD
             <!--! Icon Label -->
-            <svg x="70%" y="70%" width="30%" height="30%" viewbox="0 0 100 100" class="labelAnimation">
+            <svg x="60%" y="60%" width="40%" height="40%" viewbox="0 0 100 100" class="labelAnimation">
                 <circle cx="50%" cy="50%" fill="{$labelColor}" r="50%" />
                 <text x="50%" y="50%" fill="{$labelFontColor}" text-anchor="middle" dy=".3em" font-size="{$labelTextSize}" font-family="{$labelFont}">{$labelText}</text>
                 {$labelAnimationMarkup}
