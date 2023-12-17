@@ -1,3 +1,10 @@
+# [1.54.0](https://github.com/mapmarker/mapmarker.io/compare/1.53.0...1.54.0) (2023-12-17)
+
+
+### Features
+
+* **documentation:** upgraded docs for animated icons ([2cc472a](https://github.com/mapmarker/mapmarker.io/commit/2cc472ad361703f53f64baf2ce1291a18b90d174))
+
 # [1.53.0](https://github.com/mapmarker/mapmarker.io/compare/1.52.0...1.53.0) (2023-12-17)
 
 
