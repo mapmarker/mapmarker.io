@@ -11,6 +11,7 @@
 </head>
 
 <body class="antialiased bg-zinc-900 p-2 md:p-10">
+    <x-buy-me-a-coffee-banner />
     @section('nav') @show
     <div class="min-h-screen">
         @section('content') @show
