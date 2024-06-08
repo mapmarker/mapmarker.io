@@ -1,3 +1,10 @@
+# [1.56.0](https://github.com/mapmarker/mapmarker.io/compare/1.55.0...1.56.0) (2024-06-08)
+
+
+### Features
+
+* **website:** added support banner ([717a5f9](https://github.com/mapmarker/mapmarker.io/commit/717a5f9a9e5705bb247ab3aa93eaeaca79cadf8b))
+
 # [1.55.0](https://github.com/mapmarker/mapmarker.io/compare/1.54.0...1.55.0) (2024-06-01)
 
 
