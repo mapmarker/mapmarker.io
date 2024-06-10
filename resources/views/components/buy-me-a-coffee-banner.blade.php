@@ -1,12 +1,12 @@
 <div class="container mx-auto px-2 mt-2 md:-mt-4 mb-2">
-    <div class="bg-[#FFDE02] px-4 py-5 rounded-lg">
-        <div class="flex">
+    <div class="bg-[#FFDE02] px-2 py-4 md:py-5 rounded-lg">
+        <div class="flex items-center">
             <div class="flex-grow md:pr-4">
                 <div class="block md:hidden">
-                    <strong>Support MapMarker.io Today!</strong>
+                    <strong>Support MapMarker.io!</strong>
                 </div>
                 <div class="hidden md:block">
-                    <strong>You can now support the server running cost of MapMarker.io.</strong> We will remain free for any traffic volume.
+                    <strong>You can now support the server cost and future development of MapMarker.io.</strong> We will remain free for everyone at any traffic volume.
                 </div>
             </div>
             <div class="flex-0">
