@@ -1,3 +1,10 @@
+# [1.57.0](https://github.com/mapmarker/mapmarker.io/compare/1.56.0...1.57.0) (2024-06-10)
+
+
+### Features
+
+* **website:** improved support branner on mobile devices ([dd8b3be](https://github.com/mapmarker/mapmarker.io/commit/dd8b3be2c7bda04a60ea3e13dc86b3eb096e1ff7))
+
 # [1.56.0](https://github.com/mapmarker/mapmarker.io/compare/1.55.0...1.56.0) (2024-06-08)
 
 
