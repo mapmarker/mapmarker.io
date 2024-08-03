@@ -75,7 +75,7 @@
         <div class="rounded-lg">
             <div class="rounded-lg text-right p-6" style="background: linear-gradient(0deg, #0f0f10, #131314);">
                 <div class="text-3xl lg:text-5xl font-bold">
-                    200,000
+                    240,000
                 </div>
                 <p class="text-sm mt-2">
                     People see one of our markers every month
@@ -85,7 +85,7 @@
         <div class="rounded-lg">
             <div class="rounded-lg text-right p-6" style="background: linear-gradient(0deg, #0f0f10, #131314);">
                 <div class="text-3xl lg:text-5xl font-bold">
-                    10,000,000
+                    11,000,000
                 </div>
                 <p class="text-sm mt-2">
                     Markers are used to improve maps every month
