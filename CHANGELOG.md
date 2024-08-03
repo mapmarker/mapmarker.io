@@ -1,3 +1,10 @@
+# [1.58.0](https://github.com/mapmarker/mapmarker.io/compare/1.57.0...1.58.0) (2024-08-03)
+
+
+### Features
+
+* **homepage:** updated usage statistics ([3f0603f](https://github.com/mapmarker/mapmarker.io/commit/3f0603f0a9a02290c0d8bd089213979c115bdec7))
+
 # [1.57.0](https://github.com/mapmarker/mapmarker.io/compare/1.56.0...1.57.0) (2024-06-10)
 
 
