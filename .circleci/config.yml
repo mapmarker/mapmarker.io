@@ -182,7 +182,9 @@ jobs:
 
       - run:
           name: Start Chrome Driver
-          command: ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver
+          command: |
+            chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver
+            ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver
           background: true
 
       - run:
