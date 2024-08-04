@@ -188,6 +188,10 @@ jobs:
           background: true
 
       - run:
+          name: Dectect Chrome Driver
+          command: php artisan dusk:chrome-driver --detect
+
+      - run:
           name: Run Browser Tests
           command: php artisan dusk
 
