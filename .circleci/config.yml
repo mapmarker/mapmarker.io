@@ -183,13 +183,10 @@ jobs:
       - run:
           name: Start Chrome Driver
           command: |
-            chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver
-            ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver
+            mv ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver ./vendor/laravel/dusk/bin/chromedriver-linux
+            chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux
+            ./vendor/laravel/dusk/bin/chromedriver-linux
           background: true
-
-      - run:
-          name: Dectect Chrome Driver
-          command: php artisan dusk:chrome-driver --detect
 
       - run:
           name: Run Browser Tests
