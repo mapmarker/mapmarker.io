@@ -1,3 +1,23 @@
+## [1.58.1](https://github.com/mapmarker/mapmarker.io/compare/1.58.0...1.58.1) (2024-08-04)
+
+
+### Bug Fixes
+
+* **ci:** download chrome driver to /tmp dir ([e098618](https://github.com/mapmarker/mapmarker.io/commit/e0986184c9435ad078653e1aa756cb0f430883df))
+* **ci:** make add exececute permission to chromedriver executable ([aadb313](https://github.com/mapmarker/mapmarker.io/commit/aadb3138099716b72291de369f3430275372f10c))
+* **ci:** move chrome driver executable to path that dusk ChromeProcess expects it to be ([166ffcd](https://github.com/mapmarker/mapmarker.io/commit/166ffcd996c46ff7de6faa661c31989e18e5e6a1))
+* **ci:** run chrome driver detection after launch ([d9f9052](https://github.com/mapmarker/mapmarker.io/commit/d9f9052f2467ca3015230cd8b13f9df340964da1))
+* **ci:** update chromedriver path ([0c5ca6b](https://github.com/mapmarker/mapmarker.io/commit/0c5ca6bb35a837f0baee803e47925c2837643da0))
+* **ci:** update chromedriver path to point to executable ([a741f90](https://github.com/mapmarker/mapmarker.io/commit/a741f90190575b41ac633638d85d08890574d5e5))
+* **ci:** update laravel dusk ([3cf33f6](https://github.com/mapmarker/mapmarker.io/commit/3cf33f6db975b16a7ebd3383fc88f37ff9e25e34))
+
+# [1.58.0](https://github.com/mapmarker/mapmarker.io/compare/1.57.0...1.58.0) (2024-08-03)
+
+
+### Features
+
+* **homepage:** updated usage statistics ([3f0603f](https://github.com/mapmarker/mapmarker.io/commit/3f0603f0a9a02290c0d8bd089213979c115bdec7))
+
 # [1.57.0](https://github.com/mapmarker/mapmarker.io/compare/1.56.0...1.57.0) (2024-06-10)
 
 

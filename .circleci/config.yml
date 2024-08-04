@@ -163,8 +163,8 @@ jobs:
       - run:
           name: Setup Chrome
           command: |
-            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-            sudo apt install ./google-chrome-stable_current_amd64.deb
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --directory-prefix=/tmp/
+            sudo apt install /tmp/google-chrome-stable_current_amd64.deb
 
       - run:
           name: "Prepare"
@@ -182,7 +182,10 @@ jobs:
 
       - run:
           name: Start Chrome Driver
-          command: ./vendor/laravel/dusk/bin/chromedriver-linux
+          command: |
+            mv ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver ./vendor/laravel/dusk/bin/chromedriver-linux
+            chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux
+            ./vendor/laravel/dusk/bin/chromedriver-linux
           background: true
 
       - run:
