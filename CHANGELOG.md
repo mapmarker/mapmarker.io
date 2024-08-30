@@ -1,3 +1,10 @@
+# [1.60.0](https://github.com/mapmarker/mapmarker.io/compare/1.59.0...1.60.0) (2024-08-30)
+
+
+### Features
+
+* **ci:** use latest circleci remote docker images ([8823a4a](https://github.com/mapmarker/mapmarker.io/commit/8823a4a70af58eab1133c80af0eb72dbfb018efc))
+
 # [1.59.0](https://github.com/mapmarker/mapmarker.io/compare/1.58.2...1.59.0) (2024-08-30)
 
 
