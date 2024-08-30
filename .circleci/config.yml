@@ -199,7 +199,7 @@ jobs:
     <<: *defaults
     steps:
       - setup_remote_docker:
-          version: 20.10.14
+          version: default
       - attach_workspace:
           at: /home/circleci
       - checkout
@@ -211,7 +211,7 @@ jobs:
     <<: *defaults
     steps:
       - setup_remote_docker:
-          version: 20.10.14
+          version: default
       - attach_workspace:
           at: /home/circleci
       - checkout
@@ -223,7 +223,7 @@ jobs:
     <<: *defaults
     steps:
       - setup_remote_docker:
-          version: 20.10.14
+          version: default
       - attach_workspace:
           at: /home/circleci
       - checkout
