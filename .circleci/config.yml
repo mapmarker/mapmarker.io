@@ -185,7 +185,7 @@ jobs:
           command: |
             mv ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver ./vendor/laravel/dusk/bin/chromedriver-linux
             chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux
-            ./vendor/laravel/dusk/bin/chromedriver-linux
+            ./vendor/laravel/dusk/bin/chromedriver-linux --port=9515
           background: true
 
       - run:

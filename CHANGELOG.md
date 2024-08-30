@@ -1,3 +1,17 @@
+# [1.59.0](https://github.com/mapmarker/mapmarker.io/compare/1.58.2...1.59.0) (2024-08-30)
+
+
+### Features
+
+* **analytics:** added google analytics to documentation site ([eb66e93](https://github.com/mapmarker/mapmarker.io/commit/eb66e9325cf3a15594ce596af0e1b7f73cbefed6))
+
+## [1.58.2](https://github.com/mapmarker/mapmarker.io/compare/1.58.1...1.58.2) (2024-08-30)
+
+
+### Bug Fixes
+
+* **browser tests:** launch chromedriver with explicit port value ([4a7d759](https://github.com/mapmarker/mapmarker.io/commit/4a7d75917e3c53a5906eccdcc01b7b0a9bd9fd79))
+
 ## [1.58.1](https://github.com/mapmarker/mapmarker.io/compare/1.58.0...1.58.1) (2024-08-04)
 
 
