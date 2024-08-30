@@ -3,7 +3,7 @@
     "description": "generate complex map markers on the fly",
     "homepage": "https://www.mapmarker.io",
     "license": "MIT",
-    "version": "1.58.2",
+    "version": "1.59.0",
     "scripts": {
         "pint": "./vendor/bin/pint",
         "style": "yarn pint -v --test",

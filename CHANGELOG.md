@@ -1,3 +1,10 @@
+# [1.59.0](https://github.com/mapmarker/mapmarker.io/compare/1.58.2...1.59.0) (2024-08-30)
+
+
+### Features
+
+* **analytics:** added google analytics to documentation site ([eb66e93](https://github.com/mapmarker/mapmarker.io/commit/eb66e9325cf3a15594ce596af0e1b7f73cbefed6))
+
 ## [1.58.2](https://github.com/mapmarker/mapmarker.io/compare/1.58.1...1.58.2) (2024-08-30)
 
 
