@@ -12,11 +12,11 @@ class IconStackController extends Controller
     public function show(Request $request)
     {
         // GET MARKER CONFIG
-        $markerSize = $request->get('size', 100);
+        $markerSize = $request->get('size') ?: 100;
 
         // FOREGROUND ICON
         $foregroundIcon = $request->get('icon') ?: null;
-        $foregroundIconColor = '#'.$request->get('color', '000');
+        $foregroundIconColor = '#'.$request->get('color') ?: '000';
         $foregroundIconMarkup = GetIconMarkup::run($foregroundIcon);
 
         // FOREGROUND ICON SHIFTING
