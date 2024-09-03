@@ -1,3 +1,10 @@
+## [1.60.1](https://github.com/mapmarker/mapmarker.io/compare/1.60.0...1.60.1) (2024-09-02)
+
+
+### Bug Fixes
+
+* **api v3:** changed logic to determine default values ([1a4bb0a](https://github.com/mapmarker/mapmarker.io/commit/1a4bb0a3692514a56d5ca0bd177617eec7f1ad9d))
+
 # [1.60.0](https://github.com/mapmarker/mapmarker.io/compare/1.59.0...1.60.0) (2024-08-30)
 
 

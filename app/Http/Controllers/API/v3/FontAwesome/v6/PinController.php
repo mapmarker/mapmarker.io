@@ -21,11 +21,11 @@ class PinController extends Controller
     protected function showIconPin(Request $request)
     {
         // GET MARKER CONFIG
-        $markerSize = $request->get('size', 100);
+        $markerSize = $request->get('size') ?: 100;
 
         // FOREGROUND ICON
         $foregroundIcon = $request->get('icon') ?: null;
-        $foregroundIconColor = '#'.$request->get('color', 'FFF');
+        $foregroundIconColor = '#'.$request->get('color') ?: 'FFF';
         $foregroundIconMarkup = GetIconMarkup::run($foregroundIcon);
 
         // FOREGROUND ICON SHIFTING
