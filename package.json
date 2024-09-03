@@ -8,7 +8,7 @@
         "pint": "./vendor/bin/pint",
         "style": "yarn pint -v --test",
         "style:fix": "yarn pint",
-        "commit": "yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
+        "commit": "yarn sitemap; yarn style:fix && git add . && ./node_modules/commitizen/bin/git-cz",
         "cm": "yarn commit",
         "dev": "yarn development",
         "development": "mix",
@@ -21,7 +21,8 @@
         "vapor": "./vendor/bin/vapor",
         "test": "yarn sail artisan test",
         "test:browser": "yarn sail dusk",
-        "release": "./node_modules/semantic-release/bin/semantic-release.js"
+        "release": "./node_modules/semantic-release/bin/semantic-release.js",
+        "sitemap": "php artisan sitemap"
     },
     "devDependencies": {
         "@ambimax/semantic-release-composer": "ambimax/semantic-release-composer",
