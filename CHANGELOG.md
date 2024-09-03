@@ -1,3 +1,10 @@
+# [1.63.0](https://github.com/mapmarker/mapmarker.io/compare/1.62.0...1.63.0) (2024-09-03)
+
+
+### Features
+
+* **seo:** added title / description to icons page (fa4) ([f273311](https://github.com/mapmarker/mapmarker.io/commit/f273311d7060843fe7b3baf1505b131bb91ef4d7))
+
 # [1.62.0](https://github.com/mapmarker/mapmarker.io/compare/1.61.0...1.62.0) (2024-09-03)
 
 
