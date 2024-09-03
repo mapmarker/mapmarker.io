@@ -1,5 +1,7 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Privacy Policy - MapMarker.io @endsection
+
 @section('content')
     <div class="container mx-auto px-2 text-gray-100">
         <div class="pt-4">

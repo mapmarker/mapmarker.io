@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Custom Map Markers using Font Awesome 4 - MapMarker.io @endsection
+@section('seo-description')Create custom map markers using the appearance of Font Awesome 4. @endsection
+
 @section('content')
     <x-docs-layout>
         <div class="md:grid grid-cols-3 gap-8">

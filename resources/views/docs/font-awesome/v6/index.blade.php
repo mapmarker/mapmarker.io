@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Custom Map Markers using Font Awesome 6 - MapMarker.io @endsection
+@section('seo-description')Create custom map markers using the appearance of Font Awesome 6. @endsection
+
 @section('content')
 <x-docs-layout>
 

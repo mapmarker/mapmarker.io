@@ -18,7 +18,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MapMarker</title>
+    <title>@section('seo-title')MapMarker @show</title>
+    <meta name="description" content="@section('seo-description')Custom map markers for better user-experience.@show">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     @section('scripts') @show
