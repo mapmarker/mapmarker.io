@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Changelog - MapMarker.io @endsection
+@section('seo-description')Review the latest changes rolling out to the MapMarker service to see if they can help your teams improve your apps. @endsection
+
 @section('content')
     <div class="container mx-auto px-2 text-gray-100">
         <div class="pt-4">

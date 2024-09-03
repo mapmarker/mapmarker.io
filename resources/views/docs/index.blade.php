@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')API Documentation - MapMarker.io @endsection
+@section('seo-description')Get the most out of the MapMarker API for your apps and your users by integrating with the latest endpoints @endsection
+
 @section('content')
     <x-docs-layout>
 

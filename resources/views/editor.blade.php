@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Marker Creator &amp; Editor - MapMarker.io @endsection
+@section('seo-description')Design the map marker or icon you need for your next project. Interactively, right in the browser. @endsection
+
 @section('content')
     <div class="container mx-auto px-2 text-gray-200">
         <h1 class="font-bold text-5xl mb-8">

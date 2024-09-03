@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Google Maps Custom Markers - MapMarker.io @endsection
+@section('seo-description')Here is everything you need to know about how to use our map markers with Google maps. @endsection
+
 @section('content')
     <x-docs-layout>
         <div class="grid grid-cols-3 gap-8">

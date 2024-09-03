@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')API Versions - MapMarker.io @endsection
+@section('seo-description')We have been serving all versions of our APIs since 2016. For more details, check out the current support and development status of all of our API versions. @endsection
+
 @section('content')
     <x-docs-layout>
 

@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Pins using Font Awesome 6 - MapMarker.io @endsection
+@section('seo-description')Create custom pin based map markers with custom text using the appearance of Font Awesome 6. @endsection
+
 @section('content')
     <x-docs-layout>
         <div class="grid grid-cols-3 gap-8">
