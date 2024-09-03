@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Custom Markers in Map SDKs - MapMarker.io @endsection
+@section('seo-description')Here is everything you need to know about how to use our custom map markers within popular mapping software development kits. @endsection
+
 @section('content')
     <x-docs-layout>
         <div class="md:grid grid-cols-3 gap-8">

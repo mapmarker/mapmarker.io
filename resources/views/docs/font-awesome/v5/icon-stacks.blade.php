@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')Icon Stacks using Font Awesome 5 - MapMarker.io @endsection
+@section('seo-description')Create custom stacked icon based map markers using the appearance of Font Awesome 5. @endsection
+
 @section('content')
     <x-docs-layout>
         <div class="grid grid-cols-3 gap-8">

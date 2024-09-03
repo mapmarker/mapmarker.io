@@ -1,5 +1,8 @@
 @extends('layouts.app-nav')
 
+@section('seo-title')License - MapMarker.io @endsection
+@section('seo-description')We are open-source and use the MIT license for the convenvience of businesses and developers everywhere. @endsection
+
 @section('content')
     <div class="container mx-auto px-2 text-gray-100">
         <div class="pt-4">

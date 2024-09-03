@@ -8,14 +8,18 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-M49WX379LE');
     </script>
 
+    <!-- SEO -->
+    <link rel="canonical" href="https://mapmarker.io/{{ request()->path() }}" />
+    <meta name="google-site-verification" content="RC96bUWVuDpuroWlQAckYhJ4GOCR0g5U7vaREIiZm8I" />
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="RC96bUWVuDpuroWlQAckYhJ4GOCR0g5U7vaREIiZm8I" />
-    <title>MapMarker</title>
+    <title>@section('seo-title')MapMarker @show</title>
+    <meta name="description" content="@section('seo-description')Custom map markers for better user-experience.@show">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     @section('scripts') @show
