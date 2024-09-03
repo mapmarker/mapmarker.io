@@ -1,7 +1,7 @@
 @extends('layouts.app-nav')
 
 @section('seo-title')Icons using Font Awesome 4 - MapMarker.io @endsection
-@section('seo-description')Create custom stacked icon based map markers using the appearance of Font Awesome 4. @endsection
+@section('seo-description')Create custom icon based map markers using the appearance of Font Awesome 4. @endsection
 
 @section('content')
     <x-docs-layout>
