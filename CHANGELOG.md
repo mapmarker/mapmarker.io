@@ -1,3 +1,10 @@
+# [1.61.0](https://github.com/mapmarker/mapmarker.io/compare/1.60.1...1.61.0) (2024-09-03)
+
+
+### Features
+
+* **site template:** added automatic canoncial link tag ([07673c8](https://github.com/mapmarker/mapmarker.io/commit/07673c80581de0357a27c556c892ccc82a8bd134))
+
 ## [1.60.1](https://github.com/mapmarker/mapmarker.io/compare/1.60.0...1.60.1) (2024-09-02)
 
 
