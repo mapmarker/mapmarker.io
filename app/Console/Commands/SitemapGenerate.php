@@ -47,7 +47,7 @@ class SitemapGenerate extends Command
 
         foreach ($routes as $route) {
             if (! $this->shouldExcludePath($route)) {
-                $url = 'https://mapmarker.io/';
+                $url = 'https://www.mapmarker.io/';
                 if ($route != '/') {
                     $url .= $route;
                 }

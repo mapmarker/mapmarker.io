@@ -12,7 +12,7 @@
     </script>
 
     <!-- SEO -->
-    <link rel="canonical" href="https://mapmarker.io/{{ request()->path() }}" />
+    <link rel="canonical" href="https://www.mapmarker.io/{{ request()->path() }}" />
     <meta name="google-site-verification" content="RC96bUWVuDpuroWlQAckYhJ4GOCR0g5U7vaREIiZm8I" />
 
 
