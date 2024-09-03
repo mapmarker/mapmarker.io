@@ -1,3 +1,11 @@
+# [1.62.0](https://github.com/mapmarker/mapmarker.io/compare/1.61.0...1.62.0) (2024-09-03)
+
+
+### Features
+
+* **documentation:** added title & meta description ([f11661e](https://github.com/mapmarker/mapmarker.io/commit/f11661ea172947e7ac32e7327863dfe934dcfa70))
+* **robots.txt:** disallow api routes for indexing ([da0d6bb](https://github.com/mapmarker/mapmarker.io/commit/da0d6bbb4afcd2c51673e878198360dd61d185db))
+
 # [1.61.0](https://github.com/mapmarker/mapmarker.io/compare/1.60.1...1.61.0) (2024-09-03)
 
 
