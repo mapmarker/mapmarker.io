@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/sitemap.xml', [HomeController::class, 'sitemap']);
 Route::get('/license', [HomeController::class, 'license']);
 Route::get('/privacy', [HomeController::class, 'privacy']);
 Route::get('/terms', [HomeController::class, 'terms']);

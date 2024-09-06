@@ -29,4 +29,11 @@ class HomeController extends Controller
 
         return view('terms', compact('termsOfService'));
     }
+
+    public function sitemap()
+    {
+        $xml = file_get_contents(public_path('sitemap/sitemap.xml'));
+
+        return response(content: $xml, headers:['Content-Type' => 'application/xml']);
+    }
 }
