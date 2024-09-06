@@ -10,7 +10,7 @@ use Spatie\Sitemap\Tags\Url;
 
 class SitemapGenerate extends Command
 {
-    const EXCLUDE = [
+    public const EXCLUDE = [
         '_dusk',
         'api',
         'sanctum',
@@ -43,6 +43,8 @@ class SitemapGenerate extends Command
             return $route->uri;
         }, (array) Route::getRoutes()->getIterator());
 
+        asort($routes);
+
         $sitemap = Sitemap::create();
 
         foreach ($routes as $route) {
@@ -55,7 +57,7 @@ class SitemapGenerate extends Command
             }
         }
 
-        $sitemap->writeToFile(public_path('sitemap.xml'));
+        $sitemap->writeToFile(public_path('sitemap/sitemap.xml'));
 
         return Command::SUCCESS;
     }
