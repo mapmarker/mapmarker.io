@@ -1,3 +1,10 @@
+## [1.64.3](https://github.com/mapmarker/mapmarker.io/compare/1.64.2...1.64.3) (2024-09-06)
+
+
+### Bug Fixes
+
+* **sitemap:** serve sitemap from /sitemap url ([b8f0166](https://github.com/mapmarker/mapmarker.io/commit/b8f01666ee5ff08860cc9e874f2d3dd44c736e19))
+
 ## [1.64.2](https://github.com/mapmarker/mapmarker.io/compare/1.64.1...1.64.2) (2024-09-06)
 
 
