@@ -1,127 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://mapmarker.io/</loc>
+        <loc>https://www.mapmarker.io/</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/license</loc>
+        <loc>https://www.mapmarker.io/license</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/privacy</loc>
+        <loc>https://www.mapmarker.io/privacy</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/terms</loc>
+        <loc>https://www.mapmarker.io/terms</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/changelog</loc>
+        <loc>https://www.mapmarker.io/changelog</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/editor</loc>
+        <loc>https://www.mapmarker.io/editor</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation</loc>
+        <loc>https://www.mapmarker.io/documentation</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/versions</loc>
+        <loc>https://www.mapmarker.io/documentation/versions</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/integrations</loc>
+        <loc>https://www.mapmarker.io/documentation/integrations</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/integrations/bing-maps</loc>
+        <loc>https://www.mapmarker.io/documentation/integrations/bing-maps</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/integrations/google-maps</loc>
+        <loc>https://www.mapmarker.io/documentation/integrations/google-maps</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/integrations/mapbox</loc>
+        <loc>https://www.mapmarker.io/documentation/integrations/mapbox</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v6</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v6</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v6/pins</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v6/pins</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v6/icons</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v6/icons</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v6/icon-stacks</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v6/icon-stacks</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v5</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v5</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v5/pins</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v5/pins</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v5/icons</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v5/icons</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v5/icon-stacks</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v5/icon-stacks</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v4</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v4</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v4/pins</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v4/pins</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v4/icons</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v4/icons</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://mapmarker.io/documentation/font-awesome/v4/icon-stacks</loc>
+        <loc>https://www.mapmarker.io/documentation/font-awesome/v4/icon-stacks</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>

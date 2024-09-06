@@ -1,3 +1,10 @@
+## [1.64.1](https://github.com/mapmarker/mapmarker.io/compare/1.64.0...1.64.1) (2024-09-03)
+
+
+### Bug Fixes
+
+* **seo:** adjust canonical and sitemap host ([34e2a81](https://github.com/mapmarker/mapmarker.io/commit/34e2a81bea1db187db31c4a0ad63456a507465c0))
+
 # [1.64.0](https://github.com/mapmarker/mapmarker.io/compare/1.63.0...1.64.0) (2024-09-03)
 
 
