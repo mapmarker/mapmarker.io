@@ -1,3 +1,10 @@
+## [1.64.2](https://github.com/mapmarker/mapmarker.io/compare/1.64.1...1.64.2) (2024-09-06)
+
+
+### Bug Fixes
+
+* **sitemap:** make sitemap work by setting up an actual route ([f1d913f](https://github.com/mapmarker/mapmarker.io/commit/f1d913fadd026556b9597dcf413fc5031caca955))
+
 ## [1.64.1](https://github.com/mapmarker/mapmarker.io/compare/1.64.0...1.64.1) (2024-09-03)
 
 
