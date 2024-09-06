@@ -1,3 +1,18 @@
+## [1.64.1](https://github.com/mapmarker/mapmarker.io/compare/1.64.0...1.64.1) (2024-09-03)
+
+
+### Bug Fixes
+
+* **seo:** adjust canonical and sitemap host ([34e2a81](https://github.com/mapmarker/mapmarker.io/commit/34e2a81bea1db187db31c4a0ad63456a507465c0))
+
+# [1.64.0](https://github.com/mapmarker/mapmarker.io/compare/1.63.0...1.64.0) (2024-09-03)
+
+
+### Features
+
+* **sitemap:** added command to generate sitemap ([1e71067](https://github.com/mapmarker/mapmarker.io/commit/1e710674ca49223ccb2b49822ab640c273206d82))
+* **sitemap:** added logic to generate sitemap to commit script ([571df56](https://github.com/mapmarker/mapmarker.io/commit/571df561fa9d5fc2a3687977c9e6958798f4a3d3))
+
 # [1.63.0](https://github.com/mapmarker/mapmarker.io/compare/1.62.0...1.63.0) (2024-09-03)
 
 
