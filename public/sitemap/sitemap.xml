@@ -121,7 +121,7 @@
         <priority>1.0</priority>
             </url>
     <url>
-        <loc>https://www.mapmarker.io/sitemap.xml</loc>
+        <loc>https://www.mapmarker.io/sitemap</loc>
             <changefreq>always</changefreq>
         <priority>1.0</priority>
             </url>
