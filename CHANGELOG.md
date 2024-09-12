@@ -1,3 +1,10 @@
+## [1.64.5](https://github.com/mapmarker/mapmarker.io/compare/1.64.4...1.64.5) (2024-09-12)
+
+
+### Bug Fixes
+
+* **sitemap:** change sitemap path to sitemap.xml ([e2cb1ae](https://github.com/mapmarker/mapmarker.io/commit/e2cb1ae4f47a5ccc800101e590087056439af2c1))
+
 ## [1.64.4](https://github.com/mapmarker/mapmarker.io/compare/1.64.3...1.64.4) (2024-09-12)
 
 
