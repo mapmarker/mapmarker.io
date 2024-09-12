@@ -1,3 +1,10 @@
+## [1.64.4](https://github.com/mapmarker/mapmarker.io/compare/1.64.3...1.64.4) (2024-09-12)
+
+
+### Bug Fixes
+
+* **sitemap:** move sitemap file to resource path ([762147f](https://github.com/mapmarker/mapmarker.io/commit/762147f23616f12fb3f875a6977cf1dacae6ab35))
+
 ## [1.64.3](https://github.com/mapmarker/mapmarker.io/compare/1.64.2...1.64.3) (2024-09-06)
 
 
