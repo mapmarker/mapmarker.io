@@ -32,7 +32,7 @@ class HomeController extends Controller
 
     public function sitemap()
     {
-        $xml = file_get_contents(public_path('sitemap/sitemap.xml'));
+        $xml = file_get_contents(resource_path('sitemap.xml'));
 
         return response(content: $xml, headers:['Content-Type' => 'application/xml']);
     }
