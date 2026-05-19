@@ -1,0 +1,159 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - prod
+    tags:
+      - '**'
+  pull_request:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: gd, mbstring, intl, pdo_sqlite, sqlite3
+          coverage: none
+          tools: composer:v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install PHP dependencies
+        run: composer install -n --prefer-dist --no-progress
+
+      - name: Install JS dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Compile assets
+        run: yarn prod
+
+  code-formatting:
+    name: Code Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: gd, mbstring, intl
+          coverage: none
+          tools: composer:v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install PHP dependencies
+        run: composer install -n --prefer-dist --no-progress
+
+      - name: Install JS dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Check code style
+        run: yarn style
+
+  test-unit:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: gd, mbstring, intl, pdo_sqlite, sqlite3
+          coverage: none
+          tools: composer:v2
+
+      - name: Install PHP dependencies
+        run: composer install -n --prefer-dist --no-progress
+
+      - name: Prepare environment
+        run: |
+          mkdir -p test-results/junit
+          touch database/database.sqlite
+          cp .env.circleci .env
+          php artisan key:generate
+          php artisan migrate
+
+      - name: Run PHPUnit
+        run: ./vendor/bin/phpunit --log-junit ./test-results/junit/results.xml
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phpunit-results
+          path: test-results
+
+  test-browser:
+    name: Browser Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: gd, mbstring, intl, pdo_sqlite, sqlite3
+          coverage: none
+          tools: composer:v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install PHP dependencies
+        run: composer install -n --prefer-dist --no-progress
+
+      - name: Install JS dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Compile assets
+        run: yarn prod
+
+      - name: Prepare environment
+        run: |
+          cp .env.circleci .env
+          touch database/database.sqlite
+          php artisan key:generate
+          php artisan migrate
+          php artisan dusk:chrome-driver --detect
+          mv ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver ./vendor/laravel/dusk/bin/chromedriver-linux
+          chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux
+
+      - name: Start Laravel server
+        run: nohup sudo -E php artisan serve --host=localhost --port=80 > server.log 2>&1 &
+
+      - name: Start Chrome Driver
+        run: nohup ./vendor/laravel/dusk/bin/chromedriver-linux --port=9515 > chromedriver.log 2>&1 &
+
+      - name: Run Dusk tests
+        run: php artisan dusk
+
+      - name: Upload Dusk screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dusk-screenshots
+          path: tests/Browser/screenshots
