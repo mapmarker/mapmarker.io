@@ -139,6 +139,8 @@ jobs:
           php artisan key:generate
           php artisan migrate
           php artisan dusk:chrome-driver --detect
+          mv ./vendor/laravel/dusk/bin/chromedriver-linux64/chromedriver ./vendor/laravel/dusk/bin/chromedriver-linux
+          chmod +x ./vendor/laravel/dusk/bin/chromedriver-linux
 
       - name: Start Laravel server
         run: nohup sudo -E php artisan serve --host=localhost --port=80 > server.log 2>&1 &
