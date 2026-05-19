@@ -145,6 +145,9 @@ jobs:
       - name: Start Laravel server
         run: nohup sudo -E php artisan serve --host=localhost --port=80 > server.log 2>&1 &
 
+      - name: Start Chrome Driver
+        run: nohup ./vendor/laravel/dusk/bin/chromedriver-linux --port=9515 > chromedriver.log 2>&1 &
+
       - name: Run Dusk tests
         run: php artisan dusk
 
