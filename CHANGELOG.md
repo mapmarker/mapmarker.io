@@ -1,3 +1,10 @@
+# [1.65.0](https://github.com/mapmarker/mapmarker.io/compare/1.64.5...1.65.0) (2026-05-19)
+
+
+### Features
+
+* **icon-stack:** add text rendering parameters ([c5d5711](https://github.com/mapmarker/mapmarker.io/commit/c5d57119054b1bc0fa7454a4e76dbbc156254612))
+
 ## [1.64.5](https://github.com/mapmarker/mapmarker.io/compare/1.64.4...1.64.5) (2024-09-12)
 
 
