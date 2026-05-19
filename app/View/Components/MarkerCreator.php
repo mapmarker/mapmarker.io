@@ -67,6 +67,30 @@ class MarkerCreator extends Component
             'type' => 'number',
             'description' => 'You can manually adjust the position of the text vertically with this parmeter. Zero is the automatic center and you can move in positive or negative directions.',
         ],
+        'text_color' => [
+            'name' => 'Text Color',
+            'value' => 'FFF',
+            'type' => 'text',
+            'description' => 'The color of the text rendered on top of the icon stack.',
+        ],
+        'textsize' => [
+            'name' => 'Text Size',
+            'value' => 30,
+            'type' => 'number',
+            'description' => 'The font size of the text rendered on top of the icon stack.',
+        ],
+        'text_hoffset' => [
+            'name' => 'Text Horizontal Offset',
+            'value' => 0,
+            'type' => 'number',
+            'description' => 'Adjust the position of the text horizontally. Zero is centered on the marker and you can move in positive or negative directions.',
+        ],
+        'text_voffset' => [
+            'name' => 'Text Vertical Offset',
+            'value' => 0,
+            'type' => 'number',
+            'description' => 'Adjust the position of the text vertically. Zero is centered on the marker and you can move in positive or negative directions.',
+        ],
     ];
 
     public $parameters = [];
