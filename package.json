@@ -71,7 +71,8 @@
                         "package.json",
                         "yarn.lock",
                         "composer.json"
-                    ]
+                    ],
+                    "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
                 }
             ],
             "@semantic-release/github"
