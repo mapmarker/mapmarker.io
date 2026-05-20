@@ -50,5 +50,5 @@ jobs:
       - name: Dispatch staging deploy
         if: steps.post.outputs.tag != steps.pre.outputs.tag && steps.post.outputs.tag != 'none'
         env:
-          GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy-staging.yml --ref "${{ steps.post.outputs.tag }}"
