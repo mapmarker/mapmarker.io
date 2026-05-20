@@ -13,12 +13,12 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
-  actions: write
 
 jobs:
   tag-version:
     name: Tag Version
     runs-on: ubuntu-latest
+    if: ${{ !startsWith(github.event.head_commit.message, 'chore(release):') }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,21 +34,7 @@ jobs:
       - name: Install JS dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Capture current tag
-        id: pre
-        run: echo "tag=$(git describe --tags --abbrev=0 2>/dev/null || echo none)" >> "$GITHUB_OUTPUT"
-
       - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN || secrets.GITHUB_TOKEN }}
         run: yarn release
-
-      - name: Detect new tag
-        id: post
-        run: echo "tag=$(git describe --tags --abbrev=0 2>/dev/null || echo none)" >> "$GITHUB_OUTPUT"
-
-      - name: Dispatch staging deploy
-        if: steps.post.outputs.tag != steps.pre.outputs.tag && steps.post.outputs.tag != 'none'
-        env:
-          GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN || secrets.GITHUB_TOKEN }}
-        run: gh workflow run deploy-staging.yml --ref "${{ steps.post.outputs.tag }}"

@@ -7,7 +7,6 @@ on:
       - prod
     tags:
       - '**'
-  pull_request:
 
 jobs:
   build:
