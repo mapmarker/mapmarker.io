@@ -9,7 +9,7 @@
             <div class="col-span-3">
                 <x-docs-box>
                     <h2>Icon Stacks</h2>
-                    <p>You can generate complex icons to convey importan attributes when rendering lots of data on a map.
+                    <p>You can generate complex icons to convey important attributes when rendering lots of data on a map.
                         This will help improve your users understanding of what is going on when lots of things are moving.
                     </p>
                     <x-marker-creator endpoint="/api/v3/font-awesome/v6/icon-stack" :fields="[
