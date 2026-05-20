@@ -34,6 +34,20 @@ class IconStackController extends Controller
         $backgroundIconColor = '#'.$request->get('oncolor', 'CCC');
         $backgroundIconMarkup = GetIconMarkup::run($backgroundIcon);
 
+        // TEXT
+        $text = htmlspecialchars((string) $request->get('text', ''), ENT_QUOTES | ENT_XML1, 'UTF-8');
+        $textColor = '#'.$request->get('text_color', 'FFF');
+        $textSize = $request->get('textsize', $markerSize / 3);
+        $textFont = 'Arial';
+        $textXOffsetPercent = 50 + ($request->get('text_hoffset', 0) / $markerSize * 100.00);
+        $textYOffsetPercent = 50 + ($request->get('text_voffset', 0) / $markerSize * 100.00);
+        $textMarkup = '';
+        if ($request->has('text')) {
+            $textMarkup = <<<EOD
+            <text x="{$textXOffsetPercent}%" y="{$textYOffsetPercent}%" fill="{$textColor}" text-anchor="middle" dy=".33em" font-size="{$textSize}" font-family="{$textFont}">{$text}</text>
+            EOD;
+        }
+
         // LABEL
         $labelMarkup = GetLabelMarkup::run(request: $request, markerSize: $markerSize);
 
@@ -46,6 +60,8 @@ class IconStackController extends Controller
             <svg fill="{$foregroundIconColor}" height="{$foregroundIconHeightPercent}%" x="{$foregroundIconXOffset}%" y="{$foregroundIconYOffset}%">
                 {$foregroundIconMarkup}
             </svg>
+
+            {$textMarkup}
 
             {$labelMarkup}
         </svg>

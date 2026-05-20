@@ -1,3 +1,24 @@
+## [1.65.2](https://github.com/mapmarker/mapmarker.io/compare/1.65.1...1.65.2) (2026-05-20)
+
+
+### Bug Fixes
+
+* trigger CI build on release PR after token fix ([d7622b6](https://github.com/mapmarker/mapmarker.io/commit/d7622b67721b34e397b56d6568587d50daed3bd9))
+
+## [1.65.1](https://github.com/mapmarker/mapmarker.io/compare/1.65.0...1.65.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* **docs:** correct "importan" typo on icon-stacks pages ([6ac41d1](https://github.com/mapmarker/mapmarker.io/commit/6ac41d1e4670f1b4a75eecfa7950b567a6197227))
+
+# [1.65.0](https://github.com/mapmarker/mapmarker.io/compare/1.64.5...1.65.0) (2026-05-19)
+
+
+### Features
+
+* **icon-stack:** add text rendering parameters ([c5d5711](https://github.com/mapmarker/mapmarker.io/commit/c5d57119054b1bc0fa7454a4e76dbbc156254612))
+
 ## [1.64.5](https://github.com/mapmarker/mapmarker.io/compare/1.64.4...1.64.5) (2024-09-12)
 
 
