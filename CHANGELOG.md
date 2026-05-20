@@ -1,3 +1,10 @@
+## [1.65.2](https://github.com/mapmarker/mapmarker.io/compare/1.65.1...1.65.2) (2026-05-20)
+
+
+### Bug Fixes
+
+* trigger CI build on release PR after token fix ([d7622b6](https://github.com/mapmarker/mapmarker.io/commit/d7622b67721b34e397b56d6568587d50daed3bd9))
+
 ## [1.65.1](https://github.com/mapmarker/mapmarker.io/compare/1.65.0...1.65.1) (2026-05-20)
 
 
