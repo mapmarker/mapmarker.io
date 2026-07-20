@@ -1,3 +1,11 @@
+# [1.66.0](https://github.com/mapmarker/mapmarker.io/compare/1.65.2...1.66.0) (2026-07-20)
+
+
+### Features
+
+* **docs:** document animated labels for icons and icon stacks ([901643c](https://github.com/mapmarker/mapmarker.io/commit/901643c12f6d701203ac5905ed698e74ff9049fb))
+* **docs:** document animated labels for pins ([15b2299](https://github.com/mapmarker/mapmarker.io/commit/15b229932fd86b9980193c8cfab42e53703fc9f6))
+
 ## [1.65.2](https://github.com/mapmarker/mapmarker.io/compare/1.65.1...1.65.2) (2026-05-20)
 
 
